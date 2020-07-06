@@ -1,0 +1,733 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		82A28B064BC1F44CE2EB1A91 /* Pods_EffectLoadingImageView.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F3CD50846705D5188C180500 /* Pods_EffectLoadingImageView.framework */; };
+		DE37A3501E84AC79003D0730 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE37A34F1E84AC79003D0730 /* Item.swift */; };
+		DE5BF7FB1DFBA59D0077E1A7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BF7FA1DFBA59D0077E1A7 /* AppDelegate.swift */; };
+		DE5BF7FD1DFBA59D0077E1A7 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BF7FC1DFBA59D0077E1A7 /* ViewController.swift */; };
+		DE5BF8001DFBA59D0077E1A7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5BF7FE1DFBA59D0077E1A7 /* Main.storyboard */; };
+		DE5BF8051DFBA59D0077E1A7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DE5BF8031DFBA59D0077E1A7 /* LaunchScreen.storyboard */; };
+		DE5BF8101DFBA59D0077E1A7 /* EffectLoadingImageViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BF80F1DFBA59D0077E1A7 /* EffectLoadingImageViewTests.swift */; };
+		DE5BF81B1DFBA59D0077E1A7 /* EffectLoadingImageViewUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BF81A1DFBA59D0077E1A7 /* EffectLoadingImageViewUITests.swift */; };
+		DE5BF82A1DFBA7D30077E1A7 /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BF8281DFBA7D30077E1A7 /* ImageCell.swift */; };
+		DE5BF82B1DFBA7D30077E1A7 /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = DE5BF8291DFBA7D30077E1A7 /* ImageCell.xib */; };
+		DE5BF82D1DFBB5690077E1A7 /* Downloader.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BF82C1DFBB5690077E1A7 /* Downloader.swift */; };
+		DE5BF82F1DFBB7D10077E1A7 /* SafeDispatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BF82E1DFBB7D10077E1A7 /* SafeDispatch.swift */; };
+		DE5BF8321DFBB85A0077E1A7 /* NSFileManagerExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BF8311DFBB85A0077E1A7 /* NSFileManagerExtension.swift */; };
+		DE5BF8341DFBDA910077E1A7 /* CGImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DE5BF8331DFBDA910077E1A7 /* CGImageExtension.swift */; };
+		DE5BF8361DFBDAD40077E1A7 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5BF8351DFBDAD40077E1A7 /* CoreGraphics.framework */; };
+		DE5BF83B1DFBDFA30077E1A7 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DE5BF83A1DFBDFA30077E1A7 /* Accelerate.framework */; };
+		DEA075E81DFBEDD200B54B66 /* FXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = DEA075E71DFBEDD200B54B66 /* FXBlurView.m */; };
+		DEA075EA1DFBF47500B54B66 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA075E91DFBF47500B54B66 /* UIImageViewExtension.swift */; };
+		DEA075EC1DFBF4F400B54B66 /* ImageCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA075EB1DFBF4F400B54B66 /* ImageCache.swift */; };
+		DEA075EE1DFBF74200B54B66 /* UIImageExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA075ED1DFBF74200B54B66 /* UIImageExtension.swift */; };
+		DEA075F61DFBFCEC00B54B66 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DEA075EF1DFBFCEC00B54B66 /* Assets.xcassets */; };
+		DEA075F71DFBFCEC00B54B66 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA075F11DFBFCEC00B54B66 /* LaunchScreen.storyboard */; };
+		DEA075F81DFBFCEC00B54B66 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = DEA075F31DFBFCEC00B54B66 /* Main.storyboard */; };
+		DEA075F91DFBFCEC00B54B66 /* MessageLoadingProgressView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA075F51DFBFCEC00B54B66 /* MessageLoadingProgressView.swift */; };
+		DEA075FB1DFC006D00B54B66 /* UIColorExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = DEA075FA1DFC006D00B54B66 /* UIColorExtension.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		DE5BF80C1DFBA59D0077E1A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE5BF7EF1DFBA59D0077E1A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE5BF7F61DFBA59D0077E1A7;
+			remoteInfo = EffectLoadingImageView;
+		};
+		DE5BF8171DFBA59D0077E1A7 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = DE5BF7EF1DFBA59D0077E1A7 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = DE5BF7F61DFBA59D0077E1A7;
+			remoteInfo = EffectLoadingImageView;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		10BA17189F58F6BBB47160EE /* Pods-EffectLoadingImageView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffectLoadingImageView.release.xcconfig"; path = "Pods/Target Support Files/Pods-EffectLoadingImageView/Pods-EffectLoadingImageView.release.xcconfig"; sourceTree = "<group>"; };
+		442F184ED1D60DD842B8ED63 /* Pods-EffectLoadingImageView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-EffectLoadingImageView.debug.xcconfig"; path = "Pods/Target Support Files/Pods-EffectLoadingImageView/Pods-EffectLoadingImageView.debug.xcconfig"; sourceTree = "<group>"; };
+		DE37A34F1E84AC79003D0730 /* Item.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		DE5BF7F71DFBA59D0077E1A7 /* EffectLoadingImageView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EffectLoadingImageView.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5BF7FA1DFBA59D0077E1A7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		DE5BF7FC1DFBA59D0077E1A7 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		DE5BF7FF1DFBA59D0077E1A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		DE5BF8041DFBA59D0077E1A7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DE5BF8061DFBA59D0077E1A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5BF80B1DFBA59D0077E1A7 /* EffectLoadingImageViewTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EffectLoadingImageViewTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5BF80F1DFBA59D0077E1A7 /* EffectLoadingImageViewTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectLoadingImageViewTests.swift; sourceTree = "<group>"; };
+		DE5BF8111DFBA59D0077E1A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5BF8161DFBA59D0077E1A7 /* EffectLoadingImageViewUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = EffectLoadingImageViewUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		DE5BF81A1DFBA59D0077E1A7 /* EffectLoadingImageViewUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EffectLoadingImageViewUITests.swift; sourceTree = "<group>"; };
+		DE5BF81C1DFBA59D0077E1A7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		DE5BF8281DFBA7D30077E1A7 /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
+		DE5BF8291DFBA7D30077E1A7 /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		DE5BF82C1DFBB5690077E1A7 /* Downloader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Downloader.swift; sourceTree = "<group>"; };
+		DE5BF82E1DFBB7D10077E1A7 /* SafeDispatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SafeDispatch.swift; sourceTree = "<group>"; };
+		DE5BF8311DFBB85A0077E1A7 /* NSFileManagerExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSFileManagerExtension.swift; sourceTree = "<group>"; };
+		DE5BF8331DFBDA910077E1A7 /* CGImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGImageExtension.swift; sourceTree = "<group>"; };
+		DE5BF8351DFBDAD40077E1A7 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		DE5BF8371DFBDCBB0077E1A7 /* EffectLoadingImageView-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "EffectLoadingImageView-Bridging-Header.h"; sourceTree = "<group>"; };
+		DE5BF83A1DFBDFA30077E1A7 /* Accelerate.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accelerate.framework; path = System/Library/Frameworks/Accelerate.framework; sourceTree = SDKROOT; };
+		DEA075E61DFBEDD200B54B66 /* FXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FXBlurView.h; sourceTree = "<group>"; };
+		DEA075E71DFBEDD200B54B66 /* FXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FXBlurView.m; sourceTree = "<group>"; };
+		DEA075E91DFBF47500B54B66 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		DEA075EB1DFBF4F400B54B66 /* ImageCache.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCache.swift; sourceTree = "<group>"; };
+		DEA075ED1DFBF74200B54B66 /* UIImageExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIImageExtension.swift; sourceTree = "<group>"; };
+		DEA075EF1DFBFCEC00B54B66 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DEA075F21DFBFCEC00B54B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
+		DEA075F41DFBFCEC00B54B66 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Main.storyboard; sourceTree = "<group>"; };
+		DEA075F51DFBFCEC00B54B66 /* MessageLoadingProgressView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageLoadingProgressView.swift; sourceTree = "<group>"; };
+		DEA075FA1DFC006D00B54B66 /* UIColorExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColorExtension.swift; sourceTree = "<group>"; };
+		F3CD50846705D5188C180500 /* Pods_EffectLoadingImageView.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_EffectLoadingImageView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		DE5BF7F41DFBA59D0077E1A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5BF83B1DFBDFA30077E1A7 /* Accelerate.framework in Frameworks */,
+				DE5BF8361DFBDAD40077E1A7 /* CoreGraphics.framework in Frameworks */,
+				82A28B064BC1F44CE2EB1A91 /* Pods_EffectLoadingImageView.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5BF8081DFBA59D0077E1A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5BF8131DFBA59D0077E1A7 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7C82790E3DFA086068B4F75A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DE5BF83A1DFBDFA30077E1A7 /* Accelerate.framework */,
+				DE5BF8351DFBDAD40077E1A7 /* CoreGraphics.framework */,
+				F3CD50846705D5188C180500 /* Pods_EffectLoadingImageView.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B8B192E58F1B95158E0E4849 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				442F184ED1D60DD842B8ED63 /* Pods-EffectLoadingImageView.debug.xcconfig */,
+				10BA17189F58F6BBB47160EE /* Pods-EffectLoadingImageView.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		DE37A34E1E84AC5F003D0730 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				DE37A34F1E84AC79003D0730 /* Item.swift */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		DE5BF7EE1DFBA59D0077E1A7 = {
+			isa = PBXGroup;
+			children = (
+				DE5BF7F91DFBA59D0077E1A7 /* EffectLoadingImageView */,
+				DE5BF80E1DFBA59D0077E1A7 /* EffectLoadingImageViewTests */,
+				DE5BF8191DFBA59D0077E1A7 /* EffectLoadingImageViewUITests */,
+				DE5BF7F81DFBA59D0077E1A7 /* Products */,
+				B8B192E58F1B95158E0E4849 /* Pods */,
+				7C82790E3DFA086068B4F75A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		DE5BF7F81DFBA59D0077E1A7 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				DE5BF7F71DFBA59D0077E1A7 /* EffectLoadingImageView.app */,
+				DE5BF80B1DFBA59D0077E1A7 /* EffectLoadingImageViewTests.xctest */,
+				DE5BF8161DFBA59D0077E1A7 /* EffectLoadingImageViewUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		DE5BF7F91DFBA59D0077E1A7 /* EffectLoadingImageView */ = {
+			isa = PBXGroup;
+			children = (
+				DE5BF8371DFBDCBB0077E1A7 /* EffectLoadingImageView-Bridging-Header.h */,
+				DE5BF7FA1DFBA59D0077E1A7 /* AppDelegate.swift */,
+				DEA075E51DFBEDA200B54B66 /* Vendor */,
+				DE37A34E1E84AC5F003D0730 /* Model */,
+				DE5BF8301DFBB83F0077E1A7 /* Extension */,
+				DEA075FC1DFC623200B54B66 /* Views */,
+				DEA075FD1DFC62EA00B54B66 /* Cells */,
+				DE5BF7FC1DFBA59D0077E1A7 /* ViewController.swift */,
+				DE5BF7FE1DFBA59D0077E1A7 /* Main.storyboard */,
+				DE5BF8031DFBA59D0077E1A7 /* LaunchScreen.storyboard */,
+				DE5BF82C1DFBB5690077E1A7 /* Downloader.swift */,
+				DE5BF82E1DFBB7D10077E1A7 /* SafeDispatch.swift */,
+				DEA075EB1DFBF4F400B54B66 /* ImageCache.swift */,
+				DEA075EF1DFBFCEC00B54B66 /* Assets.xcassets */,
+				DEA075F01DFBFCEC00B54B66 /* Base.lproj */,
+				DE5BF8061DFBA59D0077E1A7 /* Info.plist */,
+			);
+			path = EffectLoadingImageView;
+			sourceTree = "<group>";
+		};
+		DE5BF80E1DFBA59D0077E1A7 /* EffectLoadingImageViewTests */ = {
+			isa = PBXGroup;
+			children = (
+				DE5BF80F1DFBA59D0077E1A7 /* EffectLoadingImageViewTests.swift */,
+				DE5BF8111DFBA59D0077E1A7 /* Info.plist */,
+			);
+			path = EffectLoadingImageViewTests;
+			sourceTree = "<group>";
+		};
+		DE5BF8191DFBA59D0077E1A7 /* EffectLoadingImageViewUITests */ = {
+			isa = PBXGroup;
+			children = (
+				DE5BF81A1DFBA59D0077E1A7 /* EffectLoadingImageViewUITests.swift */,
+				DE5BF81C1DFBA59D0077E1A7 /* Info.plist */,
+			);
+			path = EffectLoadingImageViewUITests;
+			sourceTree = "<group>";
+		};
+		DE5BF8301DFBB83F0077E1A7 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				DE5BF8331DFBDA910077E1A7 /* CGImageExtension.swift */,
+				DEA075E91DFBF47500B54B66 /* UIImageViewExtension.swift */,
+				DEA075ED1DFBF74200B54B66 /* UIImageExtension.swift */,
+				DEA075FA1DFC006D00B54B66 /* UIColorExtension.swift */,
+				DE5BF8311DFBB85A0077E1A7 /* NSFileManagerExtension.swift */,
+			);
+			name = Extension;
+			sourceTree = "<group>";
+		};
+		DEA075E51DFBEDA200B54B66 /* Vendor */ = {
+			isa = PBXGroup;
+			children = (
+				DEA075E61DFBEDD200B54B66 /* FXBlurView.h */,
+				DEA075E71DFBEDD200B54B66 /* FXBlurView.m */,
+			);
+			name = Vendor;
+			sourceTree = "<group>";
+		};
+		DEA075F01DFBFCEC00B54B66 /* Base.lproj */ = {
+			isa = PBXGroup;
+			children = (
+				DEA075F11DFBFCEC00B54B66 /* LaunchScreen.storyboard */,
+				DEA075F31DFBFCEC00B54B66 /* Main.storyboard */,
+			);
+			path = Base.lproj;
+			sourceTree = "<group>";
+		};
+		DEA075FC1DFC623200B54B66 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				DEA075F51DFBFCEC00B54B66 /* MessageLoadingProgressView.swift */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		DEA075FD1DFC62EA00B54B66 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				DE5BF8281DFBA7D30077E1A7 /* ImageCell.swift */,
+				DE5BF8291DFBA7D30077E1A7 /* ImageCell.xib */,
+			);
+			name = Cells;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		DE5BF7F61DFBA59D0077E1A7 /* EffectLoadingImageView */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5BF81F1DFBA59D0077E1A7 /* Build configuration list for PBXNativeTarget "EffectLoadingImageView" */;
+			buildPhases = (
+				DBCDA2293FF0BCCA340E449D /* [CP] Check Pods Manifest.lock */,
+				DE5BF7F31DFBA59D0077E1A7 /* Sources */,
+				DE5BF7F41DFBA59D0077E1A7 /* Frameworks */,
+				DE5BF7F51DFBA59D0077E1A7 /* Resources */,
+				18B24FFEF40C63B4C6F3A701 /* [CP] Embed Pods Frameworks */,
+				6E3BAB04F7946E54D69401BC /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EffectLoadingImageView;
+			productName = EffectLoadingImageView;
+			productReference = DE5BF7F71DFBA59D0077E1A7 /* EffectLoadingImageView.app */;
+			productType = "com.apple.product-type.application";
+		};
+		DE5BF80A1DFBA59D0077E1A7 /* EffectLoadingImageViewTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5BF8221DFBA59D0077E1A7 /* Build configuration list for PBXNativeTarget "EffectLoadingImageViewTests" */;
+			buildPhases = (
+				DE5BF8071DFBA59D0077E1A7 /* Sources */,
+				DE5BF8081DFBA59D0077E1A7 /* Frameworks */,
+				DE5BF8091DFBA59D0077E1A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE5BF80D1DFBA59D0077E1A7 /* PBXTargetDependency */,
+			);
+			name = EffectLoadingImageViewTests;
+			productName = EffectLoadingImageViewTests;
+			productReference = DE5BF80B1DFBA59D0077E1A7 /* EffectLoadingImageViewTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		DE5BF8151DFBA59D0077E1A7 /* EffectLoadingImageViewUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = DE5BF8251DFBA59D0077E1A7 /* Build configuration list for PBXNativeTarget "EffectLoadingImageViewUITests" */;
+			buildPhases = (
+				DE5BF8121DFBA59D0077E1A7 /* Sources */,
+				DE5BF8131DFBA59D0077E1A7 /* Frameworks */,
+				DE5BF8141DFBA59D0077E1A7 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				DE5BF8181DFBA59D0077E1A7 /* PBXTargetDependency */,
+			);
+			name = EffectLoadingImageViewUITests;
+			productName = EffectLoadingImageViewUITests;
+			productReference = DE5BF8161DFBA59D0077E1A7 /* EffectLoadingImageViewUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		DE5BF7EF1DFBA59D0077E1A7 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0730;
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = "Framgia, Inc";
+				TargetAttributes = {
+					DE5BF7F61DFBA59D0077E1A7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						DevelopmentTeam = LU2ZMKCXL3;
+					};
+					DE5BF80A1DFBA59D0077E1A7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DE5BF7F61DFBA59D0077E1A7;
+					};
+					DE5BF8151DFBA59D0077E1A7 = {
+						CreatedOnToolsVersion = 7.3.1;
+						TestTargetID = DE5BF7F61DFBA59D0077E1A7;
+					};
+				};
+			};
+			buildConfigurationList = DE5BF7F21DFBA59D0077E1A7 /* Build configuration list for PBXProject "EffectLoadingImageView" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = DE5BF7EE1DFBA59D0077E1A7;
+			productRefGroup = DE5BF7F81DFBA59D0077E1A7 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				DE5BF7F61DFBA59D0077E1A7 /* EffectLoadingImageView */,
+				DE5BF80A1DFBA59D0077E1A7 /* EffectLoadingImageViewTests */,
+				DE5BF8151DFBA59D0077E1A7 /* EffectLoadingImageViewUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DE5BF7F51DFBA59D0077E1A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA075F81DFBFCEC00B54B66 /* Main.storyboard in Resources */,
+				DE5BF8051DFBA59D0077E1A7 /* LaunchScreen.storyboard in Resources */,
+				DE5BF82B1DFBA7D30077E1A7 /* ImageCell.xib in Resources */,
+				DEA075F71DFBFCEC00B54B66 /* LaunchScreen.storyboard in Resources */,
+				DE5BF8001DFBA59D0077E1A7 /* Main.storyboard in Resources */,
+				DEA075F61DFBFCEC00B54B66 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5BF8091DFBA59D0077E1A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5BF8141DFBA59D0077E1A7 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		18B24FFEF40C63B4C6F3A701 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EffectLoadingImageView/Pods-EffectLoadingImageView-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		6E3BAB04F7946E54D69401BC /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-EffectLoadingImageView/Pods-EffectLoadingImageView-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		DBCDA2293FF0BCCA340E449D /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		DE5BF7F31DFBA59D0077E1A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DEA075EC1DFBF4F400B54B66 /* ImageCache.swift in Sources */,
+				DE5BF82F1DFBB7D10077E1A7 /* SafeDispatch.swift in Sources */,
+				DE5BF7FD1DFBA59D0077E1A7 /* ViewController.swift in Sources */,
+				DE5BF8341DFBDA910077E1A7 /* CGImageExtension.swift in Sources */,
+				DE37A3501E84AC79003D0730 /* Item.swift in Sources */,
+				DEA075EE1DFBF74200B54B66 /* UIImageExtension.swift in Sources */,
+				DE5BF8321DFBB85A0077E1A7 /* NSFileManagerExtension.swift in Sources */,
+				DEA075FB1DFC006D00B54B66 /* UIColorExtension.swift in Sources */,
+				DE5BF7FB1DFBA59D0077E1A7 /* AppDelegate.swift in Sources */,
+				DEA075EA1DFBF47500B54B66 /* UIImageViewExtension.swift in Sources */,
+				DEA075F91DFBFCEC00B54B66 /* MessageLoadingProgressView.swift in Sources */,
+				DEA075E81DFBEDD200B54B66 /* FXBlurView.m in Sources */,
+				DE5BF82D1DFBB5690077E1A7 /* Downloader.swift in Sources */,
+				DE5BF82A1DFBA7D30077E1A7 /* ImageCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5BF8071DFBA59D0077E1A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5BF8101DFBA59D0077E1A7 /* EffectLoadingImageViewTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		DE5BF8121DFBA59D0077E1A7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DE5BF81B1DFBA59D0077E1A7 /* EffectLoadingImageViewUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		DE5BF80D1DFBA59D0077E1A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE5BF7F61DFBA59D0077E1A7 /* EffectLoadingImageView */;
+			targetProxy = DE5BF80C1DFBA59D0077E1A7 /* PBXContainerItemProxy */;
+		};
+		DE5BF8181DFBA59D0077E1A7 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = DE5BF7F61DFBA59D0077E1A7 /* EffectLoadingImageView */;
+			targetProxy = DE5BF8171DFBA59D0077E1A7 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		DE5BF7FE1DFBA59D0077E1A7 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5BF7FF1DFBA59D0077E1A7 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		DE5BF8031DFBA59D0077E1A7 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DE5BF8041DFBA59D0077E1A7 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DEA075F11DFBFCEC00B54B66 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEA075F21DFBFCEC00B54B66 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		DEA075F31DFBFCEC00B54B66 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				DEA075F41DFBFCEC00B54B66 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		DE5BF81D1DFBA59D0077E1A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE5BF81E1DFBA59D0077E1A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		DE5BF8201DFBA59D0077E1A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 442F184ED1D60DD842B8ED63 /* Pods-EffectLoadingImageView.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = EffectLoadingImageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Exlinct.EffectLoadingImageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "EffectLoadingImageView/EffectLoadingImageView-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		DE5BF8211DFBA59D0077E1A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 10BA17189F58F6BBB47160EE /* Pods-EffectLoadingImageView.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				INFOPLIST_FILE = EffectLoadingImageView/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Exlinct.EffectLoadingImageView;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
+				SWIFT_OBJC_BRIDGING_HEADER = "EffectLoadingImageView/EffectLoadingImageView-Bridging-Header.h";
+			};
+			name = Release;
+		};
+		DE5BF8231DFBA59D0077E1A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EffectLoadingImageViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Exlinct.EffectLoadingImageViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EffectLoadingImageView.app/EffectLoadingImageView";
+			};
+			name = Debug;
+		};
+		DE5BF8241DFBA59D0077E1A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = EffectLoadingImageViewTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Exlinct.EffectLoadingImageViewTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/EffectLoadingImageView.app/EffectLoadingImageView";
+			};
+			name = Release;
+		};
+		DE5BF8261DFBA59D0077E1A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EffectLoadingImageViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Exlinct.EffectLoadingImageViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EffectLoadingImageView;
+			};
+			name = Debug;
+		};
+		DE5BF8271DFBA59D0077E1A7 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = EffectLoadingImageViewUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = Exlinct.EffectLoadingImageViewUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = EffectLoadingImageView;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		DE5BF7F21DFBA59D0077E1A7 /* Build configuration list for PBXProject "EffectLoadingImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5BF81D1DFBA59D0077E1A7 /* Debug */,
+				DE5BF81E1DFBA59D0077E1A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5BF81F1DFBA59D0077E1A7 /* Build configuration list for PBXNativeTarget "EffectLoadingImageView" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5BF8201DFBA59D0077E1A7 /* Debug */,
+				DE5BF8211DFBA59D0077E1A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5BF8221DFBA59D0077E1A7 /* Build configuration list for PBXNativeTarget "EffectLoadingImageViewTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5BF8231DFBA59D0077E1A7 /* Debug */,
+				DE5BF8241DFBA59D0077E1A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		DE5BF8251DFBA59D0077E1A7 /* Build configuration list for PBXNativeTarget "EffectLoadingImageViewUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DE5BF8261DFBA59D0077E1A7 /* Debug */,
+				DE5BF8271DFBA59D0077E1A7 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = DE5BF7EF1DFBA59D0077E1A7 /* Project object */;
+}
