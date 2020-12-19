@@ -1,0 +1,392 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		110DCC33258E114000A5A783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110DCC32258E114000A5A783 /* AppDelegate.swift */; };
+		110DCC35258E114000A5A783 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110DCC34258E114000A5A783 /* SceneDelegate.swift */; };
+		110DCC37258E114000A5A783 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110DCC36258E114000A5A783 /* ViewController.swift */; };
+		110DCC3A258E114000A5A783 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110DCC38258E114000A5A783 /* Main.storyboard */; };
+		110DCC3C258E114000A5A783 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 110DCC3B258E114000A5A783 /* Assets.xcassets */; };
+		110DCC3F258E114000A5A783 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 110DCC3D258E114000A5A783 /* LaunchScreen.storyboard */; };
+		110DCC48258E15BE00A5A783 /* CustomSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110DCC47258E15BE00A5A783 /* CustomSettingViewController.swift */; };
+		110DCC50258E613600A5A783 /* AppleSettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110DCC4F258E613600A5A783 /* AppleSettingViewController.swift */; };
+		110DCC54258E65B000A5A783 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110DCC53258E65B000A5A783 /* Item.swift */; };
+		110DCC59258E66A600A5A783 /* GmailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110DCC58258E66A600A5A783 /* GmailViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		110DCC2F258E114000A5A783 /* SettingScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		110DCC32258E114000A5A783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		110DCC34258E114000A5A783 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		110DCC36258E114000A5A783 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		110DCC39258E114000A5A783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		110DCC3B258E114000A5A783 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		110DCC3E258E114000A5A783 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		110DCC40258E114000A5A783 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		110DCC47258E15BE00A5A783 /* CustomSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSettingViewController.swift; sourceTree = "<group>"; };
+		110DCC4F258E613600A5A783 /* AppleSettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSettingViewController.swift; sourceTree = "<group>"; };
+		110DCC53258E65B000A5A783 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		110DCC58258E66A600A5A783 /* GmailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GmailViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		110DCC2C258E114000A5A783 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		110DCC26258E114000A5A783 = {
+			isa = PBXGroup;
+			children = (
+				110DCC31258E114000A5A783 /* SettingScreen */,
+				110DCC30258E114000A5A783 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		110DCC30258E114000A5A783 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				110DCC2F258E114000A5A783 /* SettingScreen.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		110DCC31258E114000A5A783 /* SettingScreen */ = {
+			isa = PBXGroup;
+			children = (
+				110DCC52258E659500A5A783 /* Model */,
+				110DCC4C258E5F0800A5A783 /* Custom */,
+				110DCC4D258E5F1900A5A783 /* Apple */,
+				110DCC57258E669600A5A783 /* Gmail */,
+				110DCC32258E114000A5A783 /* AppDelegate.swift */,
+				110DCC34258E114000A5A783 /* SceneDelegate.swift */,
+				110DCC36258E114000A5A783 /* ViewController.swift */,
+				110DCC38258E114000A5A783 /* Main.storyboard */,
+				110DCC3B258E114000A5A783 /* Assets.xcassets */,
+				110DCC3D258E114000A5A783 /* LaunchScreen.storyboard */,
+				110DCC40258E114000A5A783 /* Info.plist */,
+			);
+			path = SettingScreen;
+			sourceTree = "<group>";
+		};
+		110DCC4C258E5F0800A5A783 /* Custom */ = {
+			isa = PBXGroup;
+			children = (
+				110DCC47258E15BE00A5A783 /* CustomSettingViewController.swift */,
+			);
+			path = Custom;
+			sourceTree = "<group>";
+		};
+		110DCC4D258E5F1900A5A783 /* Apple */ = {
+			isa = PBXGroup;
+			children = (
+				110DCC4F258E613600A5A783 /* AppleSettingViewController.swift */,
+			);
+			path = Apple;
+			sourceTree = "<group>";
+		};
+		110DCC52258E659500A5A783 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				110DCC53258E65B000A5A783 /* Item.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		110DCC57258E669600A5A783 /* Gmail */ = {
+			isa = PBXGroup;
+			children = (
+				110DCC58258E66A600A5A783 /* GmailViewController.swift */,
+			);
+			path = Gmail;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		110DCC2E258E114000A5A783 /* SettingScreen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 110DCC43258E114000A5A783 /* Build configuration list for PBXNativeTarget "SettingScreen" */;
+			buildPhases = (
+				110DCC2B258E114000A5A783 /* Sources */,
+				110DCC2C258E114000A5A783 /* Frameworks */,
+				110DCC2D258E114000A5A783 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SettingScreen;
+			productName = SettingScreen;
+			productReference = 110DCC2F258E114000A5A783 /* SettingScreen.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		110DCC27258E114000A5A783 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1220;
+				LastUpgradeCheck = 1220;
+				TargetAttributes = {
+					110DCC2E258E114000A5A783 = {
+						CreatedOnToolsVersion = 12.2;
+					};
+				};
+			};
+			buildConfigurationList = 110DCC2A258E114000A5A783 /* Build configuration list for PBXProject "SettingScreen" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 110DCC26258E114000A5A783;
+			productRefGroup = 110DCC30258E114000A5A783 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				110DCC2E258E114000A5A783 /* SettingScreen */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		110DCC2D258E114000A5A783 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110DCC3F258E114000A5A783 /* LaunchScreen.storyboard in Resources */,
+				110DCC3C258E114000A5A783 /* Assets.xcassets in Resources */,
+				110DCC3A258E114000A5A783 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		110DCC2B258E114000A5A783 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				110DCC37258E114000A5A783 /* ViewController.swift in Sources */,
+				110DCC50258E613600A5A783 /* AppleSettingViewController.swift in Sources */,
+				110DCC33258E114000A5A783 /* AppDelegate.swift in Sources */,
+				110DCC35258E114000A5A783 /* SceneDelegate.swift in Sources */,
+				110DCC54258E65B000A5A783 /* Item.swift in Sources */,
+				110DCC59258E66A600A5A783 /* GmailViewController.swift in Sources */,
+				110DCC48258E15BE00A5A783 /* CustomSettingViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		110DCC38258E114000A5A783 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110DCC39258E114000A5A783 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		110DCC3D258E114000A5A783 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				110DCC3E258E114000A5A783 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		110DCC41258E114000A5A783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		110DCC42258E114000A5A783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		110DCC44258E114000A5A783 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SettingScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.exlinct.SettingScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		110DCC45258E114000A5A783 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = SettingScreen/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.exlinct.SettingScreen;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		110DCC2A258E114000A5A783 /* Build configuration list for PBXProject "SettingScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110DCC41258E114000A5A783 /* Debug */,
+				110DCC42258E114000A5A783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		110DCC43258E114000A5A783 /* Build configuration list for PBXNativeTarget "SettingScreen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				110DCC44258E114000A5A783 /* Debug */,
+				110DCC45258E114000A5A783 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 110DCC27258E114000A5A783 /* Project object */;
+}
