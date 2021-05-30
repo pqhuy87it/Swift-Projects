@@ -36,6 +36,7 @@ class ViewController: UIViewController {
 		func decode() {
 			do {
 				let hoge = try JSONDecoder().decode(CodableTest.self, from: json)
+                print(hoge)
 			} catch {
 				print(error)
 			}
@@ -64,6 +65,7 @@ class ViewController: UIViewController {
 		func decode() {
 			do {
 				let hoge = try JSONDecoder().decode(CodableTest2.self, from: json)
+                print(hoge)
 			} catch {
 				print(error)
 			}
@@ -96,6 +98,7 @@ class ViewController: UIViewController {
 		func decode() {
 			do {
 				let hoge = try JSONDecoder().decode(CodableTest3.self, from: json)
+                print(hoge)
 			} catch {
 				print(error)
 			}

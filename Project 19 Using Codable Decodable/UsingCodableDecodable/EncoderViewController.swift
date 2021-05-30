@@ -53,7 +53,7 @@ class EncoderViewController: UIViewController {
 
 		do {
 			let data = try JSONEncoder().encode(person)
-			let json = String(data: data, encoding: String.Encoding.utf8)
+			let json = String(data: data, encoding: String.Encoding.utf8)!
 			print(json)
 		} catch {
 			print(error)
@@ -77,7 +77,7 @@ class EncoderViewController: UIViewController {
 
 		do {
 			let data = try JSONEncoder().encode(penguin)
-			let json = String(data: data, encoding: String.Encoding.utf8)
+			let json = String(data: data, encoding: String.Encoding.utf8)!
 			print(json)
 		} catch {
 			print(error)
