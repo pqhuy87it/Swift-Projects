@@ -104,7 +104,7 @@ enum Language: Int {
     }
 }
 
-protocol LocalizeSupportType : class {
+protocol LocalizeSupportType : AnyObject {
     var language: Language { get set }
 }
 
