@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C82CF7926D01E8F0044EAD7 /* AnyDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C82CF7826D01E8F0044EAD7 /* AnyDecodable.swift */; };
 		6410B8C8249F549B0001F9C1 /* EncoderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410B8C7249F549B0001F9C1 /* EncoderViewController.swift */; };
 		6453AD832477A43000E9F2A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6453AD822477A43000E9F2A2 /* AppDelegate.swift */; };
 		6453AD852477A43000E9F2A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6453AD842477A43000E9F2A2 /* SceneDelegate.swift */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C82CF7826D01E8F0044EAD7 /* AnyDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDecodable.swift; sourceTree = "<group>"; };
 		6410B8C7249F549B0001F9C1 /* EncoderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncoderViewController.swift; sourceTree = "<group>"; };
 		6453AD7F2477A43000E9F2A2 /* UsingCodableDecodable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingCodableDecodable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6453AD822477A43000E9F2A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -110,6 +112,7 @@
 				6453ADB02477AFC300E9F2A2 /* DictionaryDecoder.swift */,
 				6453ADB22477AFE100E9F2A2 /* DictionaryEncoder.swift */,
 				6410B8C7249F549B0001F9C1 /* EncoderViewController.swift */,
+				5C82CF7826D01E8F0044EAD7 /* AnyDecodable.swift */,
 			);
 			path = UsingCodableDecodable;
 			sourceTree = "<group>";
@@ -224,6 +227,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C82CF7926D01E8F0044EAD7 /* AnyDecodable.swift in Sources */,
 				6410B8C8249F549B0001F9C1 /* EncoderViewController.swift in Sources */,
 				6453ADB32477AFE100E9F2A2 /* DictionaryEncoder.swift in Sources */,
 				6453AD872477A43000E9F2A2 /* ViewController.swift in Sources */,

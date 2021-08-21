@@ -7,7 +7,9 @@ class ViewController: UIViewController {
 		super.viewDidLoad()
 		// Do any additional setup after loading the view.
 
-		setupJsonData()
+//		setupJsonData()
+        
+        testDecodePropertyWithTypeOfJsonDictionary()
 	}
 
 	func setupJsonData() {
@@ -104,5 +106,58 @@ class ViewController: UIViewController {
 			}
 		}
 	}
+    
+    func testDecodePropertyWithTypeOfJsonDictionary() {
+        let jsonData = """
+        {
+          "id": 12345,
+          "name": "Giuseppe",
+          "last_name": "Lanza",
+          "age": 31,
+          "happy": true,
+          "rate": 1.5,
+          "classes": ["maths", "phisics"],
+          "dogs": [
+            {
+              "name": "Gala",
+              "age": 1
+            }, {
+              "name": "Aria",
+              "age": 3
+            }
+          ]
+        }
+        """.data(using: .utf8)!
+        
+        let stud = try! JSONDecoder().decode(AnyDecodable.self, from: jsonData).value as! [String: Any]
+        print(stud)
+        
+        let decoder = JSONDecoder()
+
+        let userDataJson = """
+            {
+            "id": "4yq6txdpfadhbaqnwp3",
+            "email": "john.doe@example.com",
+            "name":"John Doe",
+            "metadata": {
+              "link_id": "linked-id",
+              "buy_count": 4
+            }
+          }
+        """.data(using: .utf8)!
+
+        let user = try! decoder.decode(User.self, from: userDataJson)
+        print(user)
+
+        let encoder = PropertyListEncoder()
+        encoder.outputFormat = .xml
+        let plist = try! encoder.encode(user)
+        
+        print(String(data: plist, encoding: .utf8)!)
+        
+        let metadata = try! decoder.decode([String: AnyJSONType].self, from: userDataJson)
+        
+        print(metadata)
+    }
 }
 
