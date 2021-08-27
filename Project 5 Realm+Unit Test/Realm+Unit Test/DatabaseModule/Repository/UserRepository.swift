@@ -23,14 +23,14 @@ class UserRepository {
     
     // MARK: - CREATE
     
-    func create(_ user: UserModel) {
-        dao.create(user)
+    func create(_ model: UserModel) {
+        dao.create(model)
     }
     
     // MARK: - UPDATE
     
-    func updateUser(_ user: UserModel) {
-        dao.update(user)
+    func updateUser(_ model: UserModel) {
+        dao.update(model)
     }
     
     // MARK: - DELETE
@@ -39,8 +39,8 @@ class UserRepository {
         dao.deleteAll()
     }
     
-    func delete(_ user: UserModel) {
-        dao.delete(user)
+    func delete(_ model: UserModel) {
+        dao.delete(model)
     }
     
     func deleteBy(_ intKey: Int) {

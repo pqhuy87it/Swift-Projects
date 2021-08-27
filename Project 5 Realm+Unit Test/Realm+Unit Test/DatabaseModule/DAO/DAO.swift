@@ -22,6 +22,7 @@ extension DAO {
     func createDB(_ object: T) {
         do {
             guard let realm = try RealmService.getRealm() else {
+                logD("can't create instance realm!", logLevel: .emergency)
                 return
             }
             

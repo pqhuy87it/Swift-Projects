@@ -8,8 +8,8 @@ class UserDAO: DAO {
     // MARK: - READ
     
     func queryAll() -> [UserModel]? {
-        if let rUsers = self.readDB() {
-            return rUsers.compactMap{ UserModel($0) }
+        if let rModels = self.readDB() {
+            return rModels.compactMap{ UserModel($0) }
         }
         
         return nil
@@ -33,17 +33,17 @@ class UserDAO: DAO {
     
     // MARK: - CREATE
     
-    func create(_ user: UserModel) {
-        if let rUser = RUserModel.factoryMethod(user) {
-            self.createDB(rUser)
+    func create(_ model: UserModel) {
+        if let rModel = RUserModel.factoryMethod(model) {
+            self.createDB(rModel)
         }
     }
     
     // MARK: - UPDATE
     
-    func update(_ user: UserModel) {
-        if let rUser = RUserModel.factoryMethod(user) {
-            self.updateDB(rUser)
+    func update(_ model: UserModel) {
+        if let rModel = RUserModel.factoryMethod(model) {
+            self.updateDB(rModel)
         }
     }
     

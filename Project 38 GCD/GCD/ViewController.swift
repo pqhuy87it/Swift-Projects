@@ -40,7 +40,9 @@ class ViewController: UIViewController {
                  "operationQueuesMultipleOperations",
                  "operationQueuesDependency",
                  "operationQueuesDynamicBlocks",
-                 "operationQueuesCompletionBlocks"
+                 "operationQueuesCompletionBlocks",
+                 "semaphoreTimitTheAmountOfConcurrentWork",
+                 "semaphoreAndDispatchGroup"
         ]
     }
 
@@ -304,36 +306,44 @@ class ViewController: UIViewController {
                                      attributes: .concurrent)
         let queue_02 = DispatchQueue(label: "pl.fulmanski.concurrencyDispatchQueues.groups_01",
                                      attributes: .concurrent)
+        group.enter()
         
         queue_01.async {
-            group.enter()
             for i in 100..<105 {
+                sleep(1)
                 self.updateLogs("=\(i)")
             }
             group.leave()
         }
         
+        group.enter()
         queue_01.async {
-            group.enter()
+            
             for i in 200..<205 {
+                sleep(1)
                 self.updateLogs("=\(i)")
             }
             group.leave()
         }
         
+        group.enter()
         queue_02.async {
-            group.enter()
+            
             for i in 300..<305 {
+                sleep(1)
                 self.updateLogs("==\(i)")
             }
             group.leave()
         }
         
+        group.enter()
         queue_02.async {
-            group.enter()
+            
             for i in 400..<405 {
+                sleep(1)
                 self.updateLogs("==\(i)")
             }
+            
             group.leave()
         }
         
@@ -452,6 +462,82 @@ class ViewController: UIViewController {
         }
     }
     
+    // MARK: - Semaphore
+    
+    // https://stackoverflow.com/questions/49923810/when-to-use-semaphore-instead-of-dispatch-group
+    func semaphoreTimitTheAmountOfConcurrentWork() {
+        self.textView.text = ""
+        
+        let dq1 = DispatchQueue(label: "q1", attributes: .concurrent)
+        let dq2 = DispatchQueue(label: "q2", attributes: .concurrent)
+        let dq3 = DispatchQueue(label: "q3", attributes: .concurrent)
+        let semaphore = DispatchSemaphore(value: 2)
+        
+        dq3.async {
+            for i in 1...10 {
+                dq1.async {
+                    _ = semaphore.wait(timeout: DispatchTime.distantFuture)
+                    let randomSecond = Int.random(in: 2 ... 10)
+                    self.updateLogs("DispatchQueue 1: \(i) time: \(randomSecond)")
+                    sleep(UInt32(randomSecond))
+                    semaphore.signal()
+                }
+                
+                dq2.async {
+                    _ = semaphore.wait(timeout: DispatchTime.distantFuture)
+                    let randomSecond = Int.random(in: 2 ... 10)
+                    self.updateLogs("DispatchQueue 2: \(i) time: \(randomSecond)")
+                    sleep(UInt32(randomSecond))
+                    semaphore.signal()
+                }
+            }
+        }
+    }
+    
+    func semaphoreAndDispatchGroup() {
+        self.textView.text = ""
+        
+        let dq1 = DispatchQueue(label: "q1", attributes: .concurrent)
+        let dq2 = DispatchQueue(label: "q2", attributes: .concurrent)
+        let semaphore = DispatchSemaphore(value: 2)
+        let dispatchGroup = DispatchGroup()
+        
+        dispatchGroup.enter()
+        
+        dq1.async {
+            
+            for i in 1...5 {
+               
+                _ = semaphore.wait(timeout: DispatchTime.distantFuture)
+                let randomSecond = Int.random(in: 1 ... 3)
+                self.updateLogs("DispatchQueue 1: \(i) time: \(randomSecond)")
+                sleep(UInt32(randomSecond))
+                semaphore.signal()
+                
+            }
+            
+            dispatchGroup.leave()
+        }
+            
+        dispatchGroup.enter()
+        
+        dq2.async {
+            for i in 1...5 {
+                _ = semaphore.wait(timeout: DispatchTime.distantFuture)
+                let randomSecond = Int.random(in: 1 ... 3)
+                self.updateLogs("DispatchQueue 2: \(i) time: \(randomSecond)")
+                sleep(UInt32(randomSecond))
+                semaphore.signal()
+            }
+            
+            dispatchGroup.leave()
+        }
+        
+        dispatchGroup.notify(queue: .main) {
+            self.updateLogs("Finished all requests.")
+        }
+    }
+    
     // MARK: - Helper
     
     func printTime(withComment comment: String){
@@ -528,6 +614,10 @@ extension ViewController: UITableViewDelegate {
                 self.operationQueuesDynamicBlocks()
             case 16:
                 self.operationQueuesCompletionBlocks()
+            case 17:
+                self.semaphoreTimitTheAmountOfConcurrentWork()
+            case 18:
+                self.semaphoreAndDispatchGroup()
             default:
                 break
         }
