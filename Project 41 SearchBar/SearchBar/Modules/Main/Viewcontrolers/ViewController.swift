@@ -20,17 +20,42 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         items = [
-            Subject(title: "Custom Search Bar", description: "Custom background color, text color"),
-            Subject(title: "Insert Search Bar Into Navigation Bar", description: "Insert search into navigatin bar")
+            Subject(title: "Custom Search Bar",
+                    description: "Custom background color, text color"),
+            Subject(title: "Display Search Controller",
+                    description: "Display search view controller"),
+            Subject(title: "Insert Search Bar Into Navigation Bar",
+                    description: "Insert search into navigatin bar")
             
         ]
         
         tableView.backgroundColor = UIColor.white
         tableView.registerCellByNib(MainViewCell.self)
     }
+    
+    func customSearchBar() {
+        if let customSearchBarVC = CustomSearchBarViewController.fromStoryboard(Storyboards.CustomSearchBar.name) as? CustomSearchBarViewController {
+            self.navigationController?.pushViewController(customSearchBarVC, animated: true)
+        }
+    }
+    
+    func displaySearchViewController() {
+        if let displaySearchVC = DisplaySearchViewController.fromStoryboard(Storyboards.DisplaySearchController.name) as? DisplaySearchViewController {
+            self.navigationController?.pushViewController(displaySearchVC, animated: true)
+        }
+    }
 
     func handleDidTapTableViewAt(indexpath: IndexPath) {
-        
+        switch indexpath.row {
+        case 0:
+            self.customSearchBar()
+        case 1:
+            self.displaySearchViewController()
+        case 2:
+            break
+        default:
+            break
+        }
     }
     
 }

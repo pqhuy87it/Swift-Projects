@@ -17,6 +17,8 @@ class MainViewCell: UITableViewCell {
         super.awakeFromNib()
         // Initialization code
         
+        self.selectionStyle = .none
+        
         // background view
         bgView.backgroundColor = UIColor.white
         bgView.layer.borderColor = UIColor.Gray7.cgColor

@@ -23,6 +23,14 @@
 		5C0031D326D22EA100C8606F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0031D226D22EA100C8606F /* UIColor+Extension.swift */; };
 		5C0031D626D232DC00C8606F /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0031D526D232DC00C8606F /* StoryBoards.swift */; };
 		5C0031DF26D23A6500C8606F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0031DE26D23A6500C8606F /* UIViewController+Extension.swift */; };
+		5CC0277A26D8F074001829DA /* CustomSearchBar.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC0277926D8F074001829DA /* CustomSearchBar.storyboard */; };
+		5CC0277C26D8F08B001829DA /* CustomSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0277B26D8F08B001829DA /* CustomSearchController.swift */; };
+		5CC0277E26D8F129001829DA /* CustomSearchBarViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0277D26D8F129001829DA /* CustomSearchBarViewController.swift */; };
+		5CC0278726D8F1AD001829DA /* CustomSearchBar.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0278626D8F1AD001829DA /* CustomSearchBar.swift */; };
+		5CC0278926D930A6001829DA /* countries.txt in Resources */ = {isa = PBXBuildFile; fileRef = 5CC0278826D930A6001829DA /* countries.txt */; };
+		5CC0278E26D94D85001829DA /* DisplaySearchController.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5CC0278D26D94D85001829DA /* DisplaySearchController.storyboard */; };
+		5CC0279126D94DF2001829DA /* DisplaySearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0279026D94DF2001829DA /* DisplaySearchViewController.swift */; };
+		5CC0279326D94E60001829DA /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CC0279226D94E60001829DA /* ResultViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -65,6 +73,14 @@
 		5C0031D226D22EA100C8606F /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		5C0031D526D232DC00C8606F /* StoryBoards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoards.swift; sourceTree = "<group>"; };
 		5C0031DE26D23A6500C8606F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		5CC0277926D8F074001829DA /* CustomSearchBar.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CustomSearchBar.storyboard; sourceTree = "<group>"; };
+		5CC0277B26D8F08B001829DA /* CustomSearchController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchController.swift; sourceTree = "<group>"; };
+		5CC0277D26D8F129001829DA /* CustomSearchBarViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSearchBarViewController.swift; sourceTree = "<group>"; };
+		5CC0278626D8F1AD001829DA /* CustomSearchBar.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomSearchBar.swift; sourceTree = "<group>"; };
+		5CC0278826D930A6001829DA /* countries.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = countries.txt; sourceTree = "<group>"; };
+		5CC0278D26D94D85001829DA /* DisplaySearchController.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DisplaySearchController.storyboard; sourceTree = "<group>"; };
+		5CC0279026D94DF2001829DA /* DisplaySearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisplaySearchViewController.swift; sourceTree = "<group>"; };
+		5CC0279226D94E60001829DA /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -144,6 +160,7 @@
 		5C0031B026D22AA600C8606F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				5CC0278A26D94D51001829DA /* DisplaySearchViewController */,
 				5C0031B126D22AA600C8606F /* Main */,
 				5C52150E26D805CE00B7C318 /* CustomSearchbar */,
 			);
@@ -188,6 +205,7 @@
 		5C0031B926D22AA600C8606F /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5CC0278826D930A6001829DA /* countries.txt */,
 				5C0031BA26D22AA600C8606F /* Assets.xcassets */,
 				5C0031BB26D22AA600C8606F /* LaunchScreen.storyboard */,
 				5C0031BD26D22AA600C8606F /* Info.plist */,
@@ -236,6 +254,7 @@
 		5C52150E26D805CE00B7C318 /* CustomSearchbar */ = {
 			isa = PBXGroup;
 			children = (
+				5CC0277826D8EDA5001829DA /* Storyboard */,
 				5C52150F26D805DD00B7C318 /* ViewController */,
 			);
 			path = CustomSearchbar;
@@ -244,8 +263,45 @@
 		5C52150F26D805DD00B7C318 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				5CC0278626D8F1AD001829DA /* CustomSearchBar.swift */,
+				5CC0277B26D8F08B001829DA /* CustomSearchController.swift */,
+				5CC0277D26D8F129001829DA /* CustomSearchBarViewController.swift */,
 			);
 			path = ViewController;
+			sourceTree = "<group>";
+		};
+		5CC0277826D8EDA5001829DA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5CC0277926D8F074001829DA /* CustomSearchBar.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		5CC0278A26D94D51001829DA /* DisplaySearchViewController */ = {
+			isa = PBXGroup;
+			children = (
+				5CC0278C26D94D70001829DA /* Storyboard */,
+				5CC0278B26D94D6A001829DA /* Controller */,
+			);
+			path = DisplaySearchViewController;
+			sourceTree = "<group>";
+		};
+		5CC0278B26D94D6A001829DA /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				5CC0279026D94DF2001829DA /* DisplaySearchViewController.swift */,
+				5CC0279226D94E60001829DA /* ResultViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		5CC0278C26D94D70001829DA /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				5CC0278D26D94D85001829DA /* DisplaySearchController.storyboard */,
+			);
+			path = Storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -351,10 +407,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5CC0278E26D94D85001829DA /* DisplaySearchController.storyboard in Resources */,
 				5C0031C326D22AA600C8606F /* LaunchScreen.storyboard in Resources */,
 				5C0031D126D22D5C00C8606F /* MainViewCell.xib in Resources */,
 				5C0031C226D22AA600C8606F /* Assets.xcassets in Resources */,
+				5CC0278926D930A6001829DA /* countries.txt in Resources */,
 				5C0031BE26D22AA600C8606F /* Main.storyboard in Resources */,
+				5CC0277A26D8F074001829DA /* CustomSearchBar.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -380,15 +439,20 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C0031CB26D22BA100C8606F /* UITableViewHeaderFooterView+Extension.swift in Sources */,
+				5CC0278726D8F1AD001829DA /* CustomSearchBar.swift in Sources */,
 				5C0031C026D22AA600C8606F /* AppDelegate.swift in Sources */,
 				5C0031BF26D22AA600C8606F /* ViewController.swift in Sources */,
 				5C0031D626D232DC00C8606F /* StoryBoards.swift in Sources */,
+				5CC0279326D94E60001829DA /* ResultViewController.swift in Sources */,
 				5C0031C126D22AA600C8606F /* SceneDelegate.swift in Sources */,
+				5CC0277E26D8F129001829DA /* CustomSearchBarViewController.swift in Sources */,
 				5C0031CA26D22BA100C8606F /* UITableViewCell+Extension.swift in Sources */,
 				5C0031D026D22D5C00C8606F /* MainViewCell.swift in Sources */,
 				5C0031CC26D22BA100C8606F /* UITableView+Extension.swift in Sources */,
 				5C0031DF26D23A6500C8606F /* UIViewController+Extension.swift in Sources */,
+				5CC0277C26D8F08B001829DA /* CustomSearchController.swift in Sources */,
 				5C0031D326D22EA100C8606F /* UIColor+Extension.swift in Sources */,
+				5CC0279126D94DF2001829DA /* DisplaySearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
