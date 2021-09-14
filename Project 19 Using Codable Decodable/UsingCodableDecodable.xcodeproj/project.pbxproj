@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		5C82CF7926D01E8F0044EAD7 /* AnyDecodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C82CF7826D01E8F0044EAD7 /* AnyDecodable.swift */; };
+		5CAE6AF526E1DD6B00A1D07A /* ProtocolEncodableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE6AF426E1DD6B00A1D07A /* ProtocolEncodableViewController.swift */; };
+		5CAE6AF826E1E03500A1D07A /* EncodableArrayViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE6AF726E1E03500A1D07A /* EncodableArrayViewController.swift */; };
+		5CAE6AFB26E1F13600A1D07A /* SaveObjectToUserDefaultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CAE6AFA26E1F13600A1D07A /* SaveObjectToUserDefaultViewController.swift */; };
 		6410B8C8249F549B0001F9C1 /* EncoderViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6410B8C7249F549B0001F9C1 /* EncoderViewController.swift */; };
 		6453AD832477A43000E9F2A2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6453AD822477A43000E9F2A2 /* AppDelegate.swift */; };
 		6453AD852477A43000E9F2A2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6453AD842477A43000E9F2A2 /* SceneDelegate.swift */; };
@@ -37,6 +40,9 @@
 
 /* Begin PBXFileReference section */
 		5C82CF7826D01E8F0044EAD7 /* AnyDecodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnyDecodable.swift; sourceTree = "<group>"; };
+		5CAE6AF426E1DD6B00A1D07A /* ProtocolEncodableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProtocolEncodableViewController.swift; sourceTree = "<group>"; };
+		5CAE6AF726E1E03500A1D07A /* EncodableArrayViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncodableArrayViewController.swift; sourceTree = "<group>"; };
+		5CAE6AFA26E1F13600A1D07A /* SaveObjectToUserDefaultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SaveObjectToUserDefaultViewController.swift; sourceTree = "<group>"; };
 		6410B8C7249F549B0001F9C1 /* EncoderViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EncoderViewController.swift; sourceTree = "<group>"; };
 		6453AD7F2477A43000E9F2A2 /* UsingCodableDecodable.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UsingCodableDecodable.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		6453AD822477A43000E9F2A2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -76,6 +82,39 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5CAE6AF226E1DAE200A1D07A /* Dictionary */ = {
+			isa = PBXGroup;
+			children = (
+				6453ADB02477AFC300E9F2A2 /* DictionaryDecoder.swift */,
+				6453ADB22477AFE100E9F2A2 /* DictionaryEncoder.swift */,
+			);
+			path = Dictionary;
+			sourceTree = "<group>";
+		};
+		5CAE6AF326E1DD2000A1D07A /* Protocol Encodable */ = {
+			isa = PBXGroup;
+			children = (
+				5CAE6AF426E1DD6B00A1D07A /* ProtocolEncodableViewController.swift */,
+			);
+			path = "Protocol Encodable";
+			sourceTree = "<group>";
+		};
+		5CAE6AF626E1DE8000A1D07A /* Encodable Array */ = {
+			isa = PBXGroup;
+			children = (
+				5CAE6AF726E1E03500A1D07A /* EncodableArrayViewController.swift */,
+			);
+			path = "Encodable Array";
+			sourceTree = "<group>";
+		};
+		5CAE6AF926E1F0ED00A1D07A /* SaveObjectsToUserDefault */ = {
+			isa = PBXGroup;
+			children = (
+				5CAE6AFA26E1F13600A1D07A /* SaveObjectToUserDefaultViewController.swift */,
+			);
+			path = SaveObjectsToUserDefault;
+			sourceTree = "<group>";
+		};
 		6453AD762477A43000E9F2A2 = {
 			isa = PBXGroup;
 			children = (
@@ -103,14 +142,16 @@
 				6453AD842477A43000E9F2A2 /* SceneDelegate.swift */,
 				6453AD862477A43000E9F2A2 /* ViewController.swift */,
 				6453AD882477A43000E9F2A2 /* Main.storyboard */,
+				5CAE6AF226E1DAE200A1D07A /* Dictionary */,
+				5CAE6AF326E1DD2000A1D07A /* Protocol Encodable */,
+				5CAE6AF626E1DE8000A1D07A /* Encodable Array */,
+				5CAE6AF926E1F0ED00A1D07A /* SaveObjectsToUserDefault */,
 				6453AD8B2477A43100E9F2A2 /* Assets.xcassets */,
 				6453AD8D2477A43100E9F2A2 /* LaunchScreen.storyboard */,
 				6453AD902477A43100E9F2A2 /* Info.plist */,
 				6453ADA82477A81800E9F2A2 /* Pattern1.swift */,
 				6453ADAA2477A8A000E9F2A2 /* Pattern2.swift */,
 				6453ADAC2477A8F000E9F2A2 /* Pattern3.swift */,
-				6453ADB02477AFC300E9F2A2 /* DictionaryDecoder.swift */,
-				6453ADB22477AFE100E9F2A2 /* DictionaryEncoder.swift */,
 				6410B8C7249F549B0001F9C1 /* EncoderViewController.swift */,
 				5C82CF7826D01E8F0044EAD7 /* AnyDecodable.swift */,
 			);
@@ -229,15 +270,18 @@
 			files = (
 				5C82CF7926D01E8F0044EAD7 /* AnyDecodable.swift in Sources */,
 				6410B8C8249F549B0001F9C1 /* EncoderViewController.swift in Sources */,
+				5CAE6AF826E1E03500A1D07A /* EncodableArrayViewController.swift in Sources */,
 				6453ADB32477AFE100E9F2A2 /* DictionaryEncoder.swift in Sources */,
 				6453AD872477A43000E9F2A2 /* ViewController.swift in Sources */,
 				6453ADB12477AFC300E9F2A2 /* DictionaryDecoder.swift in Sources */,
 				6453AD832477A43000E9F2A2 /* AppDelegate.swift in Sources */,
 				6453ADAD2477A8F000E9F2A2 /* Pattern3.swift in Sources */,
 				6453ADAB2477A8A000E9F2A2 /* Pattern2.swift in Sources */,
+				5CAE6AFB26E1F13600A1D07A /* SaveObjectToUserDefaultViewController.swift in Sources */,
 				6453ADA92477A81800E9F2A2 /* Pattern1.swift in Sources */,
 				6453ADA62477A48000E9F2A2 /* JSONParser.swift in Sources */,
 				6453AD852477A43000E9F2A2 /* SceneDelegate.swift in Sources */,
+				5CAE6AF526E1DD6B00A1D07A /* ProtocolEncodableViewController.swift in Sources */,
 				6453ADA72477A48000E9F2A2 /* People.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
