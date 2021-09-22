@@ -9,6 +9,25 @@
 
 import UIKit
 
+protocol JsonEncoding where Self: Encodable { }
+
+extension JsonEncoding {
+    func encode(using encoder: JSONEncoder) throws -> Data {
+        try encoder.encode(self)
+    }
+}
+
+extension Dictionary where Value == JsonEncoding {
+    func encode(using encoder: JSONEncoder) throws -> [Key: String] {
+        try compactMapValues {
+            try String(data: $0.encode(using: encoder), encoding: .utf8)
+        }
+    }
+}
+
+extension String: JsonEncoding { }
+extension Int: JsonEncoding { }
+
 class ProtocolEncodableViewController: UIViewController {
     
     var things: [String: JsonEncoding] = [
@@ -37,22 +56,3 @@ class ProtocolEncodableViewController: UIViewController {
     }
 
 }
-
-protocol JsonEncoding where Self: Encodable { }
-
-extension JsonEncoding {
-    func encode(using encoder: JSONEncoder) throws -> Data {
-        try encoder.encode(self)
-    }
-}
-
-extension Dictionary where Value == JsonEncoding {
-    func encode(using encoder: JSONEncoder) throws -> [Key: String] {
-        try compactMapValues {
-            try String(data: $0.encode(using: encoder), encoding: .utf8)
-        }
-    }
-}
-
-extension String: JsonEncoding { }
-extension Int: JsonEncoding { }

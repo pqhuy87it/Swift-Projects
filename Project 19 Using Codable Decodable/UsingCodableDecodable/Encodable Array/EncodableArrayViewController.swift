@@ -76,12 +76,12 @@ protocol Tag: Codable {
 }
 
 struct AuthorTag: Tag {
-    let type = "author"
+    var type = "author"
     let value: String
 }
 
 struct GenreTag: Tag {
-    let type = "genre"
+    var type = "genre"
     let value: String
 }
 
