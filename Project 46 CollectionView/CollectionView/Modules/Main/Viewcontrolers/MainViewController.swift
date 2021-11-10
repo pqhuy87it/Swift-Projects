@@ -20,8 +20,8 @@ class MainViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         items = [
-            Subject(title: "Tag", description: "https://github.com/rubygarage/collection-view-layouts")
-            
+            Subject(title: "Tag", description: "https://github.com/rubygarage/collection-view-layouts"),
+            Subject(title: "Pagination", description: "https://github.com/fahidattique55/FAPaginationLayout")
         ]
         
         tableView.backgroundColor = UIColor.white
@@ -34,6 +34,7 @@ class MainViewController: UIViewController {
             self.displayTag()
             break
         case 1:
+            self.displayPagination()
             break
         case 2:
             break
@@ -64,6 +65,11 @@ class MainViewController: UIViewController {
         }
     }
     
+    func displayPagination() {
+        if let paginationVC = LayoutSelectionVC.fromStoryboard(Storyboards.Pagination.name) as? LayoutSelectionVC {
+            self.navigationController?.pushViewController(paginationVC, animated: true)
+        }
+    }
 }
 
 //MARK: - UITableViewDataSource

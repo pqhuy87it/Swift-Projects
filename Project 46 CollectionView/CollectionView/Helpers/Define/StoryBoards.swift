@@ -9,5 +9,9 @@ struct Storyboards {
     struct Tag {
         static let name = "Tag"
     }
+    
+    struct Pagination {
+        static let name = "Pagination"
+    }
 }
 

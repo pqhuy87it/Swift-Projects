@@ -7,6 +7,14 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		114AE55C273BA95600422ECE /* FAPaginationLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114AE55B273BA95600422ECE /* FAPaginationLayout.swift */; };
+		114AE567273BAA4A00422ECE /* CellsRotationAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114AE55E273BAA4A00422ECE /* CellsRotationAnimationVC.swift */; };
+		114AE568273BAA4A00422ECE /* NoCellsAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114AE55F273BAA4A00422ECE /* NoCellsAnimationVC.swift */; };
+		114AE569273BAA4A00422ECE /* LayoutSelectionVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114AE560273BAA4A00422ECE /* LayoutSelectionVC.swift */; };
+		114AE56A273BAA4A00422ECE /* CellsSizeAnimationVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114AE561273BAA4A00422ECE /* CellsSizeAnimationVC.swift */; };
+		114AE56B273BAA4A00422ECE /* Pagination.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 114AE563273BAA4A00422ECE /* Pagination.storyboard */; };
+		114AE56C273BAA4A00422ECE /* ImageCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 114AE565273BAA4A00422ECE /* ImageCell.xib */; };
+		114AE56D273BAA4A00422ECE /* ImageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 114AE566273BAA4A00422ECE /* ImageCell.swift */; };
 		11A7BD39273904460040F51B /* ContentAlignableLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7BD35273904460040F51B /* ContentAlignableLayout.swift */; };
 		11A7BD3A273904460040F51B /* BaseLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7BD36273904460040F51B /* BaseLayout.swift */; };
 		11A7BD3B273904460040F51B /* TagsLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A7BD38273904460040F51B /* TagsLayout.swift */; };
@@ -42,6 +50,14 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		114AE55B273BA95600422ECE /* FAPaginationLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FAPaginationLayout.swift; sourceTree = "<group>"; };
+		114AE55E273BAA4A00422ECE /* CellsRotationAnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellsRotationAnimationVC.swift; sourceTree = "<group>"; };
+		114AE55F273BAA4A00422ECE /* NoCellsAnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NoCellsAnimationVC.swift; sourceTree = "<group>"; };
+		114AE560273BAA4A00422ECE /* LayoutSelectionVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LayoutSelectionVC.swift; sourceTree = "<group>"; };
+		114AE561273BAA4A00422ECE /* CellsSizeAnimationVC.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CellsSizeAnimationVC.swift; sourceTree = "<group>"; };
+		114AE563273BAA4A00422ECE /* Pagination.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Pagination.storyboard; sourceTree = "<group>"; };
+		114AE565273BAA4A00422ECE /* ImageCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ImageCell.xib; sourceTree = "<group>"; };
+		114AE566273BAA4A00422ECE /* ImageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ImageCell.swift; sourceTree = "<group>"; };
 		11A7BD35273904460040F51B /* ContentAlignableLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentAlignableLayout.swift; sourceTree = "<group>"; };
 		11A7BD36273904460040F51B /* BaseLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseLayout.swift; sourceTree = "<group>"; };
 		11A7BD38273904460040F51B /* TagsLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TagsLayout.swift; sourceTree = "<group>"; };
@@ -89,6 +105,53 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		114AE559273BA92100422ECE /* Pagination */ = {
+			isa = PBXGroup;
+			children = (
+				114AE55A273BA95600422ECE /* Source */,
+				114AE55D273BAA4A00422ECE /* Controllers */,
+				114AE562273BAA4A00422ECE /* Views */,
+			);
+			path = Pagination;
+			sourceTree = "<group>";
+		};
+		114AE55A273BA95600422ECE /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				114AE55B273BA95600422ECE /* FAPaginationLayout.swift */,
+			);
+			path = Source;
+			sourceTree = "<group>";
+		};
+		114AE55D273BAA4A00422ECE /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				114AE55E273BAA4A00422ECE /* CellsRotationAnimationVC.swift */,
+				114AE55F273BAA4A00422ECE /* NoCellsAnimationVC.swift */,
+				114AE560273BAA4A00422ECE /* LayoutSelectionVC.swift */,
+				114AE561273BAA4A00422ECE /* CellsSizeAnimationVC.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		114AE562273BAA4A00422ECE /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				114AE563273BAA4A00422ECE /* Pagination.storyboard */,
+				114AE564273BAA4A00422ECE /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		114AE564273BAA4A00422ECE /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				114AE565273BAA4A00422ECE /* ImageCell.xib */,
+				114AE566273BAA4A00422ECE /* ImageCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		11A7BD2D273902020040F51B /* Tags */ = {
 			isa = PBXGroup;
 			children = (
@@ -258,6 +321,7 @@
 			children = (
 				5C0031B126D22AA600C8606F /* Main */,
 				11A7BD2D273902020040F51B /* Tags */,
+				114AE559273BA92100422ECE /* Pagination */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -404,6 +468,8 @@
 			files = (
 				5C0031C326D22AA600C8606F /* LaunchScreen.storyboard in Resources */,
 				5C0031D126D22D5C00C8606F /* MainViewCell.xib in Resources */,
+				114AE56C273BAA4A00422ECE /* ImageCell.xib in Resources */,
+				114AE56B273BAA4A00422ECE /* Pagination.storyboard in Resources */,
 				5C0031C226D22AA600C8606F /* Assets.xcassets in Resources */,
 				11A7BD53273906EF0040F51B /* Tag.storyboard in Resources */,
 				5C0031BE26D22AA600C8606F /* Main.storyboard in Resources */,
@@ -419,7 +485,9 @@
 			files = (
 				11A7BD4D2739064A0040F51B /* FlickrLayout.swift in Sources */,
 				11A7BD56273906EF0040F51B /* ContentCell.swift in Sources */,
+				114AE56D273BAA4A00422ECE /* ImageCell.swift in Sources */,
 				11A7BD492739064A0040F51B /* PinterestLayout.swift in Sources */,
+				114AE569273BAA4A00422ECE /* LayoutSelectionVC.swift in Sources */,
 				5C0031CB26D22BA100C8606F /* UITableViewHeaderFooterView+Extension.swift in Sources */,
 				5C0031C026D22AA600C8606F /* AppDelegate.swift in Sources */,
 				5C0031BF26D22AA600C8606F /* MainViewController.swift in Sources */,
@@ -427,6 +495,7 @@
 				11A7BD60273907160040F51B /* CollectionViewProvider.swift in Sources */,
 				11A7BD5F273907160040F51B /* PickerViewProvider.swift in Sources */,
 				11A7BD58273906F80040F51B /* TagViewController.swift in Sources */,
+				114AE568273BAA4A00422ECE /* NoCellsAnimationVC.swift in Sources */,
 				11A7BD4B2739064A0040F51B /* Px500Layout.swift in Sources */,
 				11A7BD3B273904460040F51B /* TagsLayout.swift in Sources */,
 				5C0031D626D232DC00C8606F /* StoryBoards.swift in Sources */,
@@ -439,10 +508,13 @@
 				11A7BD54273906EF0040F51B /* FooterView.swift in Sources */,
 				11A7BD39273904460040F51B /* ContentAlignableLayout.swift in Sources */,
 				11A7BD61273907160040F51B /* Font.swift in Sources */,
+				114AE567273BAA4A00422ECE /* CellsRotationAnimationVC.swift in Sources */,
 				5C0031CC26D22BA100C8606F /* UITableView+Extension.swift in Sources */,
 				5C0031DF26D23A6500C8606F /* UIViewController+Extension.swift in Sources */,
 				11A7BD4C2739064A0040F51B /* FlipboardLayout.swift in Sources */,
+				114AE56A273BAA4A00422ECE /* CellsSizeAnimationVC.swift in Sources */,
 				5C0031D326D22EA100C8606F /* UIColor+Extension.swift in Sources */,
+				114AE55C273BA95600422ECE /* FAPaginationLayout.swift in Sources */,
 				11A7BD482739064A0040F51B /* FacebookLayout.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
