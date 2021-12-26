@@ -20,7 +20,10 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         items = [
-            Subject(title: "Select text", description: "Select all text on label when touch.")
+            Subject(title: "Select text", description: "Select all text on label when touch."),
+            Subject(title:"Keyboard Accessory", description: "Keyboard Accessory Example"),
+            Subject(title: "ShowHideKeyboard", description: "Show hide keyboard on textField."),
+            Subject(title: "PickerView Input", description: "TextField input from picker view")
         ]
         
         tableView.backgroundColor = UIColor.white
@@ -33,10 +36,13 @@ class ViewController: UIViewController {
             self.selectAllTextOnLabel()
             break
         case 1:
+            self.keyboardAccessory()
             break
         case 2:
+            self.showHideKeyboard()
             break
         case 3:
+            self.pickerViewInput()
             break
         case 4:
             break
@@ -60,6 +66,24 @@ class ViewController: UIViewController {
     func selectAllTextOnLabel() {
         if let selectTextVC = SelectTextController.fromStoryboard(Storyboards.SelectText.name) as? SelectTextController {
             self.navigationController?.pushViewController(selectTextVC, animated: true)
+        }
+    }
+    
+    func keyboardAccessory() {
+        if let keyboardAccessoryVC = KeyboardAccessoryViewController.fromStoryboard(Storyboards.KeyboardAccessory.name) as? KeyboardAccessoryViewController {
+            self.navigationController?.pushViewController(keyboardAccessoryVC, animated: true)
+        }
+    }
+    
+    func showHideKeyboard() {
+        if let showHideKeyboardVC = ShowHideKeyboardViewController.fromStoryboard(Storyboards.ShowHideKeyboard.name) as? ShowHideKeyboardViewController {
+            self.navigationController?.pushViewController(showHideKeyboardVC, animated: true)
+        }
+    }
+    
+    func pickerViewInput() {
+        if let pickerViewInputVC = PickerViewInputViewController.fromStoryboard(Storyboards.PickerViewInput.name) as? PickerViewInputViewController {
+            self.navigationController?.pushViewController(pickerViewInputVC, animated: true)
         }
     }
 }

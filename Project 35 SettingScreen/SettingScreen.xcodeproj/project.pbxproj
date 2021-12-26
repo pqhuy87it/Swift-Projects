@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11065C90276B508700363B4F /* AppleSettingViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11065C8F276B508700363B4F /* AppleSettingViewController2.swift */; };
 		110DCC33258E114000A5A783 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110DCC32258E114000A5A783 /* AppDelegate.swift */; };
 		110DCC35258E114000A5A783 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110DCC34258E114000A5A783 /* SceneDelegate.swift */; };
 		110DCC37258E114000A5A783 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 110DCC36258E114000A5A783 /* ViewController.swift */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11065C8F276B508700363B4F /* AppleSettingViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppleSettingViewController2.swift; sourceTree = "<group>"; };
 		110DCC2F258E114000A5A783 /* SettingScreen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SettingScreen.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		110DCC32258E114000A5A783 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		110DCC34258E114000A5A783 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				110DCC4F258E613600A5A783 /* AppleSettingViewController.swift */,
+				11065C8F276B508700363B4F /* AppleSettingViewController2.swift */,
 			);
 			path = Apple;
 			sourceTree = "<group>";
@@ -188,6 +191,7 @@
 				110DCC54258E65B000A5A783 /* Item.swift in Sources */,
 				110DCC59258E66A600A5A783 /* GmailViewController.swift in Sources */,
 				110DCC48258E15BE00A5A783 /* CustomSettingViewController.swift in Sources */,
+				11065C90276B508700363B4F /* AppleSettingViewController2.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

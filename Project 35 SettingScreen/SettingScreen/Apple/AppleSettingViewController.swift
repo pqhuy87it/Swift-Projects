@@ -15,10 +15,12 @@ class AppleSettingViewController: UIViewController {
     
     // MARK: - Properties
     
-    var sections: [SettingSectionType] = [.phone, .privacy, .general]
+    var sections: [SettingSectionType] = [.phone, .privacy, .general, .apple]
     var items: [[SettingItemType]] = [[.airplaneMode, .wifi, .bluetooth, .celluar, .hotspot],
                                       [.notifications, .sound, .disturb, .screentime],
-                                      [.control, .display, .homescreen, .accessibility]]
+                                      [.control, .display, .homescreen, .accessibility],
+                                      [.appStore, .walletAndPay]
+                                     ]
     
     override func viewDidLoad() {
         super.viewDidLoad()

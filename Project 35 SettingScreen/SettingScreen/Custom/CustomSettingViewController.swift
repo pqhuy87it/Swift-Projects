@@ -32,6 +32,9 @@ class CustomSettingViewController: UIViewController {
     
     // MARK: - IBAction methods
     
+    @IBAction func dismissDidTap(_ sender: Any) {
+        self.dismiss(animated: true, completion: nil)
+    }
     // MARK: - @objc method
     
     // MARK: - Methods
@@ -63,6 +66,8 @@ extension CustomSettingViewController: UITableViewDataSource {
             case .privacy:
                 break
             case .general:
+                break
+            case .apple:
                 break
         }
         

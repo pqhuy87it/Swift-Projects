@@ -9,5 +9,17 @@ struct Storyboards {
     struct SelectText {
         static let name = "SelectText"
     }
+    
+    struct KeyboardAccessory {
+        static let name = "KeyboardAccessory"
+    }
+    
+    struct ShowHideKeyboard {
+        static let name = "ShowHideKeyboard"
+    }
+    
+    struct PickerViewInput {
+        static let name = "PickerViewInput"
+    }
 }
 

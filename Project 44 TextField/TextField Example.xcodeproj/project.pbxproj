@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		11A497C22764787B0087B36E /* KeyboardAccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A497C02764787B0087B36E /* KeyboardAccessoryViewController.swift */; };
+		11A497C32764787B0087B36E /* AccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A497C12764787B0087B36E /* AccessoryView.xib */; };
+		11A497C6276479520087B36E /* KeyboardAccessory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A497C5276479520087B36E /* KeyboardAccessory.storyboard */; };
+		11CD917927648D460018C8D4 /* ShowHideKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD917627648D460018C8D4 /* ShowHideKeyboardViewController.swift */; };
+		11CD917A27648D460018C8D4 /* ShowHideKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11CD917827648D460018C8D4 /* ShowHideKeyboard.storyboard */; };
+		11CD918027649FB90018C8D4 /* PickerViewInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD917D27649FB90018C8D4 /* PickerViewInputViewController.swift */; };
+		11CD918127649FB90018C8D4 /* PickerViewInput.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11CD917F27649FB90018C8D4 /* PickerViewInput.storyboard */; };
 		5C0031BE26D22AA600C8606F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0031B326D22AA600C8606F /* Main.storyboard */; };
 		5C0031BF26D22AA600C8606F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0031B526D22AA600C8606F /* ViewController.swift */; };
 		5C0031C026D22AA600C8606F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0031B726D22AA600C8606F /* AppDelegate.swift */; };
@@ -26,6 +33,13 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		11A497C02764787B0087B36E /* KeyboardAccessoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAccessoryViewController.swift; sourceTree = "<group>"; };
+		11A497C12764787B0087B36E /* AccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccessoryView.xib; sourceTree = "<group>"; };
+		11A497C5276479520087B36E /* KeyboardAccessory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KeyboardAccessory.storyboard; sourceTree = "<group>"; };
+		11CD917627648D460018C8D4 /* ShowHideKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowHideKeyboardViewController.swift; sourceTree = "<group>"; };
+		11CD917827648D460018C8D4 /* ShowHideKeyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShowHideKeyboard.storyboard; sourceTree = "<group>"; };
+		11CD917D27649FB90018C8D4 /* PickerViewInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewInputViewController.swift; sourceTree = "<group>"; };
+		11CD917F27649FB90018C8D4 /* PickerViewInput.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PickerViewInput.storyboard; sourceTree = "<group>"; };
 		5C00317D26D22A2E00C8606F /* TextField Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "TextField Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0031B326D22AA600C8606F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5C0031B526D22AA600C8606F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -57,6 +71,82 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		11A497BF276478670087B36E /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				11A497C02764787B0087B36E /* KeyboardAccessoryViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		11A497C4276478D80087B36E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11A497C12764787B0087B36E /* AccessoryView.xib */,
+				11A497C5276479520087B36E /* KeyboardAccessory.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11CD917427648D460018C8D4 /* ShowHideKeyboard */ = {
+			isa = PBXGroup;
+			children = (
+				11CD917527648D460018C8D4 /* Controllers */,
+				11CD917727648D460018C8D4 /* Views */,
+			);
+			path = ShowHideKeyboard;
+			sourceTree = "<group>";
+		};
+		11CD917527648D460018C8D4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11CD917627648D460018C8D4 /* ShowHideKeyboardViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11CD917727648D460018C8D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11CD917827648D460018C8D4 /* ShowHideKeyboard.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11CD917B27649FB90018C8D4 /* PickerViewInput */ = {
+			isa = PBXGroup;
+			children = (
+				11CD917C27649FB90018C8D4 /* Controllers */,
+				11CD917E27649FB90018C8D4 /* Views */,
+			);
+			path = PickerViewInput;
+			sourceTree = "<group>";
+		};
+		11CD917C27649FB90018C8D4 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11CD917D27649FB90018C8D4 /* PickerViewInputViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11CD917E27649FB90018C8D4 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11CD917F27649FB90018C8D4 /* PickerViewInput.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11D96E2827647600009D9E52 /* KeyboardAccessory */ = {
+			isa = PBXGroup;
+			children = (
+				11A497C4276478D80087B36E /* Views */,
+				11A497BF276478670087B36E /* ViewControllers */,
+			);
+			path = KeyboardAccessory;
+			sourceTree = "<group>";
+		};
 		5C00317426D22A2E00C8606F = {
 			isa = PBXGroup;
 			children = (
@@ -89,6 +179,9 @@
 			children = (
 				5C0031B126D22AA600C8606F /* Main */,
 				5CA9988A27269630005CCEE1 /* SelectText */,
+				11D96E2827647600009D9E52 /* KeyboardAccessory */,
+				11CD917427648D460018C8D4 /* ShowHideKeyboard */,
+				11CD917B27649FB90018C8D4 /* PickerViewInput */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -261,6 +354,10 @@
 				5C0031C326D22AA600C8606F /* LaunchScreen.storyboard in Resources */,
 				5C0031D126D22D5C00C8606F /* MainViewCell.xib in Resources */,
 				5C0031C226D22AA600C8606F /* Assets.xcassets in Resources */,
+				11CD917A27648D460018C8D4 /* ShowHideKeyboard.storyboard in Resources */,
+				11A497C6276479520087B36E /* KeyboardAccessory.storyboard in Resources */,
+				11A497C32764787B0087B36E /* AccessoryView.xib in Resources */,
+				11CD918127649FB90018C8D4 /* PickerViewInput.storyboard in Resources */,
 				5CA9989027269630005CCEE1 /* SelectText.storyboard in Resources */,
 				5C0031BE26D22AA600C8606F /* Main.storyboard in Resources */,
 			);
@@ -277,9 +374,12 @@
 				5C0031C026D22AA600C8606F /* AppDelegate.swift in Sources */,
 				5C0031BF26D22AA600C8606F /* ViewController.swift in Sources */,
 				5C0031D626D232DC00C8606F /* StoryBoards.swift in Sources */,
+				11CD918027649FB90018C8D4 /* PickerViewInputViewController.swift in Sources */,
 				5C0031C126D22AA600C8606F /* SceneDelegate.swift in Sources */,
 				5C0031CA26D22BA100C8606F /* UITableViewCell+Extension.swift in Sources */,
+				11A497C22764787B0087B36E /* KeyboardAccessoryViewController.swift in Sources */,
 				5C0031D026D22D5C00C8606F /* MainViewCell.swift in Sources */,
+				11CD917927648D460018C8D4 /* ShowHideKeyboardViewController.swift in Sources */,
 				5C0031CC26D22BA100C8606F /* UITableView+Extension.swift in Sources */,
 				5CA9988F27269630005CCEE1 /* SelectTextController.swift in Sources */,
 				5C0031DF26D23A6500C8606F /* UIViewController+Extension.swift in Sources */,

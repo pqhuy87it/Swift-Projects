@@ -11,7 +11,7 @@ class ViewController: UIViewController {
 
     @IBOutlet weak var tableView: UITableView!
     
-    var items: [DemoCellType] = [.custom, .apple, .gmail]
+    var items: [DemoCellType] = [.custom, .apple, .apple, .gmail]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -55,6 +55,8 @@ extension ViewController: UITableViewDelegate {
             case 1:
                 self.performSegue(withIdentifier: "appleIdentifier", sender: self)
             case 2:
+                self.performSegue(withIdentifier: "appleIdentifier2", sender: self)
+            case 3:
                 self.performSegue(withIdentifier: "gmailIdentifier", sender: self)
             default:
                 break

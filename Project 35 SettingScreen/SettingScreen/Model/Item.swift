@@ -11,6 +11,7 @@ enum SettingSectionType {
     case phone
     case privacy
     case general
+    case apple
     
     var description : String {
         switch self {
@@ -20,6 +21,8 @@ enum SettingSectionType {
                 return "Privacy"
             case .general:
                 return "General"
+            case .apple:
+                return "Apple"
         }
     }
 }
@@ -44,6 +47,11 @@ enum SettingItemType {
     case homescreen
     case accessibility
     
+    // apple
+    
+    case appStore
+    case walletAndPay
+    
     var description : String {
         switch self {
             // Use Internationalization, as appropriate.
@@ -60,6 +68,8 @@ enum SettingItemType {
             case .display: return "Display & Brightness"
             case .homescreen: return "Home Screen"
             case .accessibility: return "Accessibility"
+            case .appStore: return "Apple Store"
+            case .walletAndPay: return "Wallet & Apple Pay"
         }
     }
 }
