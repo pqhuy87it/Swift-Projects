@@ -20,7 +20,7 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         items = [
-            Subject(title: "", description: "")
+            Subject(title: "HeaderView", description: "")
             
         ]
         
@@ -31,6 +31,7 @@ class ViewController: UIViewController {
     func handleDidTapTableViewAt(_ indexpath: IndexPath) {
         switch indexpath.row {
         case 0:
+            showHeaderView()
             break
         case 1:
             break
@@ -57,6 +58,11 @@ class ViewController: UIViewController {
         }
     }
     
+    func showHeaderView() {
+        if let vc = HeaderViewController.fromStoryboard(Storyboards.HeaderView.name) as? HeaderViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
 
 //MARK: - UITableViewDataSource

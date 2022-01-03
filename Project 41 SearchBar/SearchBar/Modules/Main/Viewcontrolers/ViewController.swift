@@ -24,8 +24,8 @@ class ViewController: UIViewController {
                     description: "Custom background color, text color"),
             Subject(title: "Display Search Controller",
                     description: "Display search view controller"),
-            Subject(title: "Insert Search Bar Into Navigation Bar",
-                    description: "Insert search into navigatin bar")
+            Subject(title: "Scope Bar",
+                    description: "")
             
         ]
         
@@ -52,12 +52,18 @@ class ViewController: UIViewController {
         case 1:
             self.displaySearchViewController()
         case 2:
+            self.showScopeBar()
             break
         default:
             break
         }
     }
     
+    func showScopeBar() {
+        if let vc = ScopeBarController.fromStoryboard(Storyboards.ScopeBar.name) as? ScopeBarController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
 }
 
 //MARK: - UITableViewDataSource

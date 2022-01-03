@@ -13,5 +13,9 @@ struct Storyboards {
     struct DisplaySearchController {
         static let name = "DisplaySearchController"
     }
+    
+    struct ScopeBar {
+        static let name = "ScopeBar"
+    }
 }
 
