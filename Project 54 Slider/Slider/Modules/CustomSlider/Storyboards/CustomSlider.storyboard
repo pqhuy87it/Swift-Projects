@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="19529" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="vXZ-lx-hvc">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19519"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Custom Slider Controller-->
+        <scene sceneID="ufC-wZ-h7g">
+            <objects>
+                <viewController storyboardIdentifier="CustomSliderController" id="vXZ-lx-hvc" customClass="CustomSliderController" customModule="Slider" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="kh9-bI-dsS">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" minimumValueImage="gold1b.png" maximumValueImage="gold2b.png" translatesAutoresizingMaskIntoConstraints="NO" id="D4A-j8-Da8" customClass="MySlider" customModule="Slider" customModuleProvider="target">
+                                <rect key="frame" x="38" y="82" width="299" height="31"/>
+                            </slider>
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="EyU-6d-1xm">
+                                <rect key="frame" x="18" y="152" width="339" height="31"/>
+                                <color key="thumbTintColor" red="0.0" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <attributedString key="userComments">
+                                    <fragment content="Proving that the thumbTintColor now works once again.">
+                                        <attributes>
+                                            <font key="NSFont" metaFont="smallSystem"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </slider>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="5dK-Up-Zba"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="5dK-Up-Zba" firstAttribute="trailing" secondItem="EyU-6d-1xm" secondAttribute="trailing" constant="20" id="6H4-VU-iKH"/>
+                            <constraint firstItem="D4A-j8-Da8" firstAttribute="top" secondItem="5dK-Up-Zba" secondAttribute="top" constant="82" id="Cpl-Ov-MLo"/>
+                            <constraint firstItem="5dK-Up-Zba" firstAttribute="trailing" secondItem="D4A-j8-Da8" secondAttribute="trailing" constant="40" id="DrG-hN-Jwf"/>
+                            <constraint firstItem="D4A-j8-Da8" firstAttribute="leading" secondItem="5dK-Up-Zba" secondAttribute="leading" constant="40" id="era-aI-NM9"/>
+                            <constraint firstItem="EyU-6d-1xm" firstAttribute="top" secondItem="D4A-j8-Da8" secondAttribute="bottom" constant="40" id="hge-Ax-8Yh"/>
+                            <constraint firstItem="EyU-6d-1xm" firstAttribute="leading" secondItem="5dK-Up-Zba" secondAttribute="leading" constant="20" id="qji-GC-ZZc"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="295" y="0.0"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="gold1b.png" width="7.1999998092651367" height="7.1999998092651367"/>
+        <image name="gold2b.png" width="7.1999998092651367" height="7.1999998092651367"/>
+    </resources>
+</document>
