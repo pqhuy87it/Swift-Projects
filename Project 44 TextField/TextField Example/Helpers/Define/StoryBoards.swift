@@ -21,5 +21,9 @@ struct Storyboards {
     struct PickerViewInput {
         static let name = "PickerViewInput"
     }
+    
+    struct LeftView {
+        static let name = "LeftView"
+    }
 }
 

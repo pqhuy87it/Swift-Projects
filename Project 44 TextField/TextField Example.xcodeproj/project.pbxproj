@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		115A0F4F27870B5000E40132 /* LeftView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115A0F4A27870B5000E40132 /* LeftView.storyboard */; };
+		115A0F5027870B5000E40132 /* sun.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = 115A0F4C27870B5000E40132 /* sun.jpeg */; };
+		115A0F5127870B5000E40132 /* LeftViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A0F4E27870B5000E40132 /* LeftViewController.swift */; };
+		115A0F5427870B9000E40132 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A0F5327870B9000E40132 /* CustomTextField.swift */; };
 		11A497C22764787B0087B36E /* KeyboardAccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A497C02764787B0087B36E /* KeyboardAccessoryViewController.swift */; };
 		11A497C32764787B0087B36E /* AccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A497C12764787B0087B36E /* AccessoryView.xib */; };
 		11A497C6276479520087B36E /* KeyboardAccessory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A497C5276479520087B36E /* KeyboardAccessory.storyboard */; };
@@ -33,6 +37,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		115A0F4A27870B5000E40132 /* LeftView.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = LeftView.storyboard; sourceTree = "<group>"; };
+		115A0F4C27870B5000E40132 /* sun.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = sun.jpeg; sourceTree = "<group>"; };
+		115A0F4E27870B5000E40132 /* LeftViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LeftViewController.swift; sourceTree = "<group>"; };
+		115A0F5327870B9000E40132 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		11A497C02764787B0087B36E /* KeyboardAccessoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAccessoryViewController.swift; sourceTree = "<group>"; };
 		11A497C12764787B0087B36E /* AccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccessoryView.xib; sourceTree = "<group>"; };
 		11A497C5276479520087B36E /* KeyboardAccessory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KeyboardAccessory.storyboard; sourceTree = "<group>"; };
@@ -71,6 +79,49 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		115A0F4827870B5000E40132 /* LeftView */ = {
+			isa = PBXGroup;
+			children = (
+				115A0F5227870B7B00E40132 /* Views */,
+				115A0F4927870B5000E40132 /* Storyboards */,
+				115A0F4B27870B5000E40132 /* Resources */,
+				115A0F4D27870B5000E40132 /* Controllers */,
+			);
+			path = LeftView;
+			sourceTree = "<group>";
+		};
+		115A0F4927870B5000E40132 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				115A0F4A27870B5000E40132 /* LeftView.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		115A0F4B27870B5000E40132 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				115A0F4C27870B5000E40132 /* sun.jpeg */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		115A0F4D27870B5000E40132 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				115A0F4E27870B5000E40132 /* LeftViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		115A0F5227870B7B00E40132 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				115A0F5327870B9000E40132 /* CustomTextField.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		11A497BF276478670087B36E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +233,7 @@
 				11D96E2827647600009D9E52 /* KeyboardAccessory */,
 				11CD917427648D460018C8D4 /* ShowHideKeyboard */,
 				11CD917B27649FB90018C8D4 /* PickerViewInput */,
+				115A0F4827870B5000E40132 /* LeftView */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -352,11 +404,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				5C0031C326D22AA600C8606F /* LaunchScreen.storyboard in Resources */,
+				115A0F4F27870B5000E40132 /* LeftView.storyboard in Resources */,
 				5C0031D126D22D5C00C8606F /* MainViewCell.xib in Resources */,
 				5C0031C226D22AA600C8606F /* Assets.xcassets in Resources */,
 				11CD917A27648D460018C8D4 /* ShowHideKeyboard.storyboard in Resources */,
 				11A497C6276479520087B36E /* KeyboardAccessory.storyboard in Resources */,
 				11A497C32764787B0087B36E /* AccessoryView.xib in Resources */,
+				115A0F5027870B5000E40132 /* sun.jpeg in Resources */,
 				11CD918127649FB90018C8D4 /* PickerViewInput.storyboard in Resources */,
 				5CA9989027269630005CCEE1 /* SelectText.storyboard in Resources */,
 				5C0031BE26D22AA600C8606F /* Main.storyboard in Resources */,
@@ -370,9 +424,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				115A0F5127870B5000E40132 /* LeftViewController.swift in Sources */,
 				5C0031CB26D22BA100C8606F /* UITableViewHeaderFooterView+Extension.swift in Sources */,
 				5C0031C026D22AA600C8606F /* AppDelegate.swift in Sources */,
 				5C0031BF26D22AA600C8606F /* ViewController.swift in Sources */,
+				115A0F5427870B9000E40132 /* CustomTextField.swift in Sources */,
 				5C0031D626D232DC00C8606F /* StoryBoards.swift in Sources */,
 				11CD918027649FB90018C8D4 /* PickerViewInputViewController.swift in Sources */,
 				5C0031C126D22AA600C8606F /* SceneDelegate.swift in Sources */,

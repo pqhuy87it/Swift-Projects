@@ -21,6 +21,7 @@ class ViewController: UIViewController {
         
         items = [
             Subject(title: "Icon on label", description: "Insert icon in content label."),
+            Subject(title: "Highlighted Text Color", description: "")
         ]
         
         tableView.backgroundColor = UIColor.white
@@ -32,6 +33,8 @@ class ViewController: UIViewController {
         case 0:
             self.iconOnLabel()
             break
+        case 1:
+            showHighlightedText()
         default:
             break
         }
@@ -40,6 +43,12 @@ class ViewController: UIViewController {
     func iconOnLabel() {
         if let iconOnLabelVC = IconOnLabelController.fromStoryboard(Storyboards.IconOnLabel.name) as? IconOnLabelController {
             self.navigationController?.pushViewController(iconOnLabelVC, animated: true)
+        }
+    }
+    
+    func showHighlightedText() {
+        if let vc = HighlightedTextColorController.fromStoryboard(Storyboards.HighlightedTextColor.name) as? HighlightedTextColorController {
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

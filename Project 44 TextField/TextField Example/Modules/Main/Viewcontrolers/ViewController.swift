@@ -23,7 +23,8 @@ class ViewController: UIViewController {
             Subject(title: "Select text", description: "Select all text on label when touch."),
             Subject(title:"Keyboard Accessory", description: "Keyboard Accessory Example"),
             Subject(title: "ShowHideKeyboard", description: "Show hide keyboard on textField."),
-            Subject(title: "PickerView Input", description: "TextField input from picker view")
+            Subject(title: "PickerView Input", description: "TextField input from picker view"),
+            Subject(title: "Left View", description: "")
         ]
         
         tableView.backgroundColor = UIColor.white
@@ -45,6 +46,7 @@ class ViewController: UIViewController {
             self.pickerViewInput()
             break
         case 4:
+            self.showLeftView()
             break
         case 5:
             break
@@ -84,6 +86,12 @@ class ViewController: UIViewController {
     func pickerViewInput() {
         if let pickerViewInputVC = PickerViewInputViewController.fromStoryboard(Storyboards.PickerViewInput.name) as? PickerViewInputViewController {
             self.navigationController?.pushViewController(pickerViewInputVC, animated: true)
+        }
+    }
+    
+    func showLeftView() {
+        if let vc = LeftViewController.fromStoryboard(Storyboards.LeftView.name) as? LeftViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
         }
     }
 }

@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		115A0F5A2787100400E40132 /* HighlightedTextColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 115A0F572787100400E40132 /* HighlightedTextColor.storyboard */; };
+		115A0F5B2787100400E40132 /* HighlightedTextColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 115A0F592787100400E40132 /* HighlightedTextColorController.swift */; };
 		5C0031BE26D22AA600C8606F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0031B326D22AA600C8606F /* Main.storyboard */; };
 		5C0031BF26D22AA600C8606F /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0031B526D22AA600C8606F /* ViewController.swift */; };
 		5C0031C026D22AA600C8606F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0031B726D22AA600C8606F /* AppDelegate.swift */; };
@@ -26,7 +28,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		5C00317D26D22A2E00C8606F /* Label Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Label Example.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		115A0F572787100400E40132 /* HighlightedTextColor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = HighlightedTextColor.storyboard; sourceTree = "<group>"; };
+		115A0F592787100400E40132 /* HighlightedTextColorController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HighlightedTextColorController.swift; sourceTree = "<group>"; };
+		5C00317D26D22A2E00C8606F /* Label.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Label.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C0031B326D22AA600C8606F /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		5C0031B526D22AA600C8606F /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		5C0031B726D22AA600C8606F /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -57,10 +61,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		115A0F552787100400E40132 /* HighlightedTextColor */ = {
+			isa = PBXGroup;
+			children = (
+				115A0F562787100400E40132 /* Storyboards */,
+				115A0F582787100400E40132 /* Controllers */,
+			);
+			path = HighlightedTextColor;
+			sourceTree = "<group>";
+		};
+		115A0F562787100400E40132 /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				115A0F572787100400E40132 /* HighlightedTextColor.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		115A0F582787100400E40132 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				115A0F592787100400E40132 /* HighlightedTextColorController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
 		5C00317426D22A2E00C8606F = {
 			isa = PBXGroup;
 			children = (
-				5C00317F26D22A2E00C8606F /* Label Example */,
+				5C00317F26D22A2E00C8606F /* Label */,
 				5C00317E26D22A2E00C8606F /* Products */,
 			);
 			sourceTree = "<group>";
@@ -68,12 +97,12 @@
 		5C00317E26D22A2E00C8606F /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				5C00317D26D22A2E00C8606F /* Label Example.app */,
+				5C00317D26D22A2E00C8606F /* Label.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		5C00317F26D22A2E00C8606F /* Label Example */ = {
+		5C00317F26D22A2E00C8606F /* Label */ = {
 			isa = PBXGroup;
 			children = (
 				5C0031B626D22AA600C8606F /* AppDelegate */,
@@ -81,12 +110,13 @@
 				5C0031B926D22AA600C8606F /* Resources */,
 				5C0031C526D22BA100C8606F /* Helpers */,
 			);
-			path = "Label Example";
+			path = Label;
 			sourceTree = "<group>";
 		};
 		5C0031B026D22AA600C8606F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				115A0F552787100400E40132 /* HighlightedTextColor */,
 				5C59B0E527156D170028164C /* IconOnLabel */,
 				5C0031B126D22AA600C8606F /* Main */,
 			);
@@ -204,9 +234,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		5C00317C26D22A2E00C8606F /* Label Example */ = {
+		5C00317C26D22A2E00C8606F /* Label */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 5C0031A726D22A2F00C8606F /* Build configuration list for PBXNativeTarget "Label Example" */;
+			buildConfigurationList = 5C0031A726D22A2F00C8606F /* Build configuration list for PBXNativeTarget "Label" */;
 			buildPhases = (
 				5C00317926D22A2E00C8606F /* Sources */,
 				5C00317A26D22A2E00C8606F /* Frameworks */,
@@ -216,9 +246,9 @@
 			);
 			dependencies = (
 			);
-			name = "Label Example";
+			name = Label;
 			productName = TemplateProject;
-			productReference = 5C00317D26D22A2E00C8606F /* Label Example.app */;
+			productReference = 5C00317D26D22A2E00C8606F /* Label.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -235,7 +265,7 @@
 					};
 				};
 			};
-			buildConfigurationList = 5C00317826D22A2E00C8606F /* Build configuration list for PBXProject "Label Example" */;
+			buildConfigurationList = 5C00317826D22A2E00C8606F /* Build configuration list for PBXProject "Label" */;
 			compatibilityVersion = "Xcode 9.3";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
@@ -248,7 +278,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				5C00317C26D22A2E00C8606F /* Label Example */,
+				5C00317C26D22A2E00C8606F /* Label */,
 			);
 		};
 /* End PBXProject section */
@@ -261,6 +291,7 @@
 				5C0031C326D22AA600C8606F /* LaunchScreen.storyboard in Resources */,
 				5C59B0EB27156D970028164C /* IconOnLabel.storyboard in Resources */,
 				5C0031D126D22D5C00C8606F /* MainViewCell.xib in Resources */,
+				115A0F5A2787100400E40132 /* HighlightedTextColor.storyboard in Resources */,
 				5C0031C226D22AA600C8606F /* Assets.xcassets in Resources */,
 				5C0031BE26D22AA600C8606F /* Main.storyboard in Resources */,
 			);
@@ -275,6 +306,7 @@
 			files = (
 				5C0031CB26D22BA100C8606F /* UITableViewHeaderFooterView+Extension.swift in Sources */,
 				5C0031C026D22AA600C8606F /* AppDelegate.swift in Sources */,
+				115A0F5B2787100400E40132 /* HighlightedTextColorController.swift in Sources */,
 				5C0031BF26D22AA600C8606F /* ViewController.swift in Sources */,
 				5C0031D626D232DC00C8606F /* StoryBoards.swift in Sources */,
 				5C59B0E827156D490028164C /* IconOnLabelController.swift in Sources */,
@@ -423,7 +455,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Label Example/Resources/Info.plist";
+				INFOPLIST_FILE = Label/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -441,7 +473,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
-				INFOPLIST_FILE = "Label Example/Resources/Info.plist";
+				INFOPLIST_FILE = Label/Resources/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -456,7 +488,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		5C00317826D22A2E00C8606F /* Build configuration list for PBXProject "Label Example" */ = {
+		5C00317826D22A2E00C8606F /* Build configuration list for PBXProject "Label" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C0031A526D22A2F00C8606F /* Debug */,
@@ -465,7 +497,7 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C0031A726D22A2F00C8606F /* Build configuration list for PBXNativeTarget "Label Example" */ = {
+		5C0031A726D22A2F00C8606F /* Build configuration list for PBXNativeTarget "Label" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C0031A826D22A2F00C8606F /* Debug */,

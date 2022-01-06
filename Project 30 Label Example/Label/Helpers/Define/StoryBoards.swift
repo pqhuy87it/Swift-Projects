@@ -9,5 +9,9 @@ struct Storyboards {
     struct IconOnLabel {
         static let name = "IconOnLabel"
     }
+    
+    struct HighlightedTextColor {
+        static let name = "HighlightedTextColor"
+    }
 }
 
