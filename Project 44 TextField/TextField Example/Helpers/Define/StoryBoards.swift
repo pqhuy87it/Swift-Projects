@@ -25,5 +25,9 @@ struct Storyboards {
     struct LeftView {
         static let name = "LeftView"
     }
+    
+    struct PlaceHolderColor {
+        static let name = "PlaceHolderColor"
+    }
 }
 

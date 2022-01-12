@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swift-dispatch-group</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let queue = DispatchQueue(label:&lt;#String#&gt;, attributes:.concurrent)
+let group = DispatchGroup()
+
+group.enter()
+queue.async {
+	// do something
+}
+
+group.enter()
+queue.async {
+	// do something
+}
+
+group.enter()
+queue.async {
+	// do something
+}
+
+group.notify(queue: DispatchQueue.main) {
+    // do something
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3932710F-541B-4BD6-86CE-2BBF77F35797</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift GCD Dispatch Group</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

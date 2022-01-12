@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swift-double-tap-gesture</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>All</string>
+		<string>ClassImplementation</string>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func setupDoubleTapGesture() {
+        let doubleTapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(handleDoubleTap))
+        doubleTapGestureRecognizer.numberOfTouchesRequired = 2
+        self.view.addGestureRecognizer(doubleTapGestureRecognizer)
+    }
+
+    @objc func handleDoubleTap(_ sender: UITapGestureRecognizer) {
+        // do something
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>173426A2-E2D2-467A-BD7C-6553F66FBD57</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>swift-double-tap-gesture</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift double tap gesture</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

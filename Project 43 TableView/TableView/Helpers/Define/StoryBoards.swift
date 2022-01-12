@@ -9,5 +9,9 @@ struct Storyboards {
     struct HeaderView {
         static let name = "HeaderView"
     }
+    
+    struct ExpandCollapse {
+        static let name = "ExpandCollapse"
+    }
 }
 

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swift-uicollectionview-datasource</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>TopLevel</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>
+// MARK: - UICollectionViewDataSource
+
+extension &lt;#Class Name#&gt;: UICollectionViewDataSource {
+    func numberOfSectionsInCollectionView(collectionView: UICollectionView) -&gt; Int {
+        return &lt;#number section#&gt;
+    }
+    
+    func collectionView(collectionView: UICollectionView, numberOfItemsInSection section: Int) -&gt; Int {
+        return &lt;#number row in section#&gt;
+    }
+    
+    func collectionView(collectionView: UICollectionView, cellForItemAtIndexPath indexPath: NSIndexPath) -&gt; UICollectionViewCell  {
+        
+    }
+}</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>00D53B24-AFC4-4F7F-B7CE-64FB79319F8A</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>UICollectionViewDataSource</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

@@ -20,8 +20,8 @@ class ViewController: UIViewController {
         // Do any additional setup after loading the view.
         
         items = [
-            Subject(title: "HeaderView", description: "")
-            
+            Subject(title: "Header View", description: ""),
+            Subject(title: "Expand Collapse", description: "")
         ]
         
         tableView.backgroundColor = UIColor.white
@@ -34,6 +34,7 @@ class ViewController: UIViewController {
             showHeaderView()
             break
         case 1:
+            showExpandCollapse()
             break
         case 2:
             break
@@ -60,6 +61,12 @@ class ViewController: UIViewController {
     
     func showHeaderView() {
         if let vc = HeaderViewController.fromStoryboard(Storyboards.HeaderView.name) as? HeaderViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    func showExpandCollapse() {
+        if let vc = ExpandCollapseController.fromStoryboard(Storyboards.ExpandCollapse.name) as? ExpandCollapseController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

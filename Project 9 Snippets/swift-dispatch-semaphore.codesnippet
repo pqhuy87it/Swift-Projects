@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swift-dispatch-semaphore</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let queue = DispatchQueue.global(label: &lt;#String#&gt;, qos: .background)
+let semaphore = DispatchSemaphore(value: &lt;#T##Int#&gt;)
+
+queue.async { [weak self] in
+    // do something
+    semaphore.signal()
+}
+
+semaphore.wait()</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>4EFE9A80-D0DF-4631-8644-5045F474FCA0</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Dispatch Semaphore</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift GCD Dispatch Semaphore</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

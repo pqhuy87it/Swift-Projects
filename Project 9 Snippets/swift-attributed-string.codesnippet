@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swift-attributed-string-font</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: &lt;#Font Size#&gt;)]
+let attributedString = NSAttributedString(string: &lt;#String#&gt;,
+                                                  attributes: attributes)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>3C121F80-DB26-4E12-AE91-1C5F25A03394</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>Create AttributedString Font</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift AttributedString Font</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

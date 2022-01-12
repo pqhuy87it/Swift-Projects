@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swift-long-press-gesture</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>ClassImplementation</string>
+		<string>All</string>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>func setupLongPressGesture() {
+        let longPressGesture = UILongPressGestureRecognizer(target: self, action: #selector(handleLongPressGesture))
+        longPressGesture.minimumPressDuration = 0.5
+        longPressGesture.delaysTouchesBegan = true
+        self.view.addGestureRecognizer(longPressGesture)
+    }
+
+    @objc func handleLongPressGesture(_ gesture: UILongPressGestureRecognizer) {
+        // do something
+        if gesture.state == .began {
+
+        } else if gesture.state == .changed {
+
+        } else if gesture.state == .ended {
+            
+        }
+    }</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>06F01AE3-0B9D-46E5-B7EC-36C808752AD9</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string>swift-long-press-gesture</string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift long press gesture</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>0</integer>
+</dict>
+</plist>

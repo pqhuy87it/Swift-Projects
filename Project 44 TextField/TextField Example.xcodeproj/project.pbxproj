@@ -14,6 +14,9 @@
 		11A497C22764787B0087B36E /* KeyboardAccessoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11A497C02764787B0087B36E /* KeyboardAccessoryViewController.swift */; };
 		11A497C32764787B0087B36E /* AccessoryView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 11A497C12764787B0087B36E /* AccessoryView.xib */; };
 		11A497C6276479520087B36E /* KeyboardAccessory.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11A497C5276479520087B36E /* KeyboardAccessory.storyboard */; };
+		11BD0018278F151000503F5E /* PlaceHolderColor.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BD0014278F151000503F5E /* PlaceHolderColor.storyboard */; };
+		11BD0019278F151000503F5E /* CustomPlaceHolderTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD0017278F151000503F5E /* CustomPlaceHolderTextField.swift */; };
+		11BD001B278F152B00503F5E /* PlaceHolderColorController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD001A278F152B00503F5E /* PlaceHolderColorController.swift */; };
 		11CD917927648D460018C8D4 /* ShowHideKeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD917627648D460018C8D4 /* ShowHideKeyboardViewController.swift */; };
 		11CD917A27648D460018C8D4 /* ShowHideKeyboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11CD917827648D460018C8D4 /* ShowHideKeyboard.storyboard */; };
 		11CD918027649FB90018C8D4 /* PickerViewInputViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11CD917D27649FB90018C8D4 /* PickerViewInputViewController.swift */; };
@@ -44,6 +47,9 @@
 		11A497C02764787B0087B36E /* KeyboardAccessoryViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KeyboardAccessoryViewController.swift; sourceTree = "<group>"; };
 		11A497C12764787B0087B36E /* AccessoryView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AccessoryView.xib; sourceTree = "<group>"; };
 		11A497C5276479520087B36E /* KeyboardAccessory.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = KeyboardAccessory.storyboard; sourceTree = "<group>"; };
+		11BD0014278F151000503F5E /* PlaceHolderColor.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = PlaceHolderColor.storyboard; sourceTree = "<group>"; };
+		11BD0017278F151000503F5E /* CustomPlaceHolderTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomPlaceHolderTextField.swift; sourceTree = "<group>"; };
+		11BD001A278F152B00503F5E /* PlaceHolderColorController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlaceHolderColorController.swift; sourceTree = "<group>"; };
 		11CD917627648D460018C8D4 /* ShowHideKeyboardViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowHideKeyboardViewController.swift; sourceTree = "<group>"; };
 		11CD917827648D460018C8D4 /* ShowHideKeyboard.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ShowHideKeyboard.storyboard; sourceTree = "<group>"; };
 		11CD917D27649FB90018C8D4 /* PickerViewInputViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PickerViewInputViewController.swift; sourceTree = "<group>"; };
@@ -135,6 +141,40 @@
 			children = (
 				11A497C12764787B0087B36E /* AccessoryView.xib */,
 				11A497C5276479520087B36E /* KeyboardAccessory.storyboard */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		11BD0012278F151000503F5E /* PlaceHolderColor */ = {
+			isa = PBXGroup;
+			children = (
+				11BD0013278F151000503F5E /* Storyboards */,
+				11BD0015278F151000503F5E /* Controllers */,
+				11BD0016278F151000503F5E /* Views */,
+			);
+			path = PlaceHolderColor;
+			sourceTree = "<group>";
+		};
+		11BD0013278F151000503F5E /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				11BD0014278F151000503F5E /* PlaceHolderColor.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
+		11BD0015278F151000503F5E /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11BD001A278F152B00503F5E /* PlaceHolderColorController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11BD0016278F151000503F5E /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				11BD0017278F151000503F5E /* CustomPlaceHolderTextField.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -234,6 +274,7 @@
 				11CD917427648D460018C8D4 /* ShowHideKeyboard */,
 				11CD917B27649FB90018C8D4 /* PickerViewInput */,
 				115A0F4827870B5000E40132 /* LeftView */,
+				11BD0012278F151000503F5E /* PlaceHolderColor */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -403,6 +444,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11BD0018278F151000503F5E /* PlaceHolderColor.storyboard in Resources */,
 				5C0031C326D22AA600C8606F /* LaunchScreen.storyboard in Resources */,
 				115A0F4F27870B5000E40132 /* LeftView.storyboard in Resources */,
 				5C0031D126D22D5C00C8606F /* MainViewCell.xib in Resources */,
@@ -424,6 +466,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				11BD001B278F152B00503F5E /* PlaceHolderColorController.swift in Sources */,
 				115A0F5127870B5000E40132 /* LeftViewController.swift in Sources */,
 				5C0031CB26D22BA100C8606F /* UITableViewHeaderFooterView+Extension.swift in Sources */,
 				5C0031C026D22AA600C8606F /* AppDelegate.swift in Sources */,
@@ -439,6 +482,7 @@
 				5C0031CC26D22BA100C8606F /* UITableView+Extension.swift in Sources */,
 				5CA9988F27269630005CCEE1 /* SelectTextController.swift in Sources */,
 				5C0031DF26D23A6500C8606F /* UIViewController+Extension.swift in Sources */,
+				11BD0019278F151000503F5E /* CustomPlaceHolderTextField.swift in Sources */,
 				5C0031D326D22EA100C8606F /* UIColor+Extension.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

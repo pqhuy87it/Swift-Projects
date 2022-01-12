@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDECodeSnippetCompletionPrefix</key>
+	<string>swift-attributed-string-paragraphstyle</string>
+	<key>IDECodeSnippetCompletionScopes</key>
+	<array>
+		<string>CodeBlock</string>
+	</array>
+	<key>IDECodeSnippetContents</key>
+	<string>let paragraphStyle = NSMutableParagraphStyle()
+paragraphStyle.lineSpacing = &lt;#number#&gt;
+		paragraphStyle.alignment = .center
+		paragraphStyle.lineBreakMode = .byCharWrapping
+		paragraphStyle.paragraphSpacing = &lt;#number#&gt;
+		paragraphStyle.paragraphSpacingBefore = &lt;#number#&gt;
+		paragraphStyle.headIndent = &lt;#number#&gt;
+
+		let attributes = [NSAttributedString.Key.font: UIFont.systemFont(ofSize: &lt;#number#&gt;),
+								NSAttributedString.Key.paragraphStyle: paragraphStyle]
+
+let attributedText = NSMutableAttributedString(string: &lt;#String#&gt;,
+													   attributes: attributes)</string>
+	<key>IDECodeSnippetIdentifier</key>
+	<string>DFDCCE2C-147B-4F00-9497-2DBD704BA335</string>
+	<key>IDECodeSnippetLanguage</key>
+	<string>Xcode.SourceCodeLanguage.Swift</string>
+	<key>IDECodeSnippetPlatformFamily</key>
+	<string>iphoneos</string>
+	<key>IDECodeSnippetSummary</key>
+	<string></string>
+	<key>IDECodeSnippetTitle</key>
+	<string>Swift Attributed String Paragraphstyle</string>
+	<key>IDECodeSnippetUserSnippet</key>
+	<true/>
+	<key>IDECodeSnippetVersion</key>
+	<integer>2</integer>
+</dict>
+</plist>

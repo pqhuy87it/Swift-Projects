@@ -24,7 +24,8 @@ class ViewController: UIViewController {
             Subject(title:"Keyboard Accessory", description: "Keyboard Accessory Example"),
             Subject(title: "ShowHideKeyboard", description: "Show hide keyboard on textField."),
             Subject(title: "PickerView Input", description: "TextField input from picker view"),
-            Subject(title: "Left View", description: "")
+            Subject(title: "Left View", description: ""),
+            Subject(title: "Placeholder Color", description: "")
         ]
         
         tableView.backgroundColor = UIColor.white
@@ -49,6 +50,7 @@ class ViewController: UIViewController {
             self.showLeftView()
             break
         case 5:
+            self.showPlaceHolderColor()
             break
         case 6:
             break
@@ -91,6 +93,12 @@ class ViewController: UIViewController {
     
     func showLeftView() {
         if let vc = LeftViewController.fromStoryboard(Storyboards.LeftView.name) as? LeftViewController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    func showPlaceHolderColor() {
+        if let vc = PlaceHolderColorController.fromStoryboard(Storyboards.PlaceHolderColor.name) as? PlaceHolderColorController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }
