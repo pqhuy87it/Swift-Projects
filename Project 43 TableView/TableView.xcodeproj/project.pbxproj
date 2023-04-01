@@ -63,6 +63,8 @@
 		1155EB022781ECD700A24E74 /* flag_southcarolina.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1155EACE2781ECD700A24E74 /* flag_southcarolina.gif */; };
 		1155EB032781ECD700A24E74 /* flag_florida.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1155EACF2781ECD700A24E74 /* flag_florida.gif */; };
 		1155EB042781ECD700A24E74 /* flag_northcarolina.gif in Resources */ = {isa = PBXBuildFile; fileRef = 1155EAD02781ECD700A24E74 /* flag_northcarolina.gif */; };
+		11ADCCB72792ECED006EDA1F /* EmptyStateController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11ADCCB62792ECED006EDA1F /* EmptyStateController.swift */; };
+		11ADCCBA2792ED00006EDA1F /* EmptyState.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11ADCCB92792ED00006EDA1F /* EmptyState.storyboard */; };
 		11BD0021278F171F00503F5E /* ExpandCollapse.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 11BD001E278F171F00503F5E /* ExpandCollapse.storyboard */; };
 		11BD0022278F171F00503F5E /* ExpandCollapseController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 11BD0020278F171F00503F5E /* ExpandCollapseController.swift */; };
 		5C0031BE26D22AA600C8606F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5C0031B326D22AA600C8606F /* Main.storyboard */; };
@@ -138,6 +140,8 @@
 		1155EACE2781ECD700A24E74 /* flag_southcarolina.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = flag_southcarolina.gif; sourceTree = "<group>"; };
 		1155EACF2781ECD700A24E74 /* flag_florida.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = flag_florida.gif; sourceTree = "<group>"; };
 		1155EAD02781ECD700A24E74 /* flag_northcarolina.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = flag_northcarolina.gif; sourceTree = "<group>"; };
+		11ADCCB62792ECED006EDA1F /* EmptyStateController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateController.swift; sourceTree = "<group>"; };
+		11ADCCB92792ED00006EDA1F /* EmptyState.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = EmptyState.storyboard; sourceTree = "<group>"; };
 		11BD001E278F171F00503F5E /* ExpandCollapse.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ExpandCollapse.storyboard; sourceTree = "<group>"; };
 		11BD0020278F171F00503F5E /* ExpandCollapseController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ExpandCollapseController.swift; sourceTree = "<group>"; };
 		5C00317D26D22A2E00C8606F /* TableView.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TableView.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -264,6 +268,31 @@
 			path = Resources;
 			sourceTree = "<group>";
 		};
+		11ADCCB42792ECCD006EDA1F /* EmptyState */ = {
+			isa = PBXGroup;
+			children = (
+				11ADCCB82792ECF1006EDA1F /* Storyboards */,
+				11ADCCB52792ECD7006EDA1F /* Controllers */,
+			);
+			path = EmptyState;
+			sourceTree = "<group>";
+		};
+		11ADCCB52792ECD7006EDA1F /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				11ADCCB62792ECED006EDA1F /* EmptyStateController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		11ADCCB82792ECF1006EDA1F /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				11ADCCB92792ED00006EDA1F /* EmptyState.storyboard */,
+			);
+			path = Storyboards;
+			sourceTree = "<group>";
+		};
 		11BD001C278F171F00503F5E /* ExpandCollapse */ = {
 			isa = PBXGroup;
 			children = (
@@ -319,6 +348,7 @@
 		5C0031B026D22AA600C8606F /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				11ADCCB42792ECCD006EDA1F /* EmptyState */,
 				5C0031B126D22AA600C8606F /* Main */,
 				1155EA902781EA9500A24E74 /* HeaderView */,
 				11BD001C278F171F00503F5E /* ExpandCollapse */,
@@ -498,6 +528,7 @@
 				1155EAEE2781ECD700A24E74 /* flag_montana.gif in Resources */,
 				1155EADF2781ECD700A24E74 /* flag_kentucky.gif in Resources */,
 				1155EADB2781ECD700A24E74 /* flag_utah.gif in Resources */,
+				11ADCCBA2792ED00006EDA1F /* EmptyState.storyboard in Resources */,
 				1155EA9B2781EBBD00A24E74 /* HeaderView.xib in Resources */,
 				1155EAF42781ECD700A24E74 /* flag_ohio.gif in Resources */,
 				1155EAD52781ECD700A24E74 /* flag_alabama.gif in Resources */,
@@ -538,6 +569,7 @@
 				5C0031CB26D22BA100C8606F /* UITableViewHeaderFooterView+Extension.swift in Sources */,
 				5C0031C026D22AA600C8606F /* AppDelegate.swift in Sources */,
 				5C0031BF26D22AA600C8606F /* ViewController.swift in Sources */,
+				11ADCCB72792ECED006EDA1F /* EmptyStateController.swift in Sources */,
 				5C0031D626D232DC00C8606F /* StoryBoards.swift in Sources */,
 				5C0031C126D22AA600C8606F /* SceneDelegate.swift in Sources */,
 				5C0031CA26D22BA100C8606F /* UITableViewCell+Extension.swift in Sources */,

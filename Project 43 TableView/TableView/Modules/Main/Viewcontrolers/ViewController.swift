@@ -21,7 +21,8 @@ class ViewController: UIViewController {
         
         items = [
             Subject(title: "Header View", description: ""),
-            Subject(title: "Expand Collapse", description: "")
+            Subject(title: "Expand Collapse", description: ""),
+            Subject(title: "Empty State", description: "")
         ]
         
         tableView.backgroundColor = UIColor.white
@@ -37,6 +38,7 @@ class ViewController: UIViewController {
             showExpandCollapse()
             break
         case 2:
+            showEmptyState()
             break
         case 3:
             break
@@ -67,6 +69,12 @@ class ViewController: UIViewController {
     
     func showExpandCollapse() {
         if let vc = ExpandCollapseController.fromStoryboard(Storyboards.ExpandCollapse.name) as? ExpandCollapseController {
+            self.navigationController?.pushViewController(vc, animated: true)
+        }
+    }
+    
+    func showEmptyState() {
+        if let vc = EmptyStateController.fromStoryboard(Storyboards.EmptyState.name) as? EmptyStateController {
             self.navigationController?.pushViewController(vc, animated: true)
         }
     }

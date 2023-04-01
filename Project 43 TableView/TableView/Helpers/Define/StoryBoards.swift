@@ -13,5 +13,9 @@ struct Storyboards {
     struct ExpandCollapse {
         static let name = "ExpandCollapse"
     }
+    
+    struct EmptyState {
+        static let name = "EmptyState"
+    }
 }
 
