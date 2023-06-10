@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21678"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" id="gTV-IL-0wX" customClass="DynamicContentCell" customModule="CollectionView" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="136"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="50" height="136"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Us6-HS-u28" userLabel="Content View">
+                        <rect key="frame" x="0.0" y="0.0" width="50" height="136"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AppleIcon" translatesAutoresizingMaskIntoConstraints="NO" id="TGl-fd-U9a">
+                                <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="TGl-fd-U9a" secondAttribute="height" multiplier="1:1" id="7EH-qn-luQ"/>
+                                    <constraint firstAttribute="width" constant="50" id="Bba-2b-Dpc"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rOe-iu-5n5">
+                                <rect key="frame" x="0.0" y="50" width="50" height="20.333333333333329"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="rOe-iu-5n5" firstAttribute="top" secondItem="TGl-fd-U9a" secondAttribute="bottom" id="6w5-1P-cIK"/>
+                            <constraint firstItem="rOe-iu-5n5" firstAttribute="leading" secondItem="Us6-HS-u28" secondAttribute="leading" id="Dhe-YB-c0f"/>
+                            <constraint firstAttribute="trailing" secondItem="TGl-fd-U9a" secondAttribute="trailing" id="Ehf-V4-PzY"/>
+                            <constraint firstItem="TGl-fd-U9a" firstAttribute="top" secondItem="Us6-HS-u28" secondAttribute="top" id="Fjj-ra-wLZ"/>
+                            <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="rOe-iu-5n5" secondAttribute="bottom" id="UhO-lu-g91"/>
+                            <constraint firstItem="TGl-fd-U9a" firstAttribute="leading" secondItem="Us6-HS-u28" secondAttribute="leading" id="awZ-dJ-0yU"/>
+                            <constraint firstAttribute="trailing" secondItem="rOe-iu-5n5" secondAttribute="trailing" id="rYa-hI-olN"/>
+                        </constraints>
+                    </view>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <constraints>
+                <constraint firstAttribute="bottom" secondItem="Us6-HS-u28" secondAttribute="bottom" id="Sei-C2-XpL"/>
+                <constraint firstItem="Us6-HS-u28" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" id="TTq-Th-gFi"/>
+                <constraint firstAttribute="trailing" secondItem="Us6-HS-u28" secondAttribute="trailing" id="ZDL-wK-HpW"/>
+                <constraint firstItem="Us6-HS-u28" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" id="gU0-jA-XAQ"/>
+            </constraints>
+            <size key="customSize" width="69" height="136"/>
+            <connections>
+                <outlet property="imageView" destination="TGl-fd-U9a" id="RJu-mW-Sef"/>
+                <outlet property="lbText" destination="rOe-iu-5n5" id="MGk-He-emY"/>
+            </connections>
+            <point key="canvasLocation" x="151.14503816793894" y="50"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="AppleIcon" width="42.666667938232422" height="42.666667938232422"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

@@ -13,5 +13,13 @@ struct Storyboards {
     struct Pagination {
         static let name = "Pagination"
     }
+    
+    struct DynamicContent {
+        static let name = "DynamicContent"
+    }
+    
+    struct DynamicContentFlowLayout {
+        static let name = "DynamicContentUsingFlowLayout"
+    }
 }
 

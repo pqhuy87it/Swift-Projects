@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 53;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -47,6 +47,21 @@
 		5C0031D326D22EA100C8606F /* UIColor+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0031D226D22EA100C8606F /* UIColor+Extension.swift */; };
 		5C0031D626D232DC00C8606F /* StoryBoards.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0031D526D232DC00C8606F /* StoryBoards.swift */; };
 		5C0031DF26D23A6500C8606F /* UIViewController+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C0031DE26D23A6500C8606F /* UIViewController+Extension.swift */; };
+		B76F318C2A34CD2F00891FD5 /* FlexibleRowHeightGridLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76F318B2A34CD2F00891FD5 /* FlexibleRowHeightGridLayout.swift */; };
+		B76F318F2A34D49C00891FD5 /* DynamicContentFlowLayoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76F318D2A34D49C00891FD5 /* DynamicContentFlowLayoutCell.swift */; };
+		B76F31902A34D49C00891FD5 /* DynamicContentFlowLayoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B76F318E2A34D49C00891FD5 /* DynamicContentFlowLayoutCell.xib */; };
+		B76F31932A34D95C00891FD5 /* DynamicContentFlowLayoutDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76F31922A34D95C00891FD5 /* DynamicContentFlowLayoutDataSource.swift */; };
+		B76F31952A3525B000891FD5 /* TopAlignedCollectionViewFlowLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = B76F31942A3525B000891FD5 /* TopAlignedCollectionViewFlowLayout.swift */; };
+		B7E2B44A2A34A57E00F0BECD /* DynamicContentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E2B4492A34A57E00F0BECD /* DynamicContentController.swift */; };
+		B7E2B44D2A34A5B900F0BECD /* DynamicContent.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E2B44C2A34A5B900F0BECD /* DynamicContent.storyboard */; };
+		B7E2B4512A34A68900F0BECD /* DynamicContentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E2B44F2A34A68900F0BECD /* DynamicContentCell.swift */; };
+		B7E2B4522A34A68900F0BECD /* DynamicContentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B7E2B4502A34A68900F0BECD /* DynamicContentCell.xib */; };
+		B7E2B4552A34A83E00F0BECD /* DynamicContentDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E2B4542A34A83E00F0BECD /* DynamicContentDataSource.swift */; };
+		B7E2B4592A34A9BF00F0BECD /* Header.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E2B4582A34A9BF00F0BECD /* Header.swift */; };
+		B7E2B45B2A34A9D800F0BECD /* Footer.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E2B45A2A34A9D800F0BECD /* Footer.swift */; };
+		B7E2B45D2A34AAAC00F0BECD /* UIEdgeInsets+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E2B45C2A34AAAC00F0BECD /* UIEdgeInsets+Extension.swift */; };
+		B7E2B4642A34CC3F00F0BECD /* DynamicContentUsingFlowLayoutController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B7E2B4632A34CC3F00F0BECD /* DynamicContentUsingFlowLayoutController.swift */; };
+		B7E2B4662A34CC5500F0BECD /* DynamicContentUsingFlowLayout.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B7E2B4652A34CC5500F0BECD /* DynamicContentUsingFlowLayout.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +107,21 @@
 		5C0031D226D22EA100C8606F /* UIColor+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+Extension.swift"; sourceTree = "<group>"; };
 		5C0031D526D232DC00C8606F /* StoryBoards.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StoryBoards.swift; sourceTree = "<group>"; };
 		5C0031DE26D23A6500C8606F /* UIViewController+Extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIViewController+Extension.swift"; sourceTree = "<group>"; };
+		B76F318B2A34CD2F00891FD5 /* FlexibleRowHeightGridLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlexibleRowHeightGridLayout.swift; sourceTree = "<group>"; };
+		B76F318D2A34D49C00891FD5 /* DynamicContentFlowLayoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicContentFlowLayoutCell.swift; sourceTree = "<group>"; };
+		B76F318E2A34D49C00891FD5 /* DynamicContentFlowLayoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicContentFlowLayoutCell.xib; sourceTree = "<group>"; };
+		B76F31922A34D95C00891FD5 /* DynamicContentFlowLayoutDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicContentFlowLayoutDataSource.swift; sourceTree = "<group>"; };
+		B76F31942A3525B000891FD5 /* TopAlignedCollectionViewFlowLayout.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TopAlignedCollectionViewFlowLayout.swift; sourceTree = "<group>"; };
+		B7E2B4492A34A57E00F0BECD /* DynamicContentController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicContentController.swift; sourceTree = "<group>"; };
+		B7E2B44C2A34A5B900F0BECD /* DynamicContent.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DynamicContent.storyboard; sourceTree = "<group>"; };
+		B7E2B44F2A34A68900F0BECD /* DynamicContentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicContentCell.swift; sourceTree = "<group>"; };
+		B7E2B4502A34A68900F0BECD /* DynamicContentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DynamicContentCell.xib; sourceTree = "<group>"; };
+		B7E2B4542A34A83E00F0BECD /* DynamicContentDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicContentDataSource.swift; sourceTree = "<group>"; };
+		B7E2B4582A34A9BF00F0BECD /* Header.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Header.swift; sourceTree = "<group>"; };
+		B7E2B45A2A34A9D800F0BECD /* Footer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Footer.swift; sourceTree = "<group>"; };
+		B7E2B45C2A34AAAC00F0BECD /* UIEdgeInsets+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIEdgeInsets+Extension.swift"; sourceTree = "<group>"; };
+		B7E2B4632A34CC3F00F0BECD /* DynamicContentUsingFlowLayoutController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DynamicContentUsingFlowLayoutController.swift; sourceTree = "<group>"; };
+		B7E2B4652A34CC5500F0BECD /* DynamicContentUsingFlowLayout.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = DynamicContentUsingFlowLayout.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -139,6 +169,7 @@
 			children = (
 				114AE563273BAA4A00422ECE /* Pagination.storyboard */,
 				114AE564273BAA4A00422ECE /* Cells */,
+				B7E2B4572A34A9AF00F0BECD /* HeaderFooter */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -322,6 +353,8 @@
 				5C0031B126D22AA600C8606F /* Main */,
 				11A7BD2D273902020040F51B /* Tags */,
 				114AE559273BA92100422ECE /* Pagination */,
+				B7E2B4472A34A4FA00F0BECD /* DynamicContent */,
+				B7E2B4602A34CBA100F0BECD /* DynamicContentUsingFlowLayout */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -388,6 +421,7 @@
 				5C0031C726D22BA100C8606F /* UITableViewCell+Extension.swift */,
 				5C0031C826D22BA100C8606F /* UITableViewHeaderFooterView+Extension.swift */,
 				5C0031C926D22BA100C8606F /* UITableView+Extension.swift */,
+				B7E2B45C2A34AAAC00F0BECD /* UIEdgeInsets+Extension.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -407,6 +441,105 @@
 				5C0031D526D232DC00C8606F /* StoryBoards.swift */,
 			);
 			path = Define;
+			sourceTree = "<group>";
+		};
+		B76F318A2A34CD0B00891FD5 /* FlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				B76F318B2A34CD2F00891FD5 /* FlexibleRowHeightGridLayout.swift */,
+				B76F31942A3525B000891FD5 /* TopAlignedCollectionViewFlowLayout.swift */,
+			);
+			path = FlowLayout;
+			sourceTree = "<group>";
+		};
+		B76F31912A34D4A000891FD5 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B76F318D2A34D49C00891FD5 /* DynamicContentFlowLayoutCell.swift */,
+				B76F318E2A34D49C00891FD5 /* DynamicContentFlowLayoutCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B7E2B4472A34A4FA00F0BECD /* DynamicContent */ = {
+			isa = PBXGroup;
+			children = (
+				B7E2B4532A34A82600F0BECD /* DataSouces */,
+				B7E2B44B2A34A58700F0BECD /* Views */,
+				B7E2B4482A34A53700F0BECD /* Controllers */,
+			);
+			path = DynamicContent;
+			sourceTree = "<group>";
+		};
+		B7E2B4482A34A53700F0BECD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7E2B4492A34A57E00F0BECD /* DynamicContentController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B7E2B44B2A34A58700F0BECD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7E2B44C2A34A5B900F0BECD /* DynamicContent.storyboard */,
+				B7E2B44E2A34A66700F0BECD /* Cells */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		B7E2B44E2A34A66700F0BECD /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				B7E2B44F2A34A68900F0BECD /* DynamicContentCell.swift */,
+				B7E2B4502A34A68900F0BECD /* DynamicContentCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		B7E2B4532A34A82600F0BECD /* DataSouces */ = {
+			isa = PBXGroup;
+			children = (
+				B7E2B4542A34A83E00F0BECD /* DynamicContentDataSource.swift */,
+				B76F31922A34D95C00891FD5 /* DynamicContentFlowLayoutDataSource.swift */,
+			);
+			path = DataSouces;
+			sourceTree = "<group>";
+		};
+		B7E2B4572A34A9AF00F0BECD /* HeaderFooter */ = {
+			isa = PBXGroup;
+			children = (
+				B7E2B4582A34A9BF00F0BECD /* Header.swift */,
+				B7E2B45A2A34A9D800F0BECD /* Footer.swift */,
+			);
+			path = HeaderFooter;
+			sourceTree = "<group>";
+		};
+		B7E2B4602A34CBA100F0BECD /* DynamicContentUsingFlowLayout */ = {
+			isa = PBXGroup;
+			children = (
+				B76F318A2A34CD0B00891FD5 /* FlowLayout */,
+				B7E2B4622A34CBD900F0BECD /* Views */,
+				B7E2B4612A34CBD100F0BECD /* Controllers */,
+			);
+			path = DynamicContentUsingFlowLayout;
+			sourceTree = "<group>";
+		};
+		B7E2B4612A34CBD100F0BECD /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				B7E2B4632A34CC3F00F0BECD /* DynamicContentUsingFlowLayoutController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		B7E2B4622A34CBD900F0BECD /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B7E2B4652A34CC5500F0BECD /* DynamicContentUsingFlowLayout.storyboard */,
+				B76F31912A34D4A000891FD5 /* Cells */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -435,8 +568,9 @@
 		5C00317526D22A2E00C8606F /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				BuildIndependentTargetsInParallel = YES;
 				LastSwiftUpdateCheck = 1250;
-				LastUpgradeCheck = 1250;
+				LastUpgradeCheck = 1430;
 				TargetAttributes = {
 					5C00317C26D22A2E00C8606F = {
 						CreatedOnToolsVersion = 12.5.1;
@@ -466,11 +600,15 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E2B44D2A34A5B900F0BECD /* DynamicContent.storyboard in Resources */,
 				5C0031C326D22AA600C8606F /* LaunchScreen.storyboard in Resources */,
 				5C0031D126D22D5C00C8606F /* MainViewCell.xib in Resources */,
+				B7E2B4662A34CC5500F0BECD /* DynamicContentUsingFlowLayout.storyboard in Resources */,
 				114AE56C273BAA4A00422ECE /* ImageCell.xib in Resources */,
+				B76F31902A34D49C00891FD5 /* DynamicContentFlowLayoutCell.xib in Resources */,
 				114AE56B273BAA4A00422ECE /* Pagination.storyboard in Resources */,
 				5C0031C226D22AA600C8606F /* Assets.xcassets in Resources */,
+				B7E2B4522A34A68900F0BECD /* DynamicContentCell.xib in Resources */,
 				11A7BD53273906EF0040F51B /* Tag.storyboard in Resources */,
 				5C0031BE26D22AA600C8606F /* Main.storyboard in Resources */,
 			);
@@ -483,7 +621,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B7E2B45D2A34AAAC00F0BECD /* UIEdgeInsets+Extension.swift in Sources */,
 				11A7BD4D2739064A0040F51B /* FlickrLayout.swift in Sources */,
+				B7E2B4512A34A68900F0BECD /* DynamicContentCell.swift in Sources */,
+				B7E2B44A2A34A57E00F0BECD /* DynamicContentController.swift in Sources */,
 				11A7BD56273906EF0040F51B /* ContentCell.swift in Sources */,
 				114AE56D273BAA4A00422ECE /* ImageCell.swift in Sources */,
 				11A7BD492739064A0040F51B /* PinterestLayout.swift in Sources */,
@@ -493,15 +634,20 @@
 				5C0031BF26D22AA600C8606F /* MainViewController.swift in Sources */,
 				11A7BD4A2739064A0040F51B /* InstagramLayout.swift in Sources */,
 				11A7BD60273907160040F51B /* CollectionViewProvider.swift in Sources */,
+				B76F318F2A34D49C00891FD5 /* DynamicContentFlowLayoutCell.swift in Sources */,
 				11A7BD5F273907160040F51B /* PickerViewProvider.swift in Sources */,
 				11A7BD58273906F80040F51B /* TagViewController.swift in Sources */,
 				114AE568273BAA4A00422ECE /* NoCellsAnimationVC.swift in Sources */,
+				B76F31932A34D95C00891FD5 /* DynamicContentFlowLayoutDataSource.swift in Sources */,
 				11A7BD4B2739064A0040F51B /* Px500Layout.swift in Sources */,
+				B7E2B45B2A34A9D800F0BECD /* Footer.swift in Sources */,
 				11A7BD3B273904460040F51B /* TagsLayout.swift in Sources */,
 				5C0031D626D232DC00C8606F /* StoryBoards.swift in Sources */,
 				11A7BD3A273904460040F51B /* BaseLayout.swift in Sources */,
+				B7E2B4592A34A9BF00F0BECD /* Header.swift in Sources */,
 				5C0031C126D22AA600C8606F /* SceneDelegate.swift in Sources */,
 				5C0031CA26D22BA100C8606F /* UITableViewCell+Extension.swift in Sources */,
+				B7E2B4642A34CC3F00F0BECD /* DynamicContentUsingFlowLayoutController.swift in Sources */,
 				5C0031D026D22D5C00C8606F /* MainViewCell.swift in Sources */,
 				11A7BD62273907160040F51B /* Color.swift in Sources */,
 				11A7BD55273906EF0040F51B /* HeaderView.swift in Sources */,
@@ -509,8 +655,11 @@
 				11A7BD39273904460040F51B /* ContentAlignableLayout.swift in Sources */,
 				11A7BD61273907160040F51B /* Font.swift in Sources */,
 				114AE567273BAA4A00422ECE /* CellsRotationAnimationVC.swift in Sources */,
+				B7E2B4552A34A83E00F0BECD /* DynamicContentDataSource.swift in Sources */,
+				B76F31952A3525B000891FD5 /* TopAlignedCollectionViewFlowLayout.swift in Sources */,
 				5C0031CC26D22BA100C8606F /* UITableView+Extension.swift in Sources */,
 				5C0031DF26D23A6500C8606F /* UIViewController+Extension.swift in Sources */,
+				B76F318C2A34CD2F00891FD5 /* FlexibleRowHeightGridLayout.swift in Sources */,
 				11A7BD4C2739064A0040F51B /* FlipboardLayout.swift in Sources */,
 				114AE56A273BAA4A00422ECE /* CellsSizeAnimationVC.swift in Sources */,
 				5C0031D326D22EA100C8606F /* UIColor+Extension.swift in Sources */,

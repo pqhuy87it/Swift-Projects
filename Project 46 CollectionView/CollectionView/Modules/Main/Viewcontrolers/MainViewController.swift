@@ -21,7 +21,9 @@ class MainViewController: UIViewController {
         
         items = [
             Subject(title: "Tag", description: "https://github.com/rubygarage/collection-view-layouts"),
-            Subject(title: "Pagination", description: "https://github.com/fahidattique55/FAPaginationLayout")
+            Subject(title: "Pagination", description: "https://github.com/fahidattique55/FAPaginationLayout"),
+            Subject(title: "Dynamic content automatic size", description: "Center align"),
+            Subject(title: "Dynamic content flow layout", description: "Using flow layout"),
         ]
         
         tableView.backgroundColor = UIColor.white
@@ -37,8 +39,10 @@ class MainViewController: UIViewController {
             self.displayPagination()
             break
         case 2:
+            self.displayDynamicContent()
             break
         case 3:
+            self.displayDynamicContentFlowLayout()
             break
         case 4:
             break
@@ -68,6 +72,18 @@ class MainViewController: UIViewController {
     func displayPagination() {
         if let paginationVC = LayoutSelectionVC.fromStoryboard(Storyboards.Pagination.name) as? LayoutSelectionVC {
             self.navigationController?.pushViewController(paginationVC, animated: true)
+        }
+    }
+    
+    func displayDynamicContent() {
+        if let dynamicContentVC = DynamicContentController.fromStoryboard(Storyboards.DynamicContent.name) as? DynamicContentController {
+            self.navigationController?.pushViewController(dynamicContentVC, animated: true)
+        }
+    }
+    
+    func displayDynamicContentFlowLayout() {
+        if let dynamicContentVC = DynamicContentUsingFlowLayoutController.fromStoryboard(Storyboards.DynamicContentFlowLayout.name) as? DynamicContentUsingFlowLayoutController {
+            self.navigationController?.pushViewController(dynamicContentVC, animated: true)
         }
     }
 }

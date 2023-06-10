@@ -13,6 +13,12 @@ extension UIColor {
     static var Gray6 : UIColor {get{return UIColor.colorFromHex(0xF5F5F5)}}
     static var Gray7 : UIColor {get{return UIColor.colorFromHex(0xE7E7E7)}}
     static var Gray8 : UIColor {get{return UIColor.colorFromHex(0xB2B2B2)}}
+    
+    static var darkestBlue: UIColor {get{return UIColor.colorFromHex(0x230A59)}}
+    static var darkBlue: UIColor {get{return UIColor.colorFromHex(0x3E38F2)}}
+    static var royalBlue: UIColor {get{return UIColor.colorFromHex(0x0029FA)}}
+    static var paleBlue: UIColor {get{return UIColor.colorFromHex(0x5C73F2)}}
+    static var palestBlue: UIColor {get{return UIColor.colorFromHex(0x829FD9)}}
 
     static func colorFromHex(_ rgbValue:UInt32)->UIColor{
         let red = CGFloat((rgbValue & 0xFF0000) >> 16)/256.0
