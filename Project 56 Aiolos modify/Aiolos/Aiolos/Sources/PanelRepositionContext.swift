@@ -45,30 +45,30 @@ public final class PanelRepositionContext {
     public var targetPosition: Panel.Configuration.Position {
         let supportedPositions = self.panel.configuration.supportedPositions
 
-        if self.isMovingTowardsLeadingEdge && supportedPositions.contains(.leadingBottom) {
-            return .leadingBottom
-        }
+//        if self.isMovingTowardsLeadingEdge && supportedPositions.contains(.leadingBottom) {
+//            return .leadingBottom
+//        }
 
-        if self.isMovingTowardsTrailingEdge && supportedPositions.contains(.trailingBottom) {
-            return .trailingBottom
-        }
+//        if self.isMovingTowardsTrailingEdge && supportedPositions.contains(.trailingBottom) {
+//            return .trailingBottom
+//        }
 
         return self.originalPosition
     }
 
-    public var isMovingPastLeadingEdge: Bool {
-        guard self.panel.configuration.position == .leadingBottom else { return false }
-        guard self.normalized(self.offset) < 0.0 else { return false }
-
-        return self.normalized(self.projectedOffset) < -self.hidingTreshold
-    }
-
-    public var isMovingPastTrailingEdge: Bool {
-        guard self.panel.configuration.position == .trailingBottom else { return false }
-        guard self.normalized(self.offset) > 0.0 else { return false }
-
-        return self.normalized(self.projectedOffset) > self.hidingTreshold
-    }
+//    public var isMovingPastLeadingEdge: Bool {
+//        guard self.panel.configuration.position == .leadingBottom else { return false }
+//        guard self.normalized(self.offset) < 0.0 else { return false }
+//
+//        return self.normalized(self.projectedOffset) < -self.hidingTreshold
+//    }
+//
+//    public var isMovingPastTrailingEdge: Bool {
+//        guard self.panel.configuration.position == .trailingBottom else { return false }
+//        guard self.normalized(self.offset) > 0.0 else { return false }
+//
+//        return self.normalized(self.projectedOffset) > self.hidingTreshold
+//    }
 }
 
 // MARK: - Private

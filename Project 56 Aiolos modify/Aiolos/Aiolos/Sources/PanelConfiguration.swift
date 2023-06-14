@@ -157,8 +157,8 @@ public enum _PanelEdge: Int {
 @objc(PanelPosition)
 public enum _PanelPosition: Int {
     case bottom
-    case leadingBottom
-    case trailingBottom
+//    case leadingBottom
+//    case trailingBottom
 }
 
 @objc(PanelPositionLogic)

@@ -289,7 +289,8 @@ private extension PanelGestures {
                 self.panel.animator.performWithoutAnimation {
                     self.panel.view.transform = .identity
                     self.panel.constraints.updateForHorizontalPanEndAnimationCompleted()
-                    self.panel.constraints.updatePositionConstraints(for: targetPosition, margins: self.panel.configuration.margins)
+//                    self.panel.constraints.updatePositionConstraints(for: targetPosition, margins: self.panel.configuration.margins)
+                    self.panel.constraints.updatePositionConstraints(for: targetPosition)
                 }
             })
         }
@@ -726,7 +727,7 @@ private extension PanelGestures {
             return isPanningHorizontally || isPanningVertically || isPointerScrolling
         }
 
-        self.panel.resizeHandle.isResizing = isPanning
+//        self.panel.resizeHandle.isResizing = isPanning
     }
 
     // allow pan gestures to be triggered within non-safe area on top (UINavigationBar)

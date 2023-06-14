@@ -20,7 +20,7 @@ final class PanelConstraints {
     private var positionConstraints: [NSLayoutConstraint] = []
     private(set) var heightConstraint: NSLayoutConstraint?
 //    private lazy var keyboardLayoutGuide: KeyboardLayoutGuide = self.makeKeyboardLayoutGuide()
-    private var keyboardConstraint: NSLayoutConstraint?
+//    private var keyboardConstraint: NSLayoutConstraint?
 
     // MARK: - Lifecycle
 
@@ -43,40 +43,43 @@ final class PanelConstraints {
         }
     }
 
-    func updatePositionConstraints(for position: Panel.Configuration.Position, margins: NSDirectionalEdgeInsets) {
+//    func updatePositionConstraints(for position: Panel.Configuration.Position, margins: NSDirectionalEdgeInsets) {
+    func updatePositionConstraints(for position: Panel.Configuration.Position) {
         guard self.isTransitioning == false else { return }
         guard let view = self.panel.view else { return }
         guard let parentView = self.panel.parent?.view else { return }
 
         let anchors = self.guides(of: parentView, for: self.panel.configuration.positionLogic)
-        let topConstraint = view.topAnchor.constraint(greaterThanOrEqualTo: anchors.top, constant: margins.top).withIdentifier("Panel Top")
-//        let keyboardConstraint = view.bottomAnchor.constraint(lessThanOrEqualTo: self.keyboardLayoutGuide.topGuide.bottomAnchor, constant: -margins.bottom).withIdentifier("Keyboard Bottom")
-        let keyboardConstraint = view.bottomAnchor.constraint(lessThanOrEqualTo: anchors.bottom, constant: -margins.bottom).withIdentifier("Keyboard Bottom")
+        let topConstraint = view.topAnchor.constraint(greaterThanOrEqualTo: anchors.top,
+                                                      constant: 0).withIdentifier("Panel Top")
         var positionConstraints = [
-            view.bottomAnchor.constraint(equalTo: anchors.bottom, constant: -margins.bottom).configure { $0.priority = .defaultHigh; $0.identifier = "Panel Bottom" },
-            view.bottomAnchor.constraint(lessThanOrEqualTo: anchors.bottom, constant: -margins.bottom).withIdentifier("Panel Bottom <="),
-            keyboardConstraint,
+            view.bottomAnchor.constraint(equalTo: anchors.bottom,
+                                         constant: 0).configure { $0.priority = .defaultHigh; $0.identifier = "Panel Bottom" },
+            view.bottomAnchor.constraint(lessThanOrEqualTo: anchors.bottom,
+                                         constant: 0).withIdentifier("Panel Bottom <="),
             topConstraint
         ]
 
         switch position {
         case .bottom:
             positionConstraints += [
-                view.leadingAnchor.constraint(equalTo: anchors.leading, constant: margins.leading).withIdentifier("Panel Leading"),
-                view.trailingAnchor.constraint(equalTo: anchors.trailing, constant: -margins.trailing).withIdentifier("Panel Trailing")
+                view.leadingAnchor.constraint(equalTo: anchors.leading,
+                                              constant: 0).withIdentifier("Panel Leading"),
+                view.trailingAnchor.constraint(equalTo: anchors.trailing,
+                                               constant: 0).withIdentifier("Panel Trailing")
             ]
 
-        case .leadingBottom:
-            positionConstraints += [
-                view.leadingAnchor.constraint(equalTo: anchors.leading, constant: margins.leading).withIdentifier("Panel Leading"),
-                view.trailingAnchor.constraint(lessThanOrEqualTo: anchors.trailing, constant: -margins.trailing).withIdentifier("Panel Trailing")
-            ]
-
-        case .trailingBottom:
-            positionConstraints += [
-                view.leadingAnchor.constraint(greaterThanOrEqualTo: anchors.leading, constant: margins.leading).withIdentifier("Panel Leading"),
-                view.trailingAnchor.constraint(equalTo: anchors.trailing, constant: -margins.trailing).withIdentifier("Panel Trailing")
-            ]
+//        case .leadingBottom:
+//            positionConstraints += [
+//                view.leadingAnchor.constraint(equalTo: anchors.leading, constant: margins.leading).withIdentifier("Panel Leading"),
+//                view.trailingAnchor.constraint(lessThanOrEqualTo: anchors.trailing, constant: -margins.trailing).withIdentifier("Panel Trailing")
+//            ]
+//
+//        case .trailingBottom:
+//            positionConstraints += [
+//                view.leadingAnchor.constraint(greaterThanOrEqualTo: anchors.leading, constant: margins.leading).withIdentifier("Panel Leading"),
+//                view.trailingAnchor.constraint(equalTo: anchors.trailing, constant: -margins.trailing).withIdentifier("Panel Trailing")
+//            ]
         }
 
         self.topConstraintMargin = topConstraint.constant
@@ -89,18 +92,18 @@ final class PanelConstraints {
         }
     }
 
-    func updateKeyboardBehaviour(to keyboardBehaviour: Panel.Configuration.KeyboardBehaviour) {
-        var isAvoidingKeyboard: Bool {
-            switch keyboardBehaviour {
-            case .avoiding:
-                return true
-            case .ignoring:
-                return false
-            }
-        }
+//    func updateKeyboardBehaviour(to keyboardBehaviour: Panel.Configuration.KeyboardBehaviour) {
+//        var isAvoidingKeyboard: Bool {
+//            switch keyboardBehaviour {
+//            case .avoiding:
+//                return true
+//            case .ignoring:
+//                return false
+//            }
+//        }
 
-        self.keyboardConstraint?.isActive = isAvoidingKeyboard
-    }
+//        self.keyboardConstraint?.isActive = isAvoidingKeyboard
+//    }
 }
 
 // MARK: - Internal (Dragging Support)
@@ -195,7 +198,7 @@ private extension PanelConstraints {
             constraint.priority = .defaultHigh
         }
 
-        let minHeightConstraint = self.panel.view.heightAnchor.constraint(greaterThanOrEqualToConstant: ResizeHandle.Constants.height).withIdentifier("Panel Min Height")
+        let minHeightConstraint = self.panel.view.heightAnchor.constraint(greaterThanOrEqualToConstant: 20.0).withIdentifier("Panel Min Height")
         let heightConstraint = self.panel.view.heightAnchor.constraint(equalToConstant: size.height).configure { constraint in
             constraint.identifier = "Panel Height"
             constraint.priority = .defaultHigh

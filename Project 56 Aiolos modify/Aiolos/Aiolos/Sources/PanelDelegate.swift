@@ -72,9 +72,9 @@ public protocol PanelRepositionDelegate: AnyObject {
 public protocol PanelAccessibilityDelegate: AnyObject {
 
     /// Asks the delegate for the accessibility label of the resize handle
-    func panel(_ panel: Panel, accessibilityLabelForResizeHandle resizeHandle: ResizeHandle) -> String
+//    func panel(_ panel: Panel, accessibilityLabelForResizeHandle resizeHandle: ResizeHandle) -> String
 
     /// Tells the delegate that the resize handle was activated with Voice Over
-    func panel(_ panel: Panel, didActivateResizeHandle resizeHandle: ResizeHandle) -> Bool
+//    func panel(_ panel: Panel, didActivateResizeHandle resizeHandle: ResizeHandle) -> Bool
 }
 

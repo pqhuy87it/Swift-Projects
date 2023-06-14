@@ -137,7 +137,8 @@ extension PanelAnimator {
         self.prepare(size: size)
         self.performWithoutAnimation {
             self.panel.constraints.updateSizeConstraints(for: size)
-            self.panel.constraints.updatePositionConstraints(for: self.panel.configuration.position, margins: self.panel.configuration.margins)
+//            self.panel.constraints.updatePositionConstraints(for: self.panel.configuration.position, margins: self.panel.configuration.margins)
+            self.panel.constraints.updatePositionConstraints(for: self.panel.configuration.position)
         }
 
         self.notifyDelegateOfTransition(to: size)

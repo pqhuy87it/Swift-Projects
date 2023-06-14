@@ -146,10 +146,12 @@ extension ViewController: PanelRepositionDelegate {
     func panel(_ panel: Panel, didStopMoving endFrame: CGRect, with context: PanelRepositionContext) -> PanelRepositionContext.Instruction {
         print("Panel did move to frame \(endFrame)")
 
-        let panelShouldHide = context.isMovingPastLeadingEdge || context.isMovingPastTrailingEdge
-        guard !panelShouldHide else { return .hide }
-
-        return .updatePosition(context.targetPosition)
+//        let panelShouldHide = context.isMovingPastLeadingEdge || context.isMovingPastTrailingEdge
+//        guard !panelShouldHide else { return .hide }
+//
+//        return .updatePosition(context.targetPosition)
+        
+        return .hide 
     }
 
     func panel(_ panel: Panel, willTransitionFrom oldPosition: Panel.Configuration.Position, to newPosition: Panel.Configuration.Position, with coordinator: PanelTransitionCoordinator) {
@@ -216,9 +218,10 @@ private extension ViewController {
         var configuration = Panel.Configuration.default
 
         var panelPosition: Panel.Configuration.Position {
-            if traitCollection.userInterfaceIdiom == .pad { return .trailingBottom }
+//            if traitCollection.userInterfaceIdiom == .pad { return .trailingBottom }
 
-            return traitCollection.verticalSizeClass == .compact ? .leadingBottom : .bottom
+//            return traitCollection.verticalSizeClass == .compact ? .leadingBottom : .bottom
+            return .bottom
         }
 
         var panelMargins: NSDirectionalEdgeInsets {
@@ -232,10 +235,10 @@ private extension ViewController {
         configuration.position = panelPosition
         configuration.margins = panelMargins
 
-        if self.traitCollection.userInterfaceIdiom == .pad {
-            configuration.supportedPositions = [.leadingBottom, .trailingBottom]
-            configuration.appearance.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-        } else {
+//        if self.traitCollection.userInterfaceIdiom == .pad {
+//            configuration.supportedPositions = [.leadingBottom, .trailingBottom]
+//            configuration.appearance.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+//        } else {
             configuration.supportedModes = [.minimal, .compact, .expanded, .fullHeight]
             configuration.supportedPositions = [configuration.position]
 
@@ -244,7 +247,7 @@ private extension ViewController {
             } else {
                 configuration.appearance.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
             }
-        }
+//        }
 
         return configuration
     }

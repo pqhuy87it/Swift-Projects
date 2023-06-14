@@ -29,7 +29,7 @@ public final class Panel: UIViewController {
     // MARK: - Properties
 
     @objc private(set) public lazy var panelView: PanelView = self.makePanelView()
-    @objc private(set) public lazy var resizeHandle: ResizeHandle = self.makeResizeHandle()
+//    @objc private(set) public lazy var resizeHandle: ResizeHandle = self.makeResizeHandle()
     @objc public var isVisible: Bool { return self.parent != nil && self.animator.isMovingFromParent == false }
     @objc public var isResizing: Bool { return self.gestures.isVerticalPanActive }
     public weak var sizeDelegate: PanelSizeDelegate?
@@ -98,7 +98,7 @@ public extension Panel {
         super.viewDidLoad()
 
         self.gestures.install()
-        self.containerView?.insertSubview(self.resizeHandle, at: 0)
+//        self.containerView?.insertSubview(self.resizeHandle, at: 0)
         self.containerView?.addSubview(self.separatorView)
     }
 
@@ -107,13 +107,14 @@ public extension Panel {
 
         switch configuration.appearance.resizeHandle {
         case .hidden:
-            self.resizeHandle.frame = .null
+//            self.resizeHandle.frame = .null
             self.separatorView.frame = .null
             self.panelView.frame = self.view.bounds
 
         case .visible:
-            let (resizeFrame, panelFrame) = self.view.bounds.divided(atDistance: ResizeHandle.Constants.height, from: .minYEdge)
-            self.resizeHandle.frame = resizeFrame
+//            let (resizeFrame, panelFrame) = self.view.bounds.divided(atDistance: ResizeHandle.Constants.height, from: .minYEdge)
+//            self.resizeHandle.frame = resizeFrame
+            let panelFrame = self.view.bounds
             self.panelView.frame = panelFrame
 
             var dividerFrame: CGRect {
@@ -279,14 +280,14 @@ internal extension Panel {
         guard originalPosition != position else { return 0 }
 
         let distance = self.constraints.effectiveBounds.width - self.view.frame.width
-        switch position {
-        case .leadingBottom:
-            return self.view.isRTL ? distance : -distance
-        case .trailingBottom:
-            return self.view.isRTL ? -distance : distance
-        default:
+//        switch position {
+//        case .leadingBottom:
+//            return self.view.isRTL ? distance : -distance
+//        case .trailingBottom:
+//            return self.view.isRTL ? -distance : distance
+//        default:
             return 0.0
-        }
+//        }
     }
 
     // this is a workaround for a layout bug, when the panel is placed within non-safe areas.
@@ -346,17 +347,17 @@ private extension Panel {
         return shadowView
     }
 
-    func makeResizeHandle() -> ResizeHandle {
-        let handle = ResizeHandle(configuration: self.configuration)
-        handle.accessibilityIdentifier = "Aiolos.ResizeHandle"
-        handle.accessibilityActivateAction = { [weak self] in
-            guard let self = self else { return false }
-
-            return self.accessibilityDelegate?.panel(self, didActivateResizeHandle: self.resizeHandle) ?? false
-        }
-
-        return handle
-    }
+//    func makeResizeHandle() -> ResizeHandle {
+//        let handle = ResizeHandle(configuration: self.configuration)
+//        handle.accessibilityIdentifier = "Aiolos.ResizeHandle"
+//        handle.accessibilityActivateAction = { [weak self] in
+//            guard let self = self else { return false }
+//
+//            return self.accessibilityDelegate?.panel(self, didActivateResizeHandle: self.resizeHandle) ?? false
+//        }
+//
+//        return handle
+//    }
 
     func makeSeparatorView() -> SeparatorView {
         return SeparatorView(configuration: self.configuration)
@@ -407,7 +408,7 @@ private extension Panel {
         self.shadowView?.configure(with: newConfiguration)
         self.containerView?.configure(with: newConfiguration)
         self.panelView.configure(with: newConfiguration)
-        self.resizeHandle.configure(with: newConfiguration)
+//        self.resizeHandle.configure(with: newConfiguration)
         self.separatorView.configure(with: newConfiguration)
         self.gestures.configure(with: newConfiguration)
 
@@ -433,17 +434,18 @@ private extension Panel {
         }
 
         if positionChanged || positionLogicChanged || marginsChanged {
-            self.constraints.updatePositionConstraints(for: newConfiguration.position, margins: newConfiguration.margins)
+//            self.constraints.updatePositionConstraints(for: newConfiguration.position, margins: newConfiguration.margins)
+            self.constraints.updatePositionConstraints(for: newConfiguration.position)
         }
 
-        self.constraints.updateKeyboardBehaviour(to: newConfiguration.keyboardBehaviour)
+//        self.constraints.updateKeyboardBehaviour(to: newConfiguration.keyboardBehaviour)
     }
 
     func updateAccessibility(for mode: Configuration.Mode) {
         guard let contentView = self.contentViewController?.view else { return }
 
         if let accessibilityDelegate = self.accessibilityDelegate {
-            self.resizeHandle.accessibilityLabel = accessibilityDelegate.panel(self, accessibilityLabelForResizeHandle: self.resizeHandle)
+//            self.resizeHandle.accessibilityLabel = accessibilityDelegate.panel(self, accessibilityLabelForResizeHandle: self.resizeHandle)
         }
 
         let elementsHidden = mode == .minimal || mode == .compact
