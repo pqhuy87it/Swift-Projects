@@ -1,0 +1,10 @@
+{
+  "applinks": {
+      "details": [
+      {
+        "appID": "W3LHX5RGV2.com.neuburg.matt.UniversalLinksTest",
+        "paths": ["*"]
+      }
+    ]
+  }
+}
