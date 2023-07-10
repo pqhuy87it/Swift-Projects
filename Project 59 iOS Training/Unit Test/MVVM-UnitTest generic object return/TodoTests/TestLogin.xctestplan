@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "F313E790-CE74-43D3-9864-247C373AC098",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MVVM-UnitTest.xcodeproj",
+        "identifier" : "B7FA975C2A519C0B0003CD97",
+        "name" : "TestLogin"
+      }
+    }
+  ],
+  "version" : 1
+}

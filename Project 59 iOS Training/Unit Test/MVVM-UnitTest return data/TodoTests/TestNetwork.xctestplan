@@ -1,0 +1,24 @@
+{
+  "configurations" : [
+    {
+      "id" : "DF1D377E-4648-4CD9-B132-97CB94CA1274",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:MVVM-UnitTest.xcodeproj",
+        "identifier" : "B7FA976B2A519D870003CD97",
+        "name" : "TestNetwork"
+      }
+    }
+  ],
+  "version" : 1
+}
