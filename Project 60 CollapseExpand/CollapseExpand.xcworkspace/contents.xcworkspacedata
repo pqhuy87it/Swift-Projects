@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Workspace
+   version = "1.0">
+   <FileRef
+      location = "group:CollapseExpand-2/CollapseExpand.xcodeproj">
+   </FileRef>
+   <FileRef
+      location = "group:CollapseExpand-1/CollapseExpand.xcodeproj">
+   </FileRef>
+</Workspace>
