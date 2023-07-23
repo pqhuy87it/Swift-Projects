@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:CollapseExpand-2/CollapseExpand.xcodeproj">
+      location = "group:CollapseExpand-1/CollapseExpandCells.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:CollapseExpand-1/CollapseExpand.xcodeproj">
+      location = "group:CollapseExpand-2/CollapseExpandSections.xcodeproj">
    </FileRef>
 </Workspace>

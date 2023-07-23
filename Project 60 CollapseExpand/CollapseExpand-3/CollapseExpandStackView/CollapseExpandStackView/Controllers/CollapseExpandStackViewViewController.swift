@@ -9,7 +9,8 @@ import UIKit
 
 class CollapseExpandStackViewViewController: UIViewController {
     
-    @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var stackViews: UIStackView!
+    
     
     var items: [BaseObject] = [Header(title: "Header A", cellType: .ItemA),
                                Item(type: .ItemB, cellState: .expand),
@@ -21,6 +22,87 @@ class CollapseExpandStackViewViewController: UIViewController {
                                Item(type: .ItemD, cellState: .expand),
                                Header(title: "Header E", cellType: .ItemE),
                                Item(type: .ItemE, cellState: .expand)]
+    
+    lazy var headerViewA: HeaderView = {
+        let headerView = (Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)![0]) as! HeaderView
+        
+        headerView.delegate = self
+        headerView.headerBtn.tag = 0
+        
+        return headerView
+    }()
+    
+    lazy var headerViewB: HeaderView = {
+        let headerView = (Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)![0]) as! HeaderView
+        
+        headerView.delegate = self
+        headerView.headerBtn.tag = 1
+        
+        return headerView
+    }()
+    
+    lazy var headerViewC: HeaderView = {
+        let headerView = (Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)![0]) as! HeaderView
+        
+        headerView.delegate = self
+        headerView.headerBtn.tag = 2
+        
+        return headerView
+    }()
+    
+    lazy var headerViewD: HeaderView = {
+        let headerView = (Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)![0]) as! HeaderView
+        
+        headerView.delegate = self
+        headerView.headerBtn.tag = 3
+        
+        return headerView
+    }()
+    
+    lazy var headerViewE: HeaderView = {
+        let headerView = (Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)![0]) as! HeaderView
+        
+        headerView.delegate = self
+        headerView.headerBtn.tag = 4
+        
+        return headerView
+    }()
+    
+    lazy var itemViewA: ItemViewA = {
+        let itemViewA = (Bundle.main.loadNibNamed("ItemViewA", owner: self, options: nil)![0]) as! ItemViewA
+        
+        return itemViewA
+    }()
+    
+    lazy var itemViewB: ItemViewB = {
+        let itemView = (Bundle.main.loadNibNamed("ItemViewB", owner: self, options: nil)![0]) as! ItemViewB
+        itemView.setup()
+        
+        return itemView
+    }()
+    
+    lazy var itemViewC: ItemViewC = {
+        let itemView = (Bundle.main.loadNibNamed("ItemViewC", owner: self, options: nil)![0]) as! ItemViewC
+        
+        itemView.setup()
+        
+        return itemView
+    }()
+    
+    lazy var itemViewD: ItemViewD = {
+        let itemView = (Bundle.main.loadNibNamed("ItemViewD", owner: self, options: nil)![0]) as! ItemViewD
+        
+        return itemView
+    }()
+    
+    lazy var itemViewE: ItemViewE = {
+        let itemView = (Bundle.main.loadNibNamed("ItemViewE", owner: self, options: nil)![0]) as! ItemViewE
+        
+        itemView.setup()
+        
+        return itemView
+    }()
+    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,30 +115,39 @@ class CollapseExpandStackViewViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        
-        refreshData()
     }
 
     func setupUI() {
-        setupTableView()
-    }
-    
-    func refreshData() {
-        self.tableView.reloadData()
-    }
-    
-    func setupTableView() {
-        self.tableView.estimatedRowHeight = 400
-        self.tableView.registerCellByNib(ItemCellA.self)
-        self.tableView.registerCellByNib(ItemCellB.self)
-        self.tableView.registerCellByNib(ItemCellC.self)
-        self.tableView.registerCellByNib(ItemCellD.self)
-        self.tableView.registerCellByNib(ItemCellE.self)
         
-        self.tableView.registerCellByNib(HeaderCellA.self)
-        self.tableView.registerCellByNib(HeaderCellB.self)
-        self.tableView.registerCellByNib(HeaderCellC.self)
-        self.tableView.registerCellByNib(HeaderCellD.self)
+        self.headerViewA.titleLb.text = "Header View A"
+        
+        stackViews.addArrangedSubview(self.headerViewA)
+        stackViews.addArrangedSubview(self.itemViewA)
+        
+        self.headerViewB.titleLb.text = "Header View B"
+        
+        stackViews.addArrangedSubview(self.headerViewB)
+        stackViews.addArrangedSubview(self.itemViewB)
+        
+        self.headerViewC.titleLb.text = "Header View C"
+        
+        stackViews.addArrangedSubview(self.headerViewC)
+        stackViews.addArrangedSubview(self.itemViewC)
+        
+        self.headerViewD.titleLb.text = "Header View D"
+        
+        stackViews.addArrangedSubview(self.headerViewD)
+        stackViews.addArrangedSubview(self.itemViewD)
+        
+        self.headerViewE.titleLb.text = "Header View E"
+
+        stackViews.addArrangedSubview(self.headerViewE)
+        stackViews.addArrangedSubview(self.itemViewE)
+        
+        self.itemViewB.reloadData()
+        self.itemViewC.reloadData()
+        
+        self.stackViews.layoutIfNeeded()
     }
     
     func expandCell(_ cell: UITableViewCell, at indexPath: IndexPath) {
@@ -76,22 +167,7 @@ class CollapseExpandStackViewViewController: UIViewController {
         }
         
         UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseOut, animations: { () -> Void in
-            self.tableView.performBatchUpdates {
-                self.tableView.reloadSections(IndexSet(integer: indexPath.section), with: .fade)
-            } completion: { _ in
-                let newCell = self.tableView.cellForRow(at: indexPath)
-                
-                guard let newCell = newCell else {
-                    return
-                }
-                
-                if newCell.frame.minY < self.tableView.contentOffset.y {
-                    self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
-                } else if newCell.frame.maxY > self.tableView.frame.maxY + self.tableView.contentOffset.y {
-                    self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
-                }
-            }
-
+            
             
             
             
@@ -117,167 +193,111 @@ class CollapseExpandStackViewViewController: UIViewController {
         }
         
         UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: { () -> Void in
-            self.tableView.reloadSections(IndexSet(integer: indexPath.section), with: .fade)
             
-            let newCell = self.tableView.cellForRow(at: indexPath)
-            
-            guard let newCell = newCell else {
-                return
-            }
-            
-            if newCell.frame.minY < self.tableView.contentOffset.y {
-                self.tableView.scrollToRow(at: indexPath, at: .top, animated: true)
-            } else if newCell.frame.maxY > self.tableView.frame.maxY + self.tableView.contentOffset.y {
-                self.tableView.scrollToRow(at: indexPath, at: .bottom, animated: true)
-            }
         }, completion: nil)
         
         CATransaction.commit()
     }
 }
 
-//MARK: - UITableViewDelegate
-
-extension CollapseExpandStackViewViewController: UITableViewDelegate {
-    func tableView(_ tableView: UITableView, estimatedHeightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-        }
-    
-    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
-    }
-    
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        return UITableView.automaticDimension
-    }
-}
-
-//MARK: - UITableViewDataSource
-
-extension CollapseExpandStackViewViewController: UITableViewDataSource {
-    func numberOfSections(in tableView: UITableView) -> Int {
-        return self.items.count
-    }
-    
-    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        let object = self.items[section]
-        
-        if let item = object as? Item, item.state == .collapse {
-            return 0
-        }
-        
-        return 1
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let object = self.items[indexPath.section]
-        
-        if let header = object as? Header {
-            switch header.type {
-            case .ItemA:
-                guard let cell = tableView.dequeueCell(HeaderCellA.self, forIndexPath: indexPath) else {
-                    return UITableViewCell()
-                }
-                
-                cell.indexPath = indexPath
-                cell.delegate = self
-                
-                return cell
-            case .ItemB:
-                guard let cell = tableView.dequeueCell(HeaderCellB.self, forIndexPath: indexPath) else {
-                    return UITableViewCell()
-                }
-                
-                cell.indexPath = indexPath
-                cell.delegate = self
-                
-                return cell
-            case .ItemC:
-                guard let cell = tableView.dequeueCell(HeaderCellC.self, forIndexPath: indexPath) else {
-                    return UITableViewCell()
-                }
-                
-                cell.indexPath = indexPath
-                cell.delegate = self
-                
-                return cell
-            case .ItemD:
-                guard let cell = tableView.dequeueCell(HeaderCellD.self, forIndexPath: indexPath) else {
-                    return UITableViewCell()
-                }
-                
-                cell.indexPath = indexPath
-                cell.delegate = self
-                
-                return cell
-            case .ItemE:
-                guard let cell = tableView.dequeueCell(HeaderCellD.self, forIndexPath: indexPath) else {
-                    return UITableViewCell()
-                }
-                
-                cell.indexPath = indexPath
-                cell.delegate = self
-                cell.titleLb.text = header.title
-                
-                return cell
-            }
-        } else if let item = object as? Item {
-            switch item.type {
-            case .ItemA:
-                guard let cell = tableView.dequeueCell(ItemCellA.self, forIndexPath: indexPath) else {
-                    return UITableViewCell()
-                }
-                
-                cell.indexPath = indexPath
-                cell.delegate = self
-                
-                return cell
-            case .ItemB:
-                guard let cell = tableView.dequeueCell(ItemCellB.self, forIndexPath: indexPath) else {
-                    return UITableViewCell()
-                }
-                
-                cell.indexPath = indexPath
-                cell.delegate = self
-                cell.reloadData()
-                
-                return cell
-            case .ItemC:
-                guard let cell = tableView.dequeueCell(ItemCellC.self, forIndexPath: indexPath) else {
-                    return UITableViewCell()
-                }
-                
-                cell.indexPath = indexPath
-                cell.delegate = self
-                
-                return cell
-            case .ItemD:
-                guard let cell = tableView.dequeueCell(ItemCellD.self, forIndexPath: indexPath) else {
-                    return UITableViewCell()
-                }
-                
-                cell.indexPath = indexPath
-                cell.delegate = self
-                
-                return cell
-            case .ItemE:
-                guard let cell = tableView.dequeueCell(ItemCellE.self, forIndexPath: indexPath) else {
-                    return UITableViewCell()
-                }
-                
-                cell.indexPath = indexPath
-                cell.delegate = self
-                cell.reloadData()
-                
-                return cell
-            }
-        }
-        
-        return UITableViewCell()
-    }
-}
 
 extension CollapseExpandStackViewViewController: ItemCellDelegate {
+    func didTapButton(_ button: UIButton) {
+        switch button.tag {
+        case 0:
+            self.headerViewA.isUserInteractionEnabled = false
+            
+            CATransaction.begin()
+            
+            CATransaction.setCompletionBlock {
+                self.headerViewA.isUserInteractionEnabled = true
+            }
+            
+            UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: { () -> Void in
+                self.itemViewA.isHidden = !self.itemViewA.isHidden
+            }, completion: nil)
+            
+            CATransaction.commit()
+        case 1:
+            self.headerViewB.isUserInteractionEnabled = false
+            
+            CATransaction.begin()
+            
+            CATransaction.setCompletionBlock {
+                self.headerViewB.isUserInteractionEnabled = true
+            }
+            
+            UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: { () -> Void in
+//                self.itemViewB.isHidden = !self.itemViewB.isHidden
+//                if self.itemViewB.collectionViewHeightConstraint.constant > 0 {
+//                    self.itemViewB.collectionViewHeightConstraint.constant = 0
+//                } else {
+//                    self.itemViewB.reloadData()
+//                }
+                
+                self.itemViewB.isHidden = !self.itemViewB.isHidden
+                
+                if self.itemViewB.alpha == 1 {
+                    self.itemViewB.alpha = 0
+                } else {
+                    self.itemViewB.alpha = 1
+                }
+            }, completion: nil)
+            
+            CATransaction.commit()
+        case 2:
+            self.headerViewC.isUserInteractionEnabled = false
+            
+            CATransaction.begin()
+            
+            CATransaction.setCompletionBlock {
+                self.headerViewC.isUserInteractionEnabled = true
+            }
+            
+            UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: { () -> Void in
+                self.itemViewC.isHidden = !self.itemViewC.isHidden
+                
+                if self.itemViewC.alpha == 1 {
+                    self.itemViewC.alpha = 0
+                } else {
+                    self.itemViewC.alpha = 1
+                }
+            }, completion: nil)
+            
+            CATransaction.commit()
+        case 3:
+            self.headerViewD.isUserInteractionEnabled = false
+            
+            CATransaction.begin()
+            
+            CATransaction.setCompletionBlock {
+                self.headerViewD.isUserInteractionEnabled = true
+            }
+            
+            UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: { () -> Void in
+                self.itemViewD.isHidden = !self.itemViewD.isHidden
+            }, completion: nil)
+            
+            CATransaction.commit()
+        case 4:
+            self.headerViewE.isUserInteractionEnabled = false
+            
+            CATransaction.begin()
+            
+            CATransaction.setCompletionBlock {
+                self.headerViewE.isUserInteractionEnabled = true
+            }
+            
+            UIView.animate(withDuration: 0.3, delay: 0, options: .curveEaseOut, animations: { () -> Void in
+                self.itemViewE.isHidden = !self.itemViewE.isHidden
+            }, completion: nil)
+            
+            CATransaction.commit()
+        default:
+            break
+        }
+    }
+    
     func didTapCell(_ cell: UITableViewCell, at indexPath: IndexPath?) {
         guard let indexPath = indexPath else {
             return

@@ -8,7 +8,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Collapse Expand View Controller-->
+        <!--Collapse Expand Stack View View Controller-->
         <scene sceneID="s0d-6b-0kx">
             <objects>
                 <viewController id="Y6W-OH-hqX" customClass="CollapseExpandStackViewViewController" customModule="CollapseExpandStackView" customModuleProvider="target" sceneMemberID="viewController">
@@ -16,31 +16,40 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="Ach-x4-ODG">
+                            <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="sza-xH-ADu">
                                 <rect key="frame" x="0.0" y="59" width="393" height="759"/>
-                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
-                                <connections>
-                                    <outlet property="dataSource" destination="Y6W-OH-hqX" id="mBm-1y-s2g"/>
-                                    <outlet property="delegate" destination="Y6W-OH-hqX" id="BMP-Ua-ViZ"/>
-                                </connections>
-                            </tableView>
+                                <subviews>
+                                    <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="04B-dV-TtA">
+                                        <rect key="frame" x="0.0" y="0.0" width="393" height="910"/>
+                                    </stackView>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="04B-dV-TtA" firstAttribute="width" secondItem="sza-xH-ADu" secondAttribute="width" id="121-0P-S4S"/>
+                                    <constraint firstItem="04B-dV-TtA" firstAttribute="leading" secondItem="CG1-ZA-pzw" secondAttribute="leading" id="1zE-32-9ut"/>
+                                    <constraint firstItem="04B-dV-TtA" firstAttribute="trailing" secondItem="CG1-ZA-pzw" secondAttribute="trailing" id="DMN-JK-jMM"/>
+                                    <constraint firstItem="04B-dV-TtA" firstAttribute="top" secondItem="CG1-ZA-pzw" secondAttribute="top" id="TyN-bn-qHU"/>
+                                    <constraint firstItem="04B-dV-TtA" firstAttribute="bottom" secondItem="CG1-ZA-pzw" secondAttribute="bottom" id="h8x-XV-hMJ"/>
+                                </constraints>
+                                <viewLayoutGuide key="contentLayoutGuide" id="CG1-ZA-pzw"/>
+                                <viewLayoutGuide key="frameLayoutGuide" id="0sk-gF-cJb"/>
+                            </scrollView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="vDu-zF-Fre"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="Ach-x4-ODG" secondAttribute="trailing" id="9mQ-7m-SST"/>
-                            <constraint firstItem="Ach-x4-ODG" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="AHx-JZ-GG4"/>
-                            <constraint firstItem="Ach-x4-ODG" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="HPU-Sl-xcN"/>
-                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="Ach-x4-ODG" secondAttribute="bottom" id="dSe-6v-bvj"/>
+                            <constraint firstItem="sza-xH-ADu" firstAttribute="top" secondItem="vDu-zF-Fre" secondAttribute="top" id="Mdu-fc-byj"/>
+                            <constraint firstItem="sza-xH-ADu" firstAttribute="leading" secondItem="vDu-zF-Fre" secondAttribute="leading" id="Uan-Gg-6vE"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="bottom" secondItem="sza-xH-ADu" secondAttribute="bottom" id="qUE-H1-O7E"/>
+                            <constraint firstItem="vDu-zF-Fre" firstAttribute="trailing" secondItem="sza-xH-ADu" secondAttribute="trailing" id="tZi-Ie-Yat"/>
                         </constraints>
                     </view>
                     <connections>
-                        <outlet property="tableView" destination="Ach-x4-ODG" id="mrG-IR-Ajz"/>
+                        <outlet property="stackViews" destination="04B-dV-TtA" id="OYJ-Sv-0iq"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Ief-a0-LHa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="132" y="-27"/>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
         </scene>
     </scenes>
     <resources>

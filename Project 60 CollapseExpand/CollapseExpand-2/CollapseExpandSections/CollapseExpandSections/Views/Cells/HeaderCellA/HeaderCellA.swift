@@ -1,18 +1,13 @@
 //
 //  ItemCellA.swift
-//  CollapseExpandStackView
+//  CollapseExpandSections
 //
 //  Created by huy on 2023/07/21.
 //
 
 import UIKit
 
-protocol ItemCellDelegate: AnyObject {
-    func didTapCell(_ cell: UITableViewCell, at indexPath: IndexPath?)
-    func didTapButton(_ button: UIButton)
-}
-
-class ItemCellA: UITableViewCell {
+class HeaderCellA: UITableViewCell {
     
     weak var delegate: ItemCellDelegate?
     

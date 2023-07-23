@@ -1,6 +1,6 @@
 //
 //  ItemCellA.swift
-//  CollapseExpandStackView
+//  CollapseExpandCells
 //
 //  Created by huy on 2023/07/21.
 //
@@ -9,7 +9,6 @@ import UIKit
 
 protocol ItemCellDelegate: AnyObject {
     func didTapCell(_ cell: UITableViewCell, at indexPath: IndexPath?)
-    func didTapButton(_ button: UIButton)
 }
 
 class ItemCellA: UITableViewCell {
