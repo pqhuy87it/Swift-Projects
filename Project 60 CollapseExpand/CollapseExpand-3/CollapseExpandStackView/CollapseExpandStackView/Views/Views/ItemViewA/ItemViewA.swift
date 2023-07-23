@@ -8,11 +8,10 @@
 import UIKit
 
 class ItemViewA: UIView {
-
+    
     override init(frame: CGRect) {
         super.init(frame: frame)
         
-        // Setup view from .xib file
     }
     
     required init?(coder aDecoder: NSCoder) {

@@ -82,7 +82,7 @@ class CollapseExpandStackViewViewController: UIViewController {
     }()
     
     lazy var itemViewC: ItemViewC = {
-        let itemView = (Bundle.main.loadNibNamed("ItemViewC", owner: self, options: nil)![0]) as! ItemViewC
+        let itemView = Bundle.main.loadNibNamed("ItemViewC", owner: self, options: nil)![0] as! ItemViewC
         
         itemView.setup()
         
@@ -167,9 +167,6 @@ class CollapseExpandStackViewViewController: UIViewController {
         }
         
         UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseOut, animations: { () -> Void in
-            
-            
-            
             
         }, completion: nil)
         

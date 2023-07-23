@@ -296,5 +296,7 @@ extension CollapseExpandSectionsViewController: ItemCellDelegate {
         } else {
             self.expandCell(cell, at: newIndexPath)
         }
+        
+        
     }
 }
