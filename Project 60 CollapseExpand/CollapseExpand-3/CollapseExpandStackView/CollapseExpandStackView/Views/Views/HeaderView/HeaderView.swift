@@ -10,7 +10,7 @@ import UIKit
 class HeaderView: UIView {
 
     @IBOutlet weak var titleLb: UILabel!
-    @IBOutlet weak var headerBtn: UIButton!
+    @IBOutlet weak var headerBtn: RoundedButton!
     
     weak var delegate: ItemCellDelegate?
     
@@ -25,7 +25,9 @@ class HeaderView: UIView {
         
     }
 
-    @IBAction func btnDidTapped(_ sender: UIButton) {
+    @IBAction func btnDidTapped(_ sender: RoundedButton) {
         self.delegate?.didTapButton(sender)
     }
+    
+    
 }

@@ -15,7 +15,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="e9l-Ta-1Ea" userLabel="Title View">
-                    <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                    <rect key="frame" x="16" y="0.0" width="361" height="40"/>
                     <subviews>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Item A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Leo-WW-5Tm">
                             <rect key="frame" x="16" y="9.6666666666666643" width="49" height="21"/>
@@ -23,8 +23,8 @@
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ge6-gF-din">
-                            <rect key="frame" x="0.0" y="0.0" width="393" height="40"/>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ge6-gF-din" customClass="RoundedButton" customModule="CollapseExpandStackView" customModuleProvider="target">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="40"/>
                             <state key="normal" title="Button"/>
                             <buttonConfiguration key="configuration" style="plain"/>
                             <connections>
@@ -49,9 +49,9 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="e9l-Ta-1Ea" secondAttribute="bottom" id="Nwc-xD-Fo8"/>
-                <constraint firstItem="e9l-Ta-1Ea" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="cGr-EA-QZg"/>
-                <constraint firstItem="e9l-Ta-1Ea" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="ijd-QX-VTO"/>
                 <constraint firstItem="e9l-Ta-1Ea" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="qyr-bX-GtS"/>
+                <constraint firstItem="e9l-Ta-1Ea" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="16" id="rMd-V0-gIW"/>
+                <constraint firstAttribute="trailing" secondItem="e9l-Ta-1Ea" secondAttribute="trailing" constant="16" id="zAc-ET-a8r"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>

@@ -12,16 +12,12 @@ class CollapseExpandStackViewViewController: UIViewController {
     @IBOutlet weak var stackViews: UIStackView!
     
     
-    var items: [BaseObject] = [Header(title: "Header A", cellType: .ItemA),
-                               Item(type: .ItemB, cellState: .expand),
-                               Header(title: "Header B", cellType: .ItemB),
-                               Item(type: .ItemA, cellState: .expand),
-                               Header(title: "Header C", cellType: .ItemC),
-                               Item(type: .ItemC, cellState: .expand),
-                               Header(title: "Header D", cellType: .ItemD),
-                               Item(type: .ItemD, cellState: .expand),
-                               Header(title: "Header E", cellType: .ItemE),
-                               Item(type: .ItemE, cellState: .expand)]
+    var items: [Item] = [Item(type: .ItemA, state: .expand, headerTitle: ItemType.ItemA.rawValue),
+                         Item(type: .ItemB, state: .expand, headerTitle: ItemType.ItemB.rawValue),
+                         Item(type: .ItemC, state: .expand, headerTitle: ItemType.ItemC.rawValue),
+                         Item(type: .ItemD, state: .expand, headerTitle: ItemType.ItemD.rawValue),
+                         Item(type: .ItemE, state: .expand, headerTitle: ItemType.ItemE.rawValue)
+    ]
     
     lazy var headerViewA: HeaderView = {
         let headerView = (Bundle.main.loadNibNamed("HeaderView", owner: self, options: nil)![0]) as! HeaderView
@@ -102,7 +98,6 @@ class CollapseExpandStackViewViewController: UIViewController {
         
         return itemView
     }()
-    
 
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -115,91 +110,66 @@ class CollapseExpandStackViewViewController: UIViewController {
     
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-    }
-
-    func setupUI() {
-        
-        self.headerViewA.titleLb.text = "Header View A"
-        
-        stackViews.addArrangedSubview(self.headerViewA)
-        stackViews.addArrangedSubview(self.itemViewA)
-        
-        self.headerViewB.titleLb.text = "Header View B"
-        
-        stackViews.addArrangedSubview(self.headerViewB)
-        stackViews.addArrangedSubview(self.itemViewB)
-        
-        self.headerViewC.titleLb.text = "Header View C"
-        
-        stackViews.addArrangedSubview(self.headerViewC)
-        stackViews.addArrangedSubview(self.itemViewC)
-        
-        self.headerViewD.titleLb.text = "Header View D"
-        
-        stackViews.addArrangedSubview(self.headerViewD)
-        stackViews.addArrangedSubview(self.itemViewD)
-        
-        self.headerViewE.titleLb.text = "Header View E"
-
-        stackViews.addArrangedSubview(self.headerViewE)
-        stackViews.addArrangedSubview(self.itemViewE)
         
         self.itemViewB.reloadData()
         self.itemViewC.reloadData()
         
+//        self.headerViewA.up
+        
         self.stackViews.layoutIfNeeded()
     }
-    
-    func expandCell(_ cell: UITableViewCell, at indexPath: IndexPath) {
-        let object = self.items[indexPath.section]
+
+    func setupUI() {
         
-        guard let item = object as? Item else {
-            return
+        for (_, item) in self.items.enumerated() {
+            switch item.type {
+            case .ItemA:
+                self.headerViewA.titleLb.text = item.headerTitle
+                
+                stackViews.addArrangedSubview(self.headerViewA)
+                stackViews.addArrangedSubview(self.itemViewA)
+                let spaceView1 = (Bundle.main.loadNibNamed("SpaceView", owner: self, options: nil)![0]) as! SpaceView
+                stackViews.addArrangedSubview(spaceView1)
+            case .ItemB:
+                self.headerViewB.titleLb.text = item.headerTitle
+                
+                stackViews.addArrangedSubview(self.headerViewB)
+                stackViews.addArrangedSubview(self.itemViewB)
+                let spaceView2 = (Bundle.main.loadNibNamed("SpaceView", owner: self, options: nil)![0]) as! SpaceView
+                stackViews.addArrangedSubview(spaceView2)
+            case .ItemC:
+                self.headerViewC.titleLb.text = item.headerTitle
+                
+                stackViews.addArrangedSubview(self.headerViewC)
+                stackViews.addArrangedSubview(self.itemViewC)
+                let spaceView3 = (Bundle.main.loadNibNamed("SpaceView", owner: self, options: nil)![0]) as! SpaceView
+                stackViews.addArrangedSubview(spaceView3)
+            case .ItemD:
+                self.headerViewD.titleLb.text = item.headerTitle
+                
+                stackViews.addArrangedSubview(self.headerViewD)
+                stackViews.addArrangedSubview(self.itemViewD)
+                let spaceView4 = (Bundle.main.loadNibNamed("SpaceView", owner: self, options: nil)![0]) as! SpaceView
+                stackViews.addArrangedSubview(spaceView4)
+            case .ItemE:
+                self.headerViewE.titleLb.text = "Header View E"
+
+                stackViews.addArrangedSubview(self.headerViewE)
+                stackViews.addArrangedSubview(self.itemViewE)
+                let spaceView5 = (Bundle.main.loadNibNamed("SpaceView", owner: self, options: nil)![0]) as! SpaceView
+                stackViews.addArrangedSubview(spaceView5)
+            }
         }
-        
-        item.state = .expand
-        
-        self.items[indexPath.section] = item
-        
-        CATransaction.begin()
-        
-        CATransaction.setCompletionBlock {
-        }
-        
-        UIView.animate(withDuration: 0.1, delay: 0, options: .curveEaseOut, animations: { () -> Void in
-            
-        }, completion: nil)
-        
-        CATransaction.commit()
-    }
-    
-    func collapseCell(_ cell: UITableViewCell, at indexPath: IndexPath) {
-        let object = self.items[indexPath.section]
-        
-        guard let item = object as? Item else {
-            return
-        }
-        
-        item.state = .collapse
-        
-        self.items[indexPath.section] = item
-        
-        CATransaction.begin()
-        
-        CATransaction.setCompletionBlock {
-        }
-        
-        UIView.animate(withDuration: 0.5, delay: 0, options: .curveEaseOut, animations: { () -> Void in
-            
-        }, completion: nil)
-        
-        CATransaction.commit()
     }
 }
 
 
 extension CollapseExpandStackViewViewController: ItemCellDelegate {
-    func didTapButton(_ button: UIButton) {
+    func didTapButton(_ button: RoundedButton) {
+        let item = self.items[button.tag]
+        
+        button.updateUI(rect: button.bounds, state: item.state)
+        
         switch button.tag {
         case 0:
             self.headerViewA.isUserInteractionEnabled = false
@@ -293,25 +263,12 @@ extension CollapseExpandStackViewViewController: ItemCellDelegate {
         default:
             break
         }
-    }
-    
-    func didTapCell(_ cell: UITableViewCell, at indexPath: IndexPath?) {
-        guard let indexPath = indexPath else {
-            return
-        }
-        
-        let newIndexPath = IndexPath(row: 0, section: (indexPath.section + 1))
-        
-        let object = self.items[newIndexPath.section]
-        
-        guard let item = object as? Item else {
-            return
-        }
         
         if item.state == .expand {
-            self.collapseCell(cell, at: newIndexPath)
+            self.items[button.tag].state = .collapse
         } else {
-            self.expandCell(cell, at: newIndexPath)
+            self.items[button.tag].state = .expand
         }
+
     }
 }

@@ -50,6 +50,9 @@
 		B74630552A6BFBB600EEFE9E /* HeaderCellD.xib in Resources */ = {isa = PBXBuildFile; fileRef = B746304D2A6BFBB600EEFE9E /* HeaderCellD.xib */; };
 		B74630592A6C316000EEFE9E /* ItemCellE.swift in Sources */ = {isa = PBXBuildFile; fileRef = B74630572A6C316000EEFE9E /* ItemCellE.swift */; };
 		B746305A2A6C316000EEFE9E /* ItemCellE.xib in Resources */ = {isa = PBXBuildFile; fileRef = B74630582A6C316000EEFE9E /* ItemCellE.xib */; };
+		B75F1D612A76529F0006A0A6 /* SpaceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F1D602A76529F0006A0A6 /* SpaceView.swift */; };
+		B75F1D632A7652A80006A0A6 /* SpaceView.xib in Resources */ = {isa = PBXBuildFile; fileRef = B75F1D622A7652A80006A0A6 /* SpaceView.xib */; };
+		B75F1D652A7655670006A0A6 /* RoundedButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = B75F1D642A7655670006A0A6 /* RoundedButton.swift */; };
 		B77AD4E22A6C34EE00171D0F /* CustomCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77AD4E02A6C34EE00171D0F /* CustomCollectionViewCell.swift */; };
 		B77AD4E32A6C34EE00171D0F /* CustomCollectionViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = B77AD4E12A6C34EE00171D0F /* CustomCollectionViewCell.xib */; };
 		B77AD4F32A6D02AD00171D0F /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B77AD4F22A6D02AD00171D0F /* HeaderView.swift */; };
@@ -132,6 +135,9 @@
 		B746304D2A6BFBB600EEFE9E /* HeaderCellD.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HeaderCellD.xib; sourceTree = "<group>"; };
 		B74630572A6C316000EEFE9E /* ItemCellE.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ItemCellE.swift; sourceTree = "<group>"; };
 		B74630582A6C316000EEFE9E /* ItemCellE.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ItemCellE.xib; sourceTree = "<group>"; };
+		B75F1D602A76529F0006A0A6 /* SpaceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceView.swift; sourceTree = "<group>"; };
+		B75F1D622A7652A80006A0A6 /* SpaceView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SpaceView.xib; sourceTree = "<group>"; };
+		B75F1D642A7655670006A0A6 /* RoundedButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedButton.swift; sourceTree = "<group>"; };
 		B77AD4E02A6C34EE00171D0F /* CustomCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCollectionViewCell.swift; sourceTree = "<group>"; };
 		B77AD4E12A6C34EE00171D0F /* CustomCollectionViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCollectionViewCell.xib; sourceTree = "<group>"; };
 		B77AD4F22A6D02AD00171D0F /* HeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
@@ -275,6 +281,7 @@
 			isa = PBXGroup;
 			children = (
 				B74630062A6AC98100EEFE9E /* Extensions */,
+				B75F1D642A7655670006A0A6 /* RoundedButton.swift */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -430,6 +437,15 @@
 			path = ItemCellE;
 			sourceTree = "<group>";
 		};
+		B75F1D5D2A7652770006A0A6 /* SpaceView */ = {
+			isa = PBXGroup;
+			children = (
+				B75F1D602A76529F0006A0A6 /* SpaceView.swift */,
+				B75F1D622A7652A80006A0A6 /* SpaceView.xib */,
+			);
+			path = SpaceView;
+			sourceTree = "<group>";
+		};
 		B77AD4DF2A6C34BF00171D0F /* CustomCollectionViewCell */ = {
 			isa = PBXGroup;
 			children = (
@@ -442,6 +458,7 @@
 		B77AD4F02A6D028A00171D0F /* Views */ = {
 			isa = PBXGroup;
 			children = (
+				B75F1D5D2A7652770006A0A6 /* SpaceView */,
 				B77AD50D2A6D074200171D0F /* ItemViewE */,
 				B77AD5072A6D06BD00171D0F /* ItemViewD */,
 				B77AD5022A6D060F00171D0F /* ItemViewC */,
@@ -631,6 +648,7 @@
 				B746301E2A6ADD3800EEFE9E /* MyCell.xib in Resources */,
 				B74630032A6AC88B00EEFE9E /* CollapseExpandStackView.storyboard in Resources */,
 				B74630192A6ACFE400EEFE9E /* ItemCellB.xib in Resources */,
+				B75F1D632A7652A80006A0A6 /* SpaceView.xib in Resources */,
 				B77AD4E32A6C34EE00171D0F /* CustomCollectionViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -667,10 +685,12 @@
 				B746302A2A6AF63F00EEFE9E /* ItemCellC.swift in Sources */,
 				B74630522A6BFBB600EEFE9E /* HeaderCellC.swift in Sources */,
 				B77AD5042A6D062700171D0F /* ItemViewC.swift in Sources */,
+				B75F1D652A7655670006A0A6 /* RoundedButton.swift in Sources */,
 				B74630132A6ACC2000EEFE9E /* ItemCellA.swift in Sources */,
 				B7462FCF2A6AC7A000EEFE9E /* SceneDelegate.swift in Sources */,
 				B74630182A6ACFE400EEFE9E /* ItemCellB.swift in Sources */,
 				B74630542A6BFBB600EEFE9E /* HeaderCellD.swift in Sources */,
+				B75F1D612A76529F0006A0A6 /* SpaceView.swift in Sources */,
 				B746300B2A6AC9A400EEFE9E /* UITableView+Extension.swift in Sources */,
 				B74630262A6ADFFB00EEFE9E /* ItemModel.swift in Sources */,
 				B746304E2A6BFBB600EEFE9E /* HeaderCellA.swift in Sources */,

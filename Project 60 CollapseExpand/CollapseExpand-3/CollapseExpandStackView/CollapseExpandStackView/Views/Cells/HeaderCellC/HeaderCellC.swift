@@ -28,7 +28,7 @@ class HeaderCellC: UITableViewCell {
     }
     
     @IBAction func btnDidTap(_ sender: Any) {
-        self.delegate?.didTapCell(self, at: indexPath)
+        
     }
     
     

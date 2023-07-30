@@ -7,7 +7,7 @@
 
 import Foundation
 
-enum CellType: String {
+enum ItemType: String {
     case ItemA
     case ItemB
     case ItemC
@@ -15,31 +15,19 @@ enum CellType: String {
     case ItemE
 }
 
-enum CellState: String {
+enum ItemState: String {
     case expand
     case collapse
 }
 
-class BaseObject {
+class Item {
+    var type: ItemType
+    var state: ItemState
+    var headerTitle: String
     
-}
-
-class Header: BaseObject {
-    var type: CellType
-    var title: String
-    
-    init(title: String, cellType: CellType) {
-        self.title = title
-        self.type = cellType
-    }
-}
-
-class Item: BaseObject {
-    var type: CellType
-    var state: CellState
-    
-    init(type: CellType, cellState: CellState) {
+    init(type: ItemType, state: ItemState, headerTitle: String) {
         self.type = type
-        self.state = cellState
+        self.state = state
+        self.headerTitle = headerTitle
     }
 }

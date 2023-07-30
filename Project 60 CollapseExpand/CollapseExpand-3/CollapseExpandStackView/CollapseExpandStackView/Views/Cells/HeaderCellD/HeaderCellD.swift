@@ -29,7 +29,7 @@ class HeaderCellD: UITableViewCell {
     }
     
     @IBAction func btnDidTap(_ sender: Any) {
-        self.delegate?.didTapCell(self, at: indexPath)
+
     }
     
     func setup() {

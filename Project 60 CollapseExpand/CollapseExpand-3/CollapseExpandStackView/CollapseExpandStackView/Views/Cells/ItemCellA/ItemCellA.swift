@@ -8,8 +8,7 @@
 import UIKit
 
 protocol ItemCellDelegate: AnyObject {
-    func didTapCell(_ cell: UITableViewCell, at indexPath: IndexPath?)
-    func didTapButton(_ button: UIButton)
+    func didTapButton(_ button: RoundedButton)
 }
 
 class ItemCellA: UITableViewCell {
@@ -32,7 +31,6 @@ class ItemCellA: UITableViewCell {
     }
     
     @IBAction func btnDidTap(_ sender: Any) {
-        self.delegate?.didTapCell(self, at: indexPath)
     }
     
     func setup() {
