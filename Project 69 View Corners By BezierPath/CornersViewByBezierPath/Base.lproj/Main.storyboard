@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="TestLayerBezierPath" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DZH-LJ-lQO" customClass="TestRoundedCornerViews" customModule="TestLayerBezierPath" customModuleProvider="target">
+                                <rect key="frame" x="76.666666666666686" y="256" width="240" height="340"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="3L5-IB-2WT"/>
+                                    <constraint firstAttribute="height" constant="340" id="ETt-5V-sy0"/>
+                                </constraints>
+                            </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iKj-OU-ivH">
+                                <rect key="frame" x="159" y="616" width="75" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" title="Button"/>
+                                <connections>
+                                    <action selector="btnDidTap:" destination="BYZ-38-t0r" eventType="touchUpInside" id="qZh-sU-WGF"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="iKj-OU-ivH" firstAttribute="top" secondItem="DZH-LJ-lQO" secondAttribute="bottom" constant="20" id="3DY-ro-JMW"/>
+                            <constraint firstItem="DZH-LJ-lQO" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="6Pk-co-3Ig"/>
+                            <constraint firstItem="DZH-LJ-lQO" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Zpz-7r-yqz"/>
+                            <constraint firstItem="iKj-OU-ivH" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="jiP-uj-koh"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="testView" destination="DZH-LJ-lQO" id="2dV-o1-WH9"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="130.53435114503816" y="-27.464788732394368"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
