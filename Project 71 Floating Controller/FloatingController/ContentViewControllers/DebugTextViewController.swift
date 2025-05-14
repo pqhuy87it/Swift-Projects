@@ -9,7 +9,7 @@ final class DebugTextViewController: UIViewController, UITextViewDelegate {
     override func viewDidLoad() {
         super.viewDidLoad()
         textView.delegate = self
-        print("viewDidLoad: TextView --- ", textView.contentOffset, textView.contentInset)
+        //print("viewDidLoad: TextView --- ", textView.contentOffset, textView.contentInset)
 
         if #available(iOS 11.0, *) {
             textView.contentInsetAdjustmentBehavior = .never
@@ -17,23 +17,23 @@ final class DebugTextViewController: UIViewController, UITextViewDelegate {
     }
 
     override func viewWillLayoutSubviews() {
-        print("viewWillLayoutSubviews: TextView --- ", textView.contentOffset, textView.contentInset, textView.frame)
+//        print("viewWillLayoutSubviews: TextView --- ", textView.contentOffset, textView.contentInset, textView.frame)
     }
 
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
-        print("viewDidLayoutSubviews: TextView --- ", textView.contentOffset, textView.contentInset, textView.frame)
+//        print("viewDidLayoutSubviews: TextView --- ", textView.contentOffset, textView.contentInset, textView.frame)
     }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-        print("TextView --- ", textView.contentOffset, textView.contentInset, textView.frame)
+//        print("TextView --- ", textView.contentOffset, textView.contentInset, textView.frame)
     }
 
     func scrollViewDidScroll(_ scrollView: UIScrollView) {
-        print("TextView --- ", scrollView.contentOffset, scrollView.contentInset)
+//        print("TextView --- ", scrollView.contentOffset, scrollView.contentInset)
         if #available(iOS 11.0, *) {
-            print("TextView --- ", scrollView.adjustedContentInset)
+//            print("TextView --- ", scrollView.adjustedContentInset)
         }
     }
 

@@ -58,12 +58,12 @@ public extension FloatingPanelLayoutAnchor {
         switch position {
         case .top:
             return layoutConstraints(layoutGuide, for: vc.surfaceView.bottomAnchor)
-        case .left:
-            return layoutConstraints(layoutGuide, for: vc.surfaceView.rightAnchor)
+//        case .left:
+//            return layoutConstraints(layoutGuide, for: vc.surfaceView.rightAnchor)
         case .bottom:
             return layoutConstraints(layoutGuide, for: vc.surfaceView.topAnchor)
-        case .right:
-            return layoutConstraints(layoutGuide, for: vc.surfaceView.leftAnchor)
+//        case .right:
+//            return layoutConstraints(layoutGuide, for: vc.surfaceView.leftAnchor)
         }
     }
 
@@ -152,12 +152,12 @@ public extension FloatingPanelIntrinsicLayoutAnchor {
         switch position {
         case .top:
             return [vc.surfaceView.bottomAnchor.constraint(equalTo: layoutGuide.topAnchor, constant: constant)]
-        case .left:
-            return [vc.surfaceView.rightAnchor.constraint(equalTo: layoutGuide.leftAnchor, constant: constant)]
+//        case .left:
+//            return [vc.surfaceView.rightAnchor.constraint(equalTo: layoutGuide.leftAnchor, constant: constant)]
         case .bottom:
             return [vc.surfaceView.topAnchor.constraint(equalTo: layoutGuide.bottomAnchor, constant: -constant)]
-        case .right:
-            return [vc.surfaceView.leftAnchor.constraint(equalTo: layoutGuide.rightAnchor, constant: -constant)]
+//        case .right:
+//            return [vc.surfaceView.leftAnchor.constraint(equalTo: layoutGuide.rightAnchor, constant: -constant)]
         }
     }
 }
@@ -236,12 +236,12 @@ public extension FloatingPanelAdaptiveLayoutAnchor {
         switch position {
         case .top:
             offsetAnchor = layoutGuide.topAnchor.anchorWithOffset(to: vc.surfaceView.bottomAnchor)
-        case .left:
-            offsetAnchor = layoutGuide.leftAnchor.anchorWithOffset(to: vc.surfaceView.rightAnchor)
+//        case .left:
+//            offsetAnchor = layoutGuide.leftAnchor.anchorWithOffset(to: vc.surfaceView.rightAnchor)
         case .bottom:
             offsetAnchor = vc.surfaceView.topAnchor.anchorWithOffset(to: layoutGuide.bottomAnchor)
-        case .right:
-            offsetAnchor = vc.surfaceView.leftAnchor.anchorWithOffset(to: layoutGuide.rightAnchor)
+//        case .right:
+//            offsetAnchor = vc.surfaceView.leftAnchor.anchorWithOffset(to: layoutGuide.rightAnchor)
         }
         if isAbsolute {
             offsetConstraint = offsetAnchor.constraint(equalTo: position.mainDimensionAnchor(contentLayoutGuide), constant: -offset)

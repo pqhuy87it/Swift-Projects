@@ -21,10 +21,10 @@ final class ModalViewController: UIViewController, FloatingPanelControllerDelega
 
         // Set a content view controller and track the scroll view
         let consoleVC = storyboard?.instantiateViewController(withIdentifier: "ConsoleViewController") as! DebugTextViewController
-        fpc.set(contentViewController: consoleVC)
-        fpc.track(scrollView: consoleVC.textView)
+//        fpc.set(contentViewController: consoleVC)
+//        fpc.track(scrollView: consoleVC.textView)
 
-        self.consoleVC = consoleVC
+//        self.consoleVC = consoleVC
 
         //  Add FloatingPanel to self.view
         fpc.addPanel(toParent: self, at: view.subviews.firstIndex(of: safeAreaView) ?? -1)

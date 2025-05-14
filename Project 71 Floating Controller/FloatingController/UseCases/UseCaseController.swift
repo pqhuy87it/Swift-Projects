@@ -32,6 +32,7 @@ extension UseCaseController {
         case .trackingTableView:
             let fpc = FloatingPanelController()
             fpc.delegate = self
+            fpc.isRemovalInteractionEnabled = true
             fpc.contentInsetAdjustmentBehavior = .always
             fpc.surfaceView.appearance = {
                 let appearance = SurfaceAppearance()

@@ -75,8 +75,8 @@ class Core: NSObject, UIGestureRecognizerDelegate {
         surfaceView.backgroundColor = .white
 
         backdropView = BackdropView()
-        backdropView.backgroundColor = .black
-        backdropView.alpha = 0.0
+        backdropView.backgroundColor = .red
+        backdropView.alpha = 1.0
 
         layoutAdapter = LayoutAdapter(vc: vc, layout: layout)
         behaviorAdapter = BehaviorAdapter(vc: vc, behavior: behavior)
@@ -110,6 +110,7 @@ class Core: NSObject, UIGestureRecognizerDelegate {
 
     private func move(from: FloatingPanelState, to: FloatingPanelState, animated: Bool, completion: (() -> Void)? = nil) {
         assert(layoutAdapter.validStates.contains(to), "Can't move to '\(to)' state because it's not valid in the layout")
+        print("-----------------------> move from: FloatingPanelState, to: FloatingPanelState ")
         guard let vc = ownerVC else {
             completion?()
             return
@@ -420,11 +421,13 @@ class Core: NSObject, UIGestureRecognizerDelegate {
                 } else {
                     if state == layoutAdapter.mostExpandedState, self.transitionAnimator == nil {
                         switch layoutAdapter.position {
-                        case .top, .left:
+//                        case .top, .left:
+                        case .top:
                             if offsetDiff < 0 && velocity > 0 {
                                 unlockScrollView()
                             }
-                        case .bottom, .right:
+//                        case .bottom, .right:
+                        case .bottom:
                             if offsetDiff > 0 && velocity < 0 {
                                 unlockScrollView()
                             }
@@ -435,12 +438,14 @@ class Core: NSObject, UIGestureRecognizerDelegate {
                 if interactionInProgress {
                     // Show a scroll indicator at the top in dragging.
                     switch layoutAdapter.position {
-                    case .top, .left:
+//                    case .top, .left:
+                    case .top:
                         if offsetDiff <= 0 && velocity >= 0 {
                             unlockScrollView()
                             return
                         }
-                    case .bottom, .right:
+//                    case .bottom, .right:
+                    case .bottom:
                         if offsetDiff >= 0 && velocity <= 0 {
                             unlockScrollView()
                             return
@@ -455,14 +460,16 @@ class Core: NSObject, UIGestureRecognizerDelegate {
                 } else {
                     if state == layoutAdapter.mostExpandedState {
                         switch layoutAdapter.position {
-                        case .top, .left:
+//                        case .top, .left:
+                        case .top:
                             if velocity < 0, !allowScrollPanGesture(for: scrollView) {
                                 lockScrollView()
                             }
                             if velocity > 0, allowScrollPanGesture(for: scrollView) {
                                 unlockScrollView()
                             }
-                        case .bottom, .right:
+//                        case .bottom, .right:
+                        case .bottom:
                             // Hide a scroll indicator just before starting an interaction by swiping a panel down.
                             if velocity > 0, !allowScrollPanGesture(for: scrollView) {
                                 lockScrollView()
@@ -602,14 +609,16 @@ class Core: NSObject, UIGestureRecognizerDelegate {
         // The zero offset must be excluded because the offset is usually zero
         // after a panel moves from half/tip to full.
         switch layoutAdapter.position {
-        case .top, .left:
+//        case .top, .left:
+        case .top:
             if  offset < 0.0 {
                 return true
             }
             if velocity >= 0 {
                 return true
             }
-        case .bottom, .right:
+//        case .bottom, .right:
+        case .bottom:
             if  offset > 0.0 {
                 return true
             }
@@ -677,21 +686,21 @@ class Core: NSObject, UIGestureRecognizerDelegate {
                     scrollView.contentSize.height > scrollView.bounds.height || scrollView.alwaysBounceVertical {
                     return true
                 }
-            case .left:
-                if pre > .zero, pre < next,
-                    scrollView.contentSize.width > scrollView.bounds.width || scrollView.alwaysBounceHorizontal {
-                    return true
-                }
+//            case .left:
+//                if pre > .zero, pre < next,
+//                    scrollView.contentSize.width > scrollView.bounds.width || scrollView.alwaysBounceHorizontal {
+//                    return true
+//                }
             case .bottom:
                 if pre > .zero, pre > next,
                     scrollView.contentSize.height > scrollView.bounds.height || scrollView.alwaysBounceVertical {
                     return true
                 }
-            case .right:
-                if pre > .zero, pre > next,
-                    scrollView.contentSize.width > scrollView.bounds.width || scrollView.alwaysBounceHorizontal {
-                    return true
-                }
+//            case .right:
+//                if pre > .zero, pre > next,
+//                    scrollView.contentSize.width > scrollView.bounds.width || scrollView.alwaysBounceHorizontal {
+//                    return true
+//                }
             }
         }
         return false
@@ -725,8 +734,8 @@ class Core: NSObject, UIGestureRecognizerDelegate {
             switch layoutAdapter.position {
             case .top, .bottom:
                 removalVector = (distToHidden != 0) ? CGVector(dx: 0.0, dy: velocity.y/distToHidden) : .zero
-            case .left, .right:
-                removalVector = (distToHidden != 0) ? CGVector(dx: velocity.x/distToHidden, dy: 0.0) : .zero
+//            case .left, .right:
+//                removalVector = (distToHidden != 0) ? CGVector(dx: velocity.x/distToHidden, dy: 0.0) : .zero
             }
             if shouldRemove(with: removalVector) {
                 ownerVC?.remove()
@@ -779,12 +788,12 @@ class Core: NSObject, UIGestureRecognizerDelegate {
         switch layoutAdapter.position {
         case .top:
             return (velocityVector.dy <= -threshold)
-        case .left:
-            return (velocityVector.dx <= -threshold)
+//        case .left:
+//            return (velocityVector.dx <= -threshold)
         case .bottom:
             return (velocityVector.dy >= threshold)
-        case .right:
-            return (velocityVector.dx >= threshold)
+//        case .right:
+//            return (velocityVector.dx >= threshold)
         }
     }
 
@@ -810,11 +819,13 @@ class Core: NSObject, UIGestureRecognizerDelegate {
                 // Fit the surface bounds to a scroll offset content by startInteraction(at:offset:)
                 let offsetDiff = scrollView.contentOffset - pinningOffset
                 switch layoutAdapter.position {
-                case .top, .left:
+//                case .top, .left:
+                case .top:
                     if value(of: offsetDiff) > 0 {
                         offset = -offsetDiff
                     }
-                case .bottom, .right:
+//                case .bottom, .right:
+                case .bottom:
                     if value(of: offsetDiff) < 0 {
                         offset = -offsetDiff
                     }
@@ -939,8 +950,8 @@ class Core: NSObject, UIGestureRecognizerDelegate {
         switch layoutAdapter.position {
         case .top, .bottom:
             point.y = newValue.y
-        case .left, .right:
-            point.x = newValue.x
+//        case .left, .right:
+//            point.x = newValue.x
         }
     }
 
@@ -1062,12 +1073,12 @@ class Core: NSObject, UIGestureRecognizerDelegate {
         switch layoutAdapter.position {
         case .top:
             return CGPoint(x: 0.0, y: scrollView.fp_contentOffsetMax.y)
-        case .left:
-            return CGPoint(x: scrollView.fp_contentOffsetMax.x, y: 0.0)
+//        case .left:
+//            return CGPoint(x: scrollView.fp_contentOffsetMax.x, y: 0.0)
         case .bottom:
             return CGPoint(x: 0.0, y: 0.0 - scrollView.fp_contentInset.top)
-        case .right:
-            return CGPoint(x: 0.0 - scrollView.fp_contentInset.left, y: 0.0)
+//        case .right:
+//            return CGPoint(x: 0.0 - scrollView.fp_contentInset.left, y: 0.0)
         }
     }
 
@@ -1075,9 +1086,11 @@ class Core: NSObject, UIGestureRecognizerDelegate {
         guard state == layoutAdapter.mostExpandedState else { return false }
         var offsetY: CGFloat = 0
         switch layoutAdapter.position {
-        case .top, .left:
+//        case .top, .left:
+        case .top:
             offsetY = value(of: scrollView.fp_contentOffsetMax - scrollView.contentOffset)
-        case .bottom, .right:
+//        case .bottom, .right:
+        case .bottom:
             offsetY = value(of: scrollView.contentOffset - contentOffsetForPinning(of: scrollView))
         }
         return offsetY <= -30.0 || offsetY > 0

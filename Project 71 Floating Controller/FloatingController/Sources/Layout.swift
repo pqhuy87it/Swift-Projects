@@ -123,9 +123,11 @@ class LayoutAdapter {
     var sortedAnchorStatesByCoordinate: [FloatingPanelState] {
         return anchorStates.sorted(by: {
             switch position {
-            case .top, .left:
+//            case .top, .left:
+            case .top:
                 return $0.order < $1.order
-            case .bottom, .right:
+//            case .bottom, .right:
+            case .bottom:
                 return $0.order > $1.order
             }
         })
@@ -160,21 +162,21 @@ class LayoutAdapter {
                                 left: 0.0,
                                 bottom: 0.0,
                                 right: 0.0)
-        case .left:
-            return UIEdgeInsets(top: 0.0,
-                                left: safeAreaInsets.left,
-                                bottom: 0.0,
-                                right: 0.0)
+//        case .left:
+//            return UIEdgeInsets(top: 0.0,
+//                                left: safeAreaInsets.left,
+//                                bottom: 0.0,
+//                                right: 0.0)
         case .bottom:
             return UIEdgeInsets(top: 0.0,
                                 left: 0.0,
                                 bottom: safeAreaInsets.bottom,
                                 right: 0.0)
-        case .right:
-            return UIEdgeInsets(top: 0.0,
-                                left: 0.0,
-                                bottom: 0.0,
-                                right: safeAreaInsets.right)
+//        case .right:
+//            return UIEdgeInsets(top: 0.0,
+//                                left: 0.0,
+//                                bottom: 0.0,
+//                                right: safeAreaInsets.right)
         }
     }
 
@@ -208,21 +210,21 @@ class LayoutAdapter {
                     default:
                         fatalError("Unsupported reference edges")
                     }
-                case .left, .right:
-                    switch referenceEdge(of: anchor) {
-                    case .left:
-                        pos = animationConstraint.constant
-                        if anchor.referenceGuide == .safeArea {
-                            pos += safeAreaInsets.left
-                        }
-                    case .right:
-                        pos = vc.view.bounds.width + animationConstraint.constant
-                        if anchor.referenceGuide == .safeArea {
-                            pos -= safeAreaInsets.right
-                        }
-                    default:
-                        fatalError("Unsupported reference edges")
-                    }
+//                case .left, .right:
+//                    switch referenceEdge(of: anchor) {
+//                    case .left:
+//                        pos = animationConstraint.constant
+//                        if anchor.referenceGuide == .safeArea {
+//                            pos += safeAreaInsets.left
+//                        }
+//                    case .right:
+//                        pos = vc.view.bounds.width + animationConstraint.constant
+//                        if anchor.referenceGuide == .safeArea {
+//                            pos -= safeAreaInsets.right
+//                        }
+//                    default:
+//                        fatalError("Unsupported reference edges")
+//                    }
                 }
             } else {
                 pos = edgePosition(surfaceView.frame).rounded(by: surfaceView.fp_displayScale)
@@ -230,8 +232,8 @@ class LayoutAdapter {
             switch position {
             case .top, .bottom:
                 return CGPoint(x: 0.0, y: pos)
-            case .left, .right:
-                return CGPoint(x: pos, y: 0.0)
+//            case .left, .right:
+//                return CGPoint(x: pos, y: 0.0)
             }
         }
         set {
@@ -256,12 +258,12 @@ class LayoutAdapter {
                 switch position {
                 case .top:
                     return surfaceView.frame.origin.y = pos - surfaceView.bounds.height
-                case .left:
-                    return surfaceView.frame.origin.x = pos - surfaceView.bounds.width
+//                case .left:
+//                    return surfaceView.frame.origin.x = pos - surfaceView.bounds.width
                 case .bottom:
                     return surfaceView.frame.origin.y = pos
-                case .right:
-                    return surfaceView.frame.origin.x = pos
+//                case .right:
+//                    return surfaceView.frame.origin.x = pos
                 }
             }
         }
@@ -269,9 +271,11 @@ class LayoutAdapter {
 
     var offsetFromMostExpandedAnchor: CGFloat {
         switch position {
-        case .top, .left:
+//        case .top, .left:
+        case .top:
             return edgePosition(surfaceView.presentationFrame) - position(for: mostExpandedState)
-        case .bottom, .right:
+//        case .bottom, .right:
+        case .bottom:
             return position(for: mostExpandedState) - edgePosition(surfaceView.presentationFrame)
         }
     }
@@ -280,12 +284,12 @@ class LayoutAdapter {
         switch position {
         case .top:
             return FloatingPanelLayoutAnchor(absoluteInset: -100, edge: .top, referenceGuide: .superview)
-        case .left:
-            return FloatingPanelLayoutAnchor(absoluteInset: -100, edge: .left, referenceGuide: .superview)
+//        case .left:
+//            return FloatingPanelLayoutAnchor(absoluteInset: -100, edge: .left, referenceGuide: .superview)
         case .bottom:
             return FloatingPanelLayoutAnchor(absoluteInset: -100, edge: .bottom, referenceGuide: .superview)
-        case .right:
-            return FloatingPanelLayoutAnchor(absoluteInset: -100, edge: .right, referenceGuide: .superview)
+//        case .right:
+//            return FloatingPanelLayoutAnchor(absoluteInset: -100, edge: .right, referenceGuide: .superview)
         }
     }
 
@@ -299,8 +303,8 @@ class LayoutAdapter {
         switch layout.position {
         case .top, .bottom:
             return CGPoint(x: 0.0, y: pos)
-        case .left, .right:
-            return CGPoint(x: pos, y: 0.0)
+//        case .left, .right:
+//            return CGPoint(x: pos, y: 0.0)
         }
     }
 
@@ -314,13 +318,15 @@ class LayoutAdapter {
             let diff = anchor.isAbsolute ? anchor.offset : intrinsicLength * anchor.offset
 
             switch position {
-            case .top, .left:
+//            case .top, .left:
+            case .top:
                 var base: CGFloat = 0.0
                 if anchor.referenceGuide == .safeArea {
                     base += position.inset(safeAreaInsets)
                 }
                 return base + intrinsicLength - diff
-            case .bottom, .right:
+//            case .bottom, .right:
+            case .bottom:
                 var base = position.mainDimension(bounds.size)
                 if anchor.referenceGuide == .safeArea {
                     base -= position.inset(safeAreaInsets)
@@ -332,7 +338,8 @@ class LayoutAdapter {
             let diff = anchor.distance(from: dimension)
             var referenceBoundsLength = layout.position.mainDimension(bounds.size)
             switch layout.position {
-            case .top, .left:
+//            case .top, .left:
+            case .top:
                 if anchor.referenceGuide == .safeArea {
                     referenceBoundsLength += position.inset(safeAreaInsets)
                 }
@@ -345,7 +352,8 @@ class LayoutAdapter {
                     }
                 }()
                 return min(dimension - diff, maxPosition)
-            case .bottom, .right:
+//            case .bottom, .right:
+            case .bottom:
                 if anchor.referenceGuide == .safeArea {
                     referenceBoundsLength -= position.inset(safeAreaInsets)
                 }
@@ -384,12 +392,12 @@ class LayoutAdapter {
         switch position {
         case .top:
             return frame.maxY
-        case .left:
-            return frame.maxX
+//        case .left:
+//            return frame.maxX
         case .bottom:
             return frame.minY
-        case .right:
-            return frame.minX
+//        case .right:
+//            return frame.minX
         }
     }
 
@@ -399,9 +407,9 @@ class LayoutAdapter {
             is FloatingPanelAdaptiveLayoutAnchor:
             switch position {
             case .top: return .top
-            case .left: return .left
+//            case .left: return .left
             case .bottom: return .bottom
-            case .right: return .right
+//            case .right: return .right
             }
         case let anchor as FloatingPanelLayoutAnchor:
             return anchor.referenceEdge
@@ -427,11 +435,11 @@ class LayoutAdapter {
                     surfaceView.leftAnchor.constraint(equalTo: vc.fp_safeAreaLayoutGuide.leftAnchor, constant: 0.0),
                     surfaceView.rightAnchor.constraint(equalTo: vc.fp_safeAreaLayoutGuide.rightAnchor, constant: 0.0),
                 ]
-            case .left, .right:
-                surfaceConstraints = [
-                    surfaceView.topAnchor.constraint(equalTo: vc.fp_safeAreaLayoutGuide.topAnchor, constant: 0.0),
-                    surfaceView.bottomAnchor.constraint(equalTo: vc.fp_safeAreaLayoutGuide.bottomAnchor, constant: 0.0),
-                ]
+//            case .left, .right:
+//                surfaceConstraints = [
+//                    surfaceView.topAnchor.constraint(equalTo: vc.fp_safeAreaLayoutGuide.topAnchor, constant: 0.0),
+//                    surfaceView.bottomAnchor.constraint(equalTo: vc.fp_safeAreaLayoutGuide.bottomAnchor, constant: 0.0),
+//                ]
             }
         }
         let backdropConstraints = [
@@ -451,15 +459,15 @@ class LayoutAdapter {
             case .top:
                 fitToBoundsConstraint = surfaceView.topAnchor.constraint(equalTo: vc.view.topAnchor, constant: 0.0)
                 fitToBoundsConstraint?.identifier = "FloatingPanel-fit-to-top"
-            case .left:
-                fitToBoundsConstraint = surfaceView.leftAnchor.constraint(equalTo: vc.view.leftAnchor, constant: 0.0)
-                fitToBoundsConstraint?.identifier = "FloatingPanel-fit-to-left"
+//            case .left:
+//                fitToBoundsConstraint = surfaceView.leftAnchor.constraint(equalTo: vc.view.leftAnchor, constant: 0.0)
+//                fitToBoundsConstraint?.identifier = "FloatingPanel-fit-to-left"
             case .bottom:
                 fitToBoundsConstraint = surfaceView.bottomAnchor.constraint(equalTo: vc.view.bottomAnchor, constant: 0.0)
                 fitToBoundsConstraint?.identifier = "FloatingPanel-fit-to-bottom"
-            case .right:
-                fitToBoundsConstraint = surfaceView.rightAnchor.constraint(equalTo: vc.view.rightAnchor, constant: 0.0)
-                fitToBoundsConstraint?.identifier = "FloatingPanel-fit-to-right"
+//            case .right:
+//                fitToBoundsConstraint = surfaceView.rightAnchor.constraint(equalTo: vc.view.rightAnchor, constant: 0.0)
+//                fitToBoundsConstraint?.identifier = "FloatingPanel-fit-to-right"
             }
             fitToBoundsConstraint?.priority = .defaultHigh
         }
@@ -499,12 +507,12 @@ class LayoutAdapter {
         switch position {
         case .top:
             constraint = surfaceView.bottomAnchor.constraint(equalTo: vc.view.topAnchor, constant: initialConst)
-        case .left:
-            constraint = surfaceView.rightAnchor.constraint(equalTo: vc.view.leftAnchor, constant: initialConst)
+//        case .left:
+//            constraint = surfaceView.rightAnchor.constraint(equalTo: vc.view.leftAnchor, constant: initialConst)
         case .bottom:
             constraint = surfaceView.topAnchor.constraint(equalTo: vc.view.topAnchor, constant: initialConst)
-        case .right:
-            constraint = surfaceView.leftAnchor.constraint(equalTo: vc.view.leftAnchor, constant: initialConst)
+//        case .right:
+//            constraint = surfaceView.leftAnchor.constraint(equalTo: vc.view.leftAnchor, constant: initialConst)
         }
 
         constraint.priority = .required
@@ -571,26 +579,26 @@ class LayoutAdapter {
             default:
                 fatalError("Unsupported reference edges")
             }
-        case .left:
-            switch referenceEdge(of: anchor) {
-            case .left:
-                animationConstraint = surfaceView.rightAnchor.constraint(equalTo: layoutGuideProvider.leftAnchor,
-                                                                          constant: currentY)
-                if anchor.referenceGuide == .safeArea {
-                    animationConstraint.constant -= safeAreaInsets.right
-                    targetY -= safeAreaInsets.right
-                }
-            case .right:
-                targetY = -(baseHeight - targetY)
-                animationConstraint = surfaceView.rightAnchor.constraint(equalTo: layoutGuideProvider.rightAnchor,
-                                                                          constant: -(baseHeight - currentY))
-                if anchor.referenceGuide == .safeArea {
-                    animationConstraint.constant += safeAreaInsets.left
-                    targetY += safeAreaInsets.left
-                }
-            default:
-                fatalError("Unsupported reference edges")
-            }
+//        case .left:
+//            switch referenceEdge(of: anchor) {
+//            case .left:
+//                animationConstraint = surfaceView.rightAnchor.constraint(equalTo: layoutGuideProvider.leftAnchor,
+//                                                                          constant: currentY)
+//                if anchor.referenceGuide == .safeArea {
+//                    animationConstraint.constant -= safeAreaInsets.right
+//                    targetY -= safeAreaInsets.right
+//                }
+//            case .right:
+//                targetY = -(baseHeight - targetY)
+//                animationConstraint = surfaceView.rightAnchor.constraint(equalTo: layoutGuideProvider.rightAnchor,
+//                                                                          constant: -(baseHeight - currentY))
+//                if anchor.referenceGuide == .safeArea {
+//                    animationConstraint.constant += safeAreaInsets.left
+//                    targetY += safeAreaInsets.left
+//                }
+//            default:
+//                fatalError("Unsupported reference edges")
+//            }
         case .bottom:
             switch referenceEdge(of: anchor) {
             case .top:
@@ -612,26 +620,26 @@ class LayoutAdapter {
             default:
                 fatalError("Unsupported reference edges")
             }
-        case .right:
-            switch referenceEdge(of: anchor) {
-            case .left:
-                animationConstraint = surfaceView.leftAnchor.constraint(equalTo: layoutGuideProvider.leftAnchor,
-                                                                         constant: currentY)
-                if anchor.referenceGuide == .safeArea {
-                    animationConstraint.constant -= safeAreaInsets.left
-                    targetY -= safeAreaInsets.left
-                }
-            case .right:
-                targetY = -(baseHeight - targetY)
-                animationConstraint = surfaceView.leftAnchor.constraint(equalTo: layoutGuideProvider.rightAnchor,
-                                                                         constant: -(baseHeight - currentY))
-                if anchor.referenceGuide == .safeArea {
-                    animationConstraint.constant += safeAreaInsets.right
-                    targetY += safeAreaInsets.right
-                }
-            default:
-                fatalError("Unsupported reference edges")
-            }
+//        case .right:
+//            switch referenceEdge(of: anchor) {
+//            case .left:
+//                animationConstraint = surfaceView.leftAnchor.constraint(equalTo: layoutGuideProvider.leftAnchor,
+//                                                                         constant: currentY)
+//                if anchor.referenceGuide == .safeArea {
+//                    animationConstraint.constant -= safeAreaInsets.left
+//                    targetY -= safeAreaInsets.left
+//                }
+//            case .right:
+//                targetY = -(baseHeight - targetY)
+//                animationConstraint = surfaceView.leftAnchor.constraint(equalTo: layoutGuideProvider.rightAnchor,
+//                                                                         constant: -(baseHeight - currentY))
+//                if anchor.referenceGuide == .safeArea {
+//                    animationConstraint.constant += safeAreaInsets.right
+//                    targetY += safeAreaInsets.right
+//                }
+//            default:
+//                fatalError("Unsupported reference edges")
+//            }
         }
 
         animationConstraint.priority = .defaultHigh
@@ -690,9 +698,11 @@ class LayoutAdapter {
             }
         default:
             switch position {
-            case .top, .left:
+//            case .top, .left:
+            case .top:
                 staticConstraint = surfaceAnchor.constraint(equalToConstant: position(for: self.mostCoordinateState))
-            case .bottom, .right:
+//            case .bottom, .right:
+            case .bottom:
                 let rootViewAnchor = position.mainDimensionAnchor(vc.view)
                 staticConstraint = rootViewAnchor.constraint(equalTo: surfaceAnchor,
                                                              constant: position(for: self.leastCoordinateState))
@@ -702,8 +712,8 @@ class LayoutAdapter {
         switch position {
         case .top, .bottom:
             staticConstraint?.identifier = "FloatingPanel-static-height"
-        case .left, .right:
-            staticConstraint?.identifier = "FloatingPanel-static-width"
+//        case .left, .right:
+//            staticConstraint?.identifier = "FloatingPanel-static-width"
         }
 
         NSLayoutConstraint.activate([staticConstraint, contentBoundingConstraint].compactMap{ $0 })

@@ -155,21 +155,21 @@ public class SurfaceView: UIView {
                 grabberHandleCenterConstraint = grabberHandle.centerXAnchor.constraint(equalTo: centerXAnchor)
                 grabberHandleWidthConstraint = grabberHandle.widthAnchor.constraint(equalToConstant: grabberHandleSize.width)
                 grabberHandleHeightConstraint = grabberHandle.heightAnchor.constraint(equalToConstant: grabberHandleSize.height)
-            case .left:
-                grabberHandleEdgePaddingConstraint = grabberHandle.rightAnchor.constraint(equalTo: rightAnchor, constant: -grabberHandlePadding)
-                grabberHandleCenterConstraint = grabberHandle.centerYAnchor.constraint(equalTo: centerYAnchor)
-                grabberHandleWidthConstraint = grabberHandle.widthAnchor.constraint(equalToConstant: grabberHandleSize.height)
-                grabberHandleHeightConstraint = grabberHandle.heightAnchor.constraint(equalToConstant: grabberHandleSize.width)
+//            case .left:
+//                grabberHandleEdgePaddingConstraint = grabberHandle.rightAnchor.constraint(equalTo: rightAnchor, constant: -grabberHandlePadding)
+//                grabberHandleCenterConstraint = grabberHandle.centerYAnchor.constraint(equalTo: centerYAnchor)
+//                grabberHandleWidthConstraint = grabberHandle.widthAnchor.constraint(equalToConstant: grabberHandleSize.height)
+//                grabberHandleHeightConstraint = grabberHandle.heightAnchor.constraint(equalToConstant: grabberHandleSize.width)
             case .bottom:
                 grabberHandleEdgePaddingConstraint = grabberHandle.topAnchor.constraint(equalTo: topAnchor, constant: grabberHandlePadding)
                 grabberHandleCenterConstraint = grabberHandle.centerXAnchor.constraint(equalTo: centerXAnchor)
                 grabberHandleWidthConstraint = grabberHandle.widthAnchor.constraint(equalToConstant: grabberHandleSize.width)
                 grabberHandleHeightConstraint = grabberHandle.heightAnchor.constraint(equalToConstant: grabberHandleSize.height)
-            case .right:
-                grabberHandleEdgePaddingConstraint = grabberHandle.leftAnchor.constraint(equalTo: leftAnchor, constant: grabberHandlePadding)
-                grabberHandleCenterConstraint = grabberHandle.centerYAnchor.constraint(equalTo: centerYAnchor)
-                grabberHandleWidthConstraint = grabberHandle.widthAnchor.constraint(equalToConstant: grabberHandleSize.height)
-                grabberHandleHeightConstraint = grabberHandle.heightAnchor.constraint(equalToConstant: grabberHandleSize.width)
+//            case .right:
+//                grabberHandleEdgePaddingConstraint = grabberHandle.leftAnchor.constraint(equalTo: leftAnchor, constant: grabberHandlePadding)
+//                grabberHandleCenterConstraint = grabberHandle.centerYAnchor.constraint(equalTo: centerYAnchor)
+//                grabberHandleWidthConstraint = grabberHandle.widthAnchor.constraint(equalToConstant: grabberHandleSize.height)
+//                grabberHandleHeightConstraint = grabberHandle.heightAnchor.constraint(equalToConstant: grabberHandleSize.width)
             }
             NSLayoutConstraint.activate([grabberHandleEdgePaddingConstraint,
                                          grabberHandleCenterConstraint,
@@ -184,15 +184,15 @@ public class SurfaceView: UIView {
         case .top:
             return CGRect(origin: .init(x: bounds.minX, y: bounds.maxY - grabberAreaOffset),
                           size: .init(width: bounds.width, height: grabberAreaOffset))
-        case .left:
-            return CGRect(origin: .init(x: bounds.maxX - grabberAreaOffset, y: bounds.minY),
-                          size: .init(width: grabberAreaOffset, height: bounds.height))
+//        case .left:
+//            return CGRect(origin: .init(x: bounds.maxX - grabberAreaOffset, y: bounds.minY),
+//                          size: .init(width: grabberAreaOffset, height: bounds.height))
         case .bottom:
             return CGRect(origin: CGPoint(x: bounds.minX, y: bounds.minY),
                           size: CGSize(width: bounds.width, height: grabberAreaOffset))
-        case .right:
-            return CGRect(origin: .init(x: bounds.minX, y: bounds.minY),
-                          size: .init(width: grabberAreaOffset, height: bounds.height))
+//        case .right:
+//            return CGRect(origin: .init(x: bounds.minX, y: bounds.minY),
+//                          size: .init(width: grabberAreaOffset, height: bounds.height))
         }
     }
 
@@ -278,21 +278,21 @@ public class SurfaceView: UIView {
             containerViewLeftConstraint.constant = containerMargins.left
             containerViewRightConstraint.constant = -containerMargins.right
             containerViewBottomConstraint.constant = -containerMargins.bottom
-        case .left:
-            containerViewTopConstraint.constant = containerMargins.top
-            containerViewLeftConstraint.constant = (containerMargins.left == 0) ? -containerOverflow : containerMargins.left
-            containerViewRightConstraint.constant = -containerMargins.right
-            containerViewBottomConstraint.constant = -containerMargins.bottom
+//        case .left:
+//            containerViewTopConstraint.constant = containerMargins.top
+//            containerViewLeftConstraint.constant = (containerMargins.left == 0) ? -containerOverflow : containerMargins.left
+//            containerViewRightConstraint.constant = -containerMargins.right
+//            containerViewBottomConstraint.constant = -containerMargins.bottom
         case .bottom:
             containerViewTopConstraint.constant = containerMargins.top
             containerViewLeftConstraint.constant = containerMargins.left
             containerViewRightConstraint.constant = -containerMargins.right
             containerViewBottomConstraint.constant = (containerMargins.bottom == 0) ? containerOverflow : -containerMargins.bottom
-        case .right:
-            containerViewTopConstraint.constant = containerMargins.top
-            containerViewLeftConstraint.constant = containerMargins.left
-            containerViewRightConstraint.constant = (containerMargins.right == 0) ? containerOverflow : -containerMargins.right
-            containerViewBottomConstraint.constant = -containerMargins.bottom
+//        case .right:
+//            containerViewTopConstraint.constant = containerMargins.top
+//            containerViewLeftConstraint.constant = containerMargins.left
+//            containerViewRightConstraint.constant = (containerMargins.right == 0) ? containerOverflow : -containerMargins.right
+//            containerViewBottomConstraint.constant = -containerMargins.bottom
         }
 
         contentViewTopConstraint?.constant = containerMargins.top + contentPadding.top
@@ -301,9 +301,11 @@ public class SurfaceView: UIView {
         contentViewBottomConstraint?.constant = containerMargins.bottom + contentPadding.bottom
 
         switch position {
-        case .top, .left:
+//        case .top, .left:
+        case .top:
             grabberHandleEdgePaddingConstraint.constant = -grabberHandlePadding
-        case .bottom, .right:
+//        case .bottom, .right:
+        case .bottom:
             grabberHandleEdgePaddingConstraint.constant = grabberHandlePadding
         }
 
@@ -311,9 +313,9 @@ public class SurfaceView: UIView {
         case .top, .bottom:
             grabberHandleWidthConstraint.constant = grabberHandleSize.width
             grabberHandleHeightConstraint.constant = grabberHandleSize.height
-        case .left, .right:
-            grabberHandleWidthConstraint.constant = grabberHandleSize.height
-            grabberHandleHeightConstraint.constant = grabberHandleSize.width
+//        case .left, .right:
+//            grabberHandleWidthConstraint.constant = grabberHandleSize.height
+//            grabberHandleHeightConstraint.constant = grabberHandleSize.width
        }
 
         super.updateConstraints()
@@ -398,12 +400,12 @@ public class SurfaceView: UIView {
             switch position {
             case .top:
                 containerView.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
-            case .left:
-                containerView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
+//            case .left:
+//                containerView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMaxXMaxYCorner]
             case .bottom:
                 containerView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner]
-            case .right:
-                containerView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
+//            case .right:
+//                containerView.layer.maskedCorners = [.layerMinXMinYCorner, .layerMinXMaxYCorner]
             }
         } else {
             // Can't use `containerView.layer.mask` because of a UIVisualEffectView issue in iOS 10, https://forums.developer.apple.com/thread/50854
@@ -459,12 +461,12 @@ public class SurfaceView: UIView {
         switch position {
         case .top:
             cappedLocation = CGPoint(x: location.x, y: min(location.y, bounds.height - adjustment))
-        case .left:
-            cappedLocation = CGPoint(x: min(location.x, bounds.width - adjustment), y: location.y)
+//        case .left:
+//            cappedLocation = CGPoint(x: min(location.x, bounds.width - adjustment), y: location.y)
         case .bottom:
             cappedLocation = CGPoint(x: location.x, y: max(location.y, 0))
-        case .right:
-            cappedLocation = CGPoint(x: max(location.x, 0), y: location.y)
+//        case .right:
+//            cappedLocation = CGPoint(x: max(location.x, 0), y: location.y)
         }
         return grabberAreaFrame.contains(cappedLocation)
     }
