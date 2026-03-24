@@ -209,9 +209,9 @@ class NativeSheetController: UIViewController, UIGestureRecognizerDelegate {
         
         // Cho phép kéo Panel khi ScrollView đang ở đỉnh
         if otherGestureRecognizer.view == scrollView {
-             if scrollView.contentOffset.y <= 0 {
-                 return true
-             }
+            if scrollView.contentOffset.y <= 0 {
+                return true
+            }
         }
         return false
     }
