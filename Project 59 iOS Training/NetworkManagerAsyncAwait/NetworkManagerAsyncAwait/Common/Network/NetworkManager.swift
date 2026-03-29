@@ -2,13 +2,13 @@ import Foundation
 import UIKit
 
 class NetworkManager {
-    let urlSession: URLSession
+    let urlSession: URLSessionProtocol
     
     init() {
         self.urlSession = URLSession.shared
     }
     
-    init(urlSession: URLSession?) {
+    init(urlSession: URLSessionProtocol?) {
         if let urlSession = urlSession {
             self.urlSession = urlSession
         } else {
@@ -18,7 +18,7 @@ class NetworkManager {
     
     func execute<T: Codable>(_ request: NetworkRequest) async throws -> NetworkResult<NetworkResponse<T>>? {
         let urlRequest = request.buildURLRequest()
-        async let (data, response) = self.urlSession.data(for: urlRequest)
+        async let (data, response) = self.urlSession.data(for: urlRequest, delegate: nil)
         
         guard let response = try await response as? HTTPURLResponse else {
             let networkError = NetworkError(errorCode: NetworkErrorCode.nilData,

@@ -1,0 +1,403 @@
+{
+   "results":[
+      {
+         "adult":false,
+         "backdrop_path":"/3V4kLQg0kSqPLctI5ziYWabAZYF.jpg",
+         "genre_ids":[
+            878,
+            28,
+            12
+         ],
+         "id":912649,
+         "original_language":"en",
+         "original_title":"Venom: The Last Dance",
+         "overview":"Eddie and Venom are on the run. Hunted by both of their worlds and with the net closing in, the duo are forced into a devastating decision that will bring the curtains down on Venom and Eddie's last dance.",
+         "popularity":6130.313,
+         "poster_path":"/k42Owka8v91trK1qMYwCQCNwJKr.jpg",
+         "release_date":"2024-10-22",
+         "title":"Venom: The Last Dance",
+         "video":false,
+         "vote_average":6.7,
+         "vote_count":329
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/v9acaWVVFdZT5yAU7J2QjwfhXyD.jpg",
+         "genre_ids":[
+            16,
+            878,
+            10751
+         ],
+         "id":1184918,
+         "original_language":"en",
+         "original_title":"The Wild Robot",
+         "overview":"After a shipwreck, an intelligent robot called Roz is stranded on an uninhabited island. To survive the harsh environment, Roz bonds with the island's animals and cares for an orphaned baby goose.",
+         "popularity":4543.334,
+         "poster_path":"/wTnV3PCVW5O92JMrFvvrRcV39RU.jpg",
+         "release_date":"2024-09-12",
+         "title":"The Wild Robot",
+         "video":false,
+         "vote_average":8.6,
+         "vote_count":2021
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/xlkclSE4aq7r3JsFIJRgs21zUew.jpg",
+         "genre_ids":[
+            27,
+            53
+         ],
+         "id":1034541,
+         "original_language":"en",
+         "original_title":"Terrifier 3",
+         "overview":"Five years after surviving Art the Clown's Halloween massacre, Sienna and Jonathan are still struggling to rebuild their shattered lives. As the holiday season approaches, they try to embrace the Christmas spirit and leave the horrors of the past behind. But just when they think they're safe, Art returns, determined to turn their holiday cheer into a new nightmare. The festive season quickly unravels as Art unleashes his twisted brand of terror, proving that no holiday is safe.",
+         "popularity":4006.976,
+         "poster_path":"/63xYQj1BwRFielxsBDXvHIJyXVm.jpg",
+         "release_date":"2024-10-09",
+         "title":"Terrifier 3",
+         "video":false,
+         "vote_average":7.4,
+         "vote_count":318
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/9oYdz5gDoIl8h67e3ccv3OHtmm2.jpg",
+         "genre_ids":[
+            27,
+            878,
+            53
+         ],
+         "id":933260,
+         "original_language":"en",
+         "original_title":"The Substance",
+         "overview":"A fading celebrity decides to use a black market drug, a cell-replicating substance that temporarily creates a younger, better version of herself.",
+         "popularity":2092.279,
+         "poster_path":"/lqoMzCcZYEFK729d6qzt349fB4o.jpg",
+         "release_date":"2024-09-07",
+         "title":"The Substance",
+         "video":false,
+         "vote_average":7.3,
+         "vote_count":1039
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/uLqNGzJwnj8JKkKuRM2dHWJKCtc.jpg",
+         "genre_ids":[
+            28,
+            27,
+            53
+         ],
+         "id":1029235,
+         "original_language":"en",
+         "original_title":"Azrael",
+         "overview":"In a world where no one speaks, a devout female hunts down a young woman who has escaped her imprisonment. Recaptured by its ruthless leaders, Azrael is due to be sacrificed to pacify an ancient evil deep within the surrounding wilderness.",
+         "popularity":1086.456,
+         "poster_path":"/qpdFKDvJS7oLKTcBLXOaMwUESbs.jpg",
+         "release_date":"2024-09-27",
+         "title":"Azrael",
+         "video":false,
+         "vote_average":6.1,
+         "vote_count":105
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/hd1TvTUGjkoYoqvXYfSBpI5Ri9B.jpg",
+         "genre_ids":[
+            16,
+            28,
+            12,
+            878
+         ],
+         "id":1159311,
+         "original_language":"ja",
+         "original_title":"僕のヒーローアカデミア THE MOVIE ユアネクスト",
+         "overview":"In a society devastated by the effects of an all-out war between heroes and villains, a mysterious giant fortress suddenly appears, engulfing towns and people one after another. Then, a man reminiscent of All Might, the 'symbol of peace', stands in front of Izuku and his friends...",
+         "popularity":768.673,
+         "poster_path":"/8rdB1wkheEMMqcY8qLAKjCMPcnZ.jpg",
+         "release_date":"2024-08-02",
+         "title":"My Hero Academia: You're Next",
+         "video":false,
+         "vote_average":6.7,
+         "vote_count":32
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/mpMDztY5OmV7i4ypYpWgqsP4DHs.jpg",
+         "genre_ids":[
+            27,
+            53
+         ],
+         "id":978796,
+         "original_language":"en",
+         "original_title":"Bagman",
+         "overview":"For centuries and across cultures, parents have warned their children of the legendary Bagman, who snatches innocent children and stuffs them into his vile, rotting bag—never to be seen again. Patrick McKee narrowly escaped such an encounter as a boy, which left him with lasting scars throughout his adulthood. Now, Patrick’s childhood tormentor has returned, threatening the safety of his wife Karina and son Jake.",
+         "popularity":638.685,
+         "poster_path":"/pkKcIP2B2ILAh4lGKyn9YkO0L1t.jpg",
+         "release_date":"2024-09-20",
+         "title":"Bagman",
+         "video":false,
+         "vote_average":6.553,
+         "vote_count":47
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/s3ioaDU8OudHWeg7rIbLyU33iXs.jpg",
+         "genre_ids":[
+            80,
+            53,
+            28
+         ],
+         "id":1047373,
+         "original_language":"en",
+         "original_title":"The Silent Hour",
+         "overview":"While working a case as an interpreter, a hearing-impaired police detective must confront a group of criminals trying to eliminate a deaf murder witness in her apartment building.",
+         "popularity":551.405,
+         "poster_path":"/j736cRzBtEPCm0nHnpRN1prqiqj.jpg",
+         "release_date":"2024-10-03",
+         "title":"The Silent Hour",
+         "video":false,
+         "vote_average":6.372,
+         "vote_count":43
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/b3mdmjYTEL70j7nuXATUAD9qgu4.jpg",
+         "genre_ids":[
+            16,
+            14,
+            12
+         ],
+         "id":823219,
+         "original_language":"xx",
+         "original_title":"Flow",
+         "overview":"A solitary cat, displaced by a great flood, finds refuge on a boat with various species and must navigate the challenges of adapting to a transformed world together.",
+         "popularity":457.866,
+         "poster_path":"/dzDMewC0Hwv01SROiWgKOi4iOc1.jpg",
+         "release_date":"2024-08-30",
+         "title":"Flow",
+         "video":false,
+         "vote_average":8.756,
+         "vote_count":133
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/l8OyAXEp5FKZWmDhqJMbiwAEvz.jpg",
+         "genre_ids":[
+            27,
+            18
+         ],
+         "id":814889,
+         "original_language":"en",
+         "original_title":"Never Let Go",
+         "overview":"As an evil takes over the world beyond their front doorstep, the only protection for a mother and her twin sons is their house and their family’s protective bond.",
+         "popularity":355.934,
+         "poster_path":"/3EpZ2ksjijmdr8BhISP03PYzNFW.jpg",
+         "release_date":"2024-09-18",
+         "title":"Never Let Go",
+         "video":false,
+         "vote_average":6.139,
+         "vote_count":158
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/yjPXIgY3QoHe8Kt8nEJCz97UF3q.jpg",
+         "genre_ids":[
+            18,
+            36,
+            10752
+         ],
+         "id":832964,
+         "original_language":"en",
+         "original_title":"Lee",
+         "overview":"The true story of photographer Elizabeth 'Lee' Miller, a fashion model who became an acclaimed war correspondent for Vogue magazine during World War II.",
+         "popularity":320.175,
+         "poster_path":"/zdNWyuim8gpJHe1LtKaDrs43dWz.jpg",
+         "release_date":"2024-09-12",
+         "title":"Lee",
+         "video":false,
+         "vote_average":6.9,
+         "vote_count":124
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/8y9mgkTlaEUAtjrHr9akapFd6hQ.jpg",
+         "genre_ids":[
+            27,
+            9648,
+            36
+         ],
+         "id":931944,
+         "original_language":"de",
+         "original_title":"Des Teufels Bad",
+         "overview":"18th century Austria. Villages surrounded by deep forests. A woman is sentenced to death after killing a baby. Agnes is marrying her loved one and candidly prepares herself for a spouse life. Soon after, her head and heart start to feel heavy. Day after day, she is increasingly trapped in a murky and lonely path leading to evil thoughts. Maybe not just thoughts…",
+         "popularity":296.793,
+         "poster_path":"/ycoXsJomPmPjtCfNweM0UWiTkPY.jpg",
+         "release_date":"2024-03-08",
+         "title":"The Devil's Bath",
+         "video":false,
+         "vote_average":7.0,
+         "vote_count":46
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/rOmUuQEZfPXglwFs5ELLLUDKodL.jpg",
+         "genre_ids":[
+            35,
+            28,
+            14
+         ],
+         "id":845781,
+         "original_language":"en",
+         "original_title":"Red One",
+         "overview":"After Santa Claus (codename: Red One) is kidnapped, the North Pole's Head of Security must team up with the world's most infamous bounty hunter in a globe-trotting, action-packed mission to save Christmas.",
+         "popularity":397.634,
+         "poster_path":"/cdqLnri3NEGcmfnqwk2TSIYtddg.jpg",
+         "release_date":"2024-10-31",
+         "title":"Red One",
+         "video":false,
+         "vote_average":7.5,
+         "vote_count":3
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/6cXqnUlCklzV52kqyn3EEqDonyM.jpg",
+         "genre_ids":[
+            16,
+            12,
+            10751,
+            35
+         ],
+         "id":1241982,
+         "original_language":"en",
+         "original_title":"Moana 2",
+         "overview":"After receiving an unexpected call from her wayfinding ancestors, Moana journeys alongside Maui and a new crew to the far seas of Oceania and into dangerous, long-lost waters for an adventure unlike anything she's ever faced.",
+         "popularity":290.657,
+         "poster_path":"/yh64qw9mgXBvlaWDi7Q9tpUBAvH.jpg",
+         "release_date":"2024-11-27",
+         "title":"Moana 2",
+         "video":false,
+         "vote_average":0.0,
+         "vote_count":0
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/8mjYwWT50GkRrrRdyHzJorfEfcl.jpg",
+         "genre_ids":[
+            28,
+            12
+         ],
+         "id":558449,
+         "original_language":"en",
+         "original_title":"Gladiator II",
+         "overview":"Years after witnessing the death of the revered hero Maximus at the hands of his uncle, Lucius is forced to enter the Colosseum after his home is conquered by the tyrannical Emperors who now lead Rome with an iron fist. With rage in his heart and the future of the Empire at stake, Lucius must look to his past to find strength and honor to return the glory of Rome to its people.",
+         "popularity":267.812,
+         "poster_path":"/2cxhvwyEwRlysAmRH4iodkvo0z5.jpg",
+         "release_date":"2024-11-13",
+         "title":"Gladiator II",
+         "video":false,
+         "vote_average":0.0,
+         "vote_count":0
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/begseNUKhZcc05Bc1UggaX5GeES.jpg",
+         "genre_ids":[
+            28,
+            53,
+            80
+         ],
+         "id":976734,
+         "original_language":"en",
+         "original_title":"Canary Black",
+         "overview":"Top level CIA agent Avery Graves is blackmailed by terrorists into betraying her own country to save her kidnapped husband. Cut off from her team, she turns to her underworld contacts to survive and help locate the coveted intelligence that the kidnappers want.",
+         "popularity":366.372,
+         "poster_path":"/hhiR6uUbTYYvKoACkdAIQPS5c6f.jpg",
+         "release_date":"2024-10-10",
+         "title":"Canary Black",
+         "video":false,
+         "vote_average":6.5,
+         "vote_count":124
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/fNylhsI3u6NmTxeanFPDEwvT9GS.jpg",
+         "genre_ids":[
+            80,
+            18,
+            53
+         ],
+         "id":835113,
+         "original_language":"en",
+         "original_title":"Woman of the Hour",
+         "overview":"An aspiring actress crosses paths with a prolific serial killer in '70s LA when they're cast on an episode of \"The Dating Game.\"",
+         "popularity":268.583,
+         "poster_path":"/nc9ZqrJFbcUdlMg9lxXXtJb24jU.jpg",
+         "release_date":"2024-10-03",
+         "title":"Woman of the Hour",
+         "video":false,
+         "vote_average":6.6,
+         "vote_count":289
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/iURqo6oIwbeegIwWXx5qrBsDcPk.jpg",
+         "genre_ids":[
+            10751,
+            12,
+            14,
+            35
+         ],
+         "id":826510,
+         "original_language":"en",
+         "original_title":"Harold and the Purple Crayon",
+         "overview":"Inside of his book, adventurous Harold can make anything come to life simply by drawing it. After he grows up and draws himself off the book's pages and into the physical world, Harold finds he has a lot to learn about real life.",
+         "popularity":236.271,
+         "poster_path":"/dEsuQOZwdaFAVL26RjgjwGl9j7m.jpg",
+         "release_date":"2024-07-31",
+         "title":"Harold and the Purple Crayon",
+         "video":false,
+         "vote_average":7.1,
+         "vote_count":167
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/NqqLef2ITlK8olXT4iFuUXFwSh.jpg",
+         "genre_ids":[
+            9648,
+            53,
+            27
+         ],
+         "id":840705,
+         "original_language":"en",
+         "original_title":"Blink Twice",
+         "overview":"When tech billionaire Slater King meets cocktail waitress Frida at his fundraising gala, he invites her to join him and his friends on a dream vacation on his private island. But despite the epic setting, beautiful people, ever-flowing champagne, and late-night dance parties, Frida can sense that there’s something sinister hiding beneath the island’s lush façade.",
+         "popularity":213.256,
+         "poster_path":"/lZGOK0I2DJSRlEPNOAFTSNxSjDD.jpg",
+         "release_date":"2024-08-21",
+         "title":"Blink Twice",
+         "video":false,
+         "vote_average":6.8,
+         "vote_count":743
+      },
+      {
+         "adult":false,
+         "backdrop_path":"/61yrVrkOH75fUtExDZ4Hi0KqOmc.jpg",
+         "genre_ids":[
+            27,
+            53,
+            35
+         ],
+         "id":1225377,
+         "original_language":"en",
+         "original_title":"The Mouse Trap",
+         "overview":"It's Alex's 21st Birthday, but she's stuck at the amusement arcade on a late shift so her friends decide to surprise her, but a masked killer dressed as Mickey Mouse decides to play a game of his own with them which she must survive.",
+         "popularity":155.259,
+         "poster_path":"/3ovFaFeojLFIl5ClqhtgYMDS8sE.jpg",
+         "release_date":"2024-08-23",
+         "title":"The Mouse Trap",
+         "video":false,
+         "vote_average":4.5,
+         "vote_count":37
+      }
+   ]
+}

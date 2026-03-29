@@ -7,11 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5C6EB4EE2CD369D600EC94C5 /* MainTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EB4EB2CD369D600EC94C5 /* MainTest.swift */; };
+		5C6EB4EF2CD369D600EC94C5 /* MovieViewModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EB4EC2CD369D600EC94C5 /* MovieViewModelTests.swift */; };
+		5C6EB4F22CD369DB00EC94C5 /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EB4F02CD369DB00EC94C5 /* NetworkManagerTest.swift */; };
+		5C6EB4F52CD36A2E00EC94C5 /* MovieViewModelDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EB4F42CD36A2E00EC94C5 /* MovieViewModelDelegate.swift */; };
+		5C6EB4F92CD36A9100EC94C5 /* MovieViewModelDelegateMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EB4F82CD36A9100EC94C5 /* MovieViewModelDelegateMock.swift */; };
+		5C6EB4FB2CD46D1900EC94C5 /* URLSessionProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EB4FA2CD46D1900EC94C5 /* URLSessionProtocol.swift */; };
+		5C6EB4FD2CD46D6D00EC94C5 /* URLSessionMockClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C6EB4FC2CD46D6D00EC94C5 /* URLSessionMockClass.swift */; };
 		5C73BA912BE1C2B800BC34B0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C73BA902BE1C2B800BC34B0 /* AppDelegate.swift */; };
 		5C73BA932BE1C2B800BC34B0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C73BA922BE1C2B800BC34B0 /* SceneDelegate.swift */; };
 		5C73BA9A2BE1C2B900BC34B0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C73BA992BE1C2B900BC34B0 /* Assets.xcassets */; };
 		5C73BA9D2BE1C2B900BC34B0 /* Base in Resources */ = {isa = PBXBuildFile; fileRef = 5C73BA9C2BE1C2B900BC34B0 /* Base */; };
-		5C73BAA82BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C73BAA72BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitTests.swift */; };
 		5C73BAB22BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C73BAB12BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitUITests.swift */; };
 		5C73BAB42BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C73BAB32BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitUITestsLaunchTests.swift */; };
 		5C73BACB2BE1C45D00BC34B0 /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C73BACA2BE1C45D00BC34B0 /* NetworkRequest.swift */; };
@@ -55,22 +61,33 @@
 		5C73BB202BE314E800BC34B0 /* MovieViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C73BB1F2BE314E800BC34B0 /* MovieViewController+UITableView.swift */; };
 		5C73BB222BE3162800BC34B0 /* MovieDetailViewController+MovieDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C73BB212BE3162800BC34B0 /* MovieDetailViewController+MovieDetailViewModel.swift */; };
 		5C73BB242BE3165500BC34B0 /* MovieDetailViewController+UITableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C73BB232BE3165500BC34B0 /* MovieDetailViewController+UITableView.swift */; };
+		5CE3A9C42CD31E4E001811D3 /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3A9C22CD31E4E001811D3 /* URLSessionMock.swift */; };
+		5CE3A9C52CD31E4E001811D3 /* URLProtocolMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3A9C02CD31E4E001811D3 /* URLProtocolMock.swift */; };
+		5CE3A9C62CD31E4E001811D3 /* URLSessionDataTaskMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3A9C12CD31E4E001811D3 /* URLSessionDataTaskMock.swift */; };
+		5CE3A9CC2CD34B4E001811D3 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3A9CB2CD34B4E001811D3 /* DataHelper.swift */; };
+		5CE3A9CD2CD34B4E001811D3 /* DataHelper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CE3A9CB2CD34B4E001811D3 /* DataHelper.swift */; };
+		5CE3A9CF2CD34C75001811D3 /* Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CE3A9CE2CD34C75001811D3 /* Movies.json */; };
+		5CE3A9D02CD34C75001811D3 /* Movies.json in Resources */ = {isa = PBXBuildFile; fileRef = 5CE3A9CE2CD34C75001811D3 /* Movies.json */; };
 		5CEC84E22BE9B3C90012C7A8 /* MovieCastErrorCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5CEC84E12BE9B3C90012C7A8 /* MovieCastErrorCell.xib */; };
 		5CEC84E32BE9B3C90012C7A8 /* MovieCastErrorCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEC84E02BE9B3C90012C7A8 /* MovieCastErrorCell.swift */; };
-		5CEC84EB2BEB15750012C7A8 /* ProjectBaseTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEC84E62BEB15610012C7A8 /* ProjectBaseTest.swift */; };
-		5CEC84EC2BEB1C1E0012C7A8 /* ParameterizedTestBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEC84E52BEB15610012C7A8 /* ParameterizedTestBase.swift */; };
-		5CEC84ED2BEB1E110012C7A8 /* XCTestCaseExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEC84E72BEB15610012C7A8 /* XCTestCaseExtension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		5C73BAA42BE1C2B900BC34B0 /* PBXContainerItemProxy */ = {
+		5C73BAAE2BE1C2B900BC34B0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5C73BA852BE1C2B800BC34B0 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 5C73BA8C2BE1C2B800BC34B0;
 			remoteInfo = NetworkManagerAsyncAwait;
 		};
-		5C73BAAE2BE1C2B900BC34B0 /* PBXContainerItemProxy */ = {
+		5C79E55E2CCF358700D047D0 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 5C73BA852BE1C2B800BC34B0 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 5C73BA8C2BE1C2B800BC34B0;
+			remoteInfo = NetworkManagerAsyncAwait;
+		};
+		5C79E56B2CCF818A00D047D0 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 5C73BA852BE1C2B800BC34B0 /* Project object */;
 			proxyType = 1;
@@ -80,14 +97,19 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5C6EB4EB2CD369D600EC94C5 /* MainTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTest.swift; sourceTree = "<group>"; };
+		5C6EB4EC2CD369D600EC94C5 /* MovieViewModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModelTests.swift; sourceTree = "<group>"; };
+		5C6EB4F02CD369DB00EC94C5 /* NetworkManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTest.swift; sourceTree = "<group>"; };
+		5C6EB4F42CD36A2E00EC94C5 /* MovieViewModelDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModelDelegate.swift; sourceTree = "<group>"; };
+		5C6EB4F82CD36A9100EC94C5 /* MovieViewModelDelegateMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieViewModelDelegateMock.swift; sourceTree = "<group>"; };
+		5C6EB4FA2CD46D1900EC94C5 /* URLSessionProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionProtocol.swift; sourceTree = "<group>"; };
+		5C6EB4FC2CD46D6D00EC94C5 /* URLSessionMockClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMockClass.swift; sourceTree = "<group>"; };
 		5C73BA8D2BE1C2B800BC34B0 /* NetworkManagerAsyncAwait.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NetworkManagerAsyncAwait.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C73BA902BE1C2B800BC34B0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5C73BA922BE1C2B800BC34B0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5C73BA992BE1C2B900BC34B0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C73BA9C2BE1C2B900BC34B0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5C73BA9E2BE1C2B900BC34B0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		5C73BAA32BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkManagerAsyncAwaitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5C73BAA72BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerAsyncAwaitTests.swift; sourceTree = "<group>"; };
 		5C73BAAD2BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkManagerAsyncAwaitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5C73BAB12BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerAsyncAwaitUITests.swift; sourceTree = "<group>"; };
 		5C73BAB32BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerAsyncAwaitUITestsLaunchTests.swift; sourceTree = "<group>"; };
@@ -132,6 +154,14 @@
 		5C73BB1F2BE314E800BC34B0 /* MovieViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieViewController+UITableView.swift"; sourceTree = "<group>"; };
 		5C73BB212BE3162800BC34B0 /* MovieDetailViewController+MovieDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieDetailViewController+MovieDetailViewModel.swift"; sourceTree = "<group>"; };
 		5C73BB232BE3165500BC34B0 /* MovieDetailViewController+UITableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "MovieDetailViewController+UITableView.swift"; sourceTree = "<group>"; };
+		5C79E5532CCF343D00D047D0 /* NetworkManagerTestPlan.xctestplan */ = {isa = PBXFileReference; lastKnownFileType = text; path = NetworkManagerTestPlan.xctestplan; sourceTree = "<group>"; };
+		5C79E55A2CCF358700D047D0 /* NetworkManagerTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NetworkManagerTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C79E5672CCF818A00D047D0 /* MainTest.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MainTest.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CE3A9C02CD31E4E001811D3 /* URLProtocolMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolMock.swift; sourceTree = "<group>"; };
+		5CE3A9C12CD31E4E001811D3 /* URLSessionDataTaskMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionDataTaskMock.swift; sourceTree = "<group>"; };
+		5CE3A9C22CD31E4E001811D3 /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
+		5CE3A9CB2CD34B4E001811D3 /* DataHelper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataHelper.swift; sourceTree = "<group>"; };
+		5CE3A9CE2CD34C75001811D3 /* Movies.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = Movies.json; sourceTree = "<group>"; };
 		5CEC84E02BE9B3C90012C7A8 /* MovieCastErrorCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieCastErrorCell.swift; sourceTree = "<group>"; };
 		5CEC84E12BE9B3C90012C7A8 /* MovieCastErrorCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MovieCastErrorCell.xib; sourceTree = "<group>"; };
 		5CEC84E52BEB15610012C7A8 /* ParameterizedTestBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ParameterizedTestBase.swift; sourceTree = "<group>"; };
@@ -147,14 +177,21 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C73BAA02BE1C2B900BC34B0 /* Frameworks */ = {
+		5C73BAAA2BE1C2B900BC34B0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C73BAAA2BE1C2B900BC34B0 /* Frameworks */ = {
+		5C79E5572CCF358700D047D0 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C79E5642CCF818A00D047D0 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -164,12 +201,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5C6EB4ED2CD369D600EC94C5 /* MainTest */ = {
+			isa = PBXGroup;
+			children = (
+				5C6EB4F32CD36A0C00EC94C5 /* Mock */,
+				5C6EB4EB2CD369D600EC94C5 /* MainTest.swift */,
+				5C6EB4EC2CD369D600EC94C5 /* MovieViewModelTests.swift */,
+			);
+			path = MainTest;
+			sourceTree = "<group>";
+		};
+		5C6EB4F12CD369DB00EC94C5 /* NetworkManagerTest */ = {
+			isa = PBXGroup;
+			children = (
+				5C6EB4F02CD369DB00EC94C5 /* NetworkManagerTest.swift */,
+			);
+			path = NetworkManagerTest;
+			sourceTree = "<group>";
+		};
+		5C6EB4F32CD36A0C00EC94C5 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				5C6EB4F82CD36A9100EC94C5 /* MovieViewModelDelegateMock.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
 		5C73BA842BE1C2B800BC34B0 = {
 			isa = PBXGroup;
 			children = (
+				5C79E5532CCF343D00D047D0 /* NetworkManagerTestPlan.xctestplan */,
 				5C73BA8F2BE1C2B800BC34B0 /* NetworkManagerAsyncAwait */,
-				5C73BAA62BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitTests */,
 				5C73BAB02BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitUITests */,
+				5C6EB4F12CD369DB00EC94C5 /* NetworkManagerTest */,
+				5C6EB4ED2CD369D600EC94C5 /* MainTest */,
 				5C73BA8E2BE1C2B800BC34B0 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -178,8 +243,9 @@
 			isa = PBXGroup;
 			children = (
 				5C73BA8D2BE1C2B800BC34B0 /* NetworkManagerAsyncAwait.app */,
-				5C73BAA32BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitTests.xctest */,
 				5C73BAAD2BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitUITests.xctest */,
+				5C79E55A2CCF358700D047D0 /* NetworkManagerTest.xctest */,
+				5C79E5672CCF818A00D047D0 /* MainTest.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -190,17 +256,10 @@
 				5C73BAC02BE1C30500BC34B0 /* AppDelegate */,
 				5C73BAC32BE1C3D500BC34B0 /* Modules */,
 				5C73BAC12BE1C33C00BC34B0 /* Common */,
+				5CE3A9CA2CD34B02001811D3 /* Helper */,
 				5C73BAC22BE1C34500BC34B0 /* Resources */,
 			);
 			path = NetworkManagerAsyncAwait;
-			sourceTree = "<group>";
-		};
-		5C73BAA62BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitTests */ = {
-			isa = PBXGroup;
-			children = (
-				5C73BAA72BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitTests.swift */,
-			);
-			path = NetworkManagerAsyncAwaitTests;
 			sourceTree = "<group>";
 		};
 		5C73BAB02BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitUITests */ = {
@@ -238,6 +297,7 @@
 		5C73BAC22BE1C34500BC34B0 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				5CE3A9CE2CD34C75001811D3 /* Movies.json */,
 				5C73BA992BE1C2B900BC34B0 /* Assets.xcassets */,
 				5C73BA9B2BE1C2B900BC34B0 /* LaunchScreen.storyboard */,
 				5C73BA9E2BE1C2B900BC34B0 /* Info.plist */,
@@ -279,6 +339,8 @@
 		5C73BAC62BE1C40500BC34B0 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				5CE3A9C32CD31E4E001811D3 /* Mock */,
+				5C6EB4FA2CD46D1900EC94C5 /* URLSessionProtocol.swift */,
 				5C73BAD62BE1C60A00BC34B0 /* NetworkError.swift */,
 				5C73BAD52BE1C60A00BC34B0 /* NetworkErrorCode.swift */,
 				5C73BAD72BE1C60A00BC34B0 /* NetworkResponse.swift */,
@@ -343,6 +405,7 @@
 		5C73BAE22BE1D00900BC34B0 /* ViewModel */ = {
 			isa = PBXGroup;
 			children = (
+				5C6EB4F42CD36A2E00EC94C5 /* MovieViewModelDelegate.swift */,
 				5C73BAE12BE1D00900BC34B0 /* MovieViewModel.swift */,
 			);
 			path = ViewModel;
@@ -409,6 +472,25 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		5CE3A9C32CD31E4E001811D3 /* Mock */ = {
+			isa = PBXGroup;
+			children = (
+				5CE3A9C02CD31E4E001811D3 /* URLProtocolMock.swift */,
+				5CE3A9C12CD31E4E001811D3 /* URLSessionDataTaskMock.swift */,
+				5CE3A9C22CD31E4E001811D3 /* URLSessionMock.swift */,
+				5C6EB4FC2CD46D6D00EC94C5 /* URLSessionMockClass.swift */,
+			);
+			path = Mock;
+			sourceTree = "<group>";
+		};
+		5CE3A9CA2CD34B02001811D3 /* Helper */ = {
+			isa = PBXGroup;
+			children = (
+				5CE3A9CB2CD34B4E001811D3 /* DataHelper.swift */,
+			);
+			path = Helper;
+			sourceTree = "<group>";
+		};
 		5CEC84E42BEB14FA0012C7A8 /* UnitTestHepler */ = {
 			isa = PBXGroup;
 			children = (
@@ -439,24 +521,6 @@
 			productReference = 5C73BA8D2BE1C2B800BC34B0 /* NetworkManagerAsyncAwait.app */;
 			productType = "com.apple.product-type.application";
 		};
-		5C73BAA22BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitTests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5C73BABA2BE1C2B900BC34B0 /* Build configuration list for PBXNativeTarget "NetworkManagerAsyncAwaitTests" */;
-			buildPhases = (
-				5C73BA9F2BE1C2B900BC34B0 /* Sources */,
-				5C73BAA02BE1C2B900BC34B0 /* Frameworks */,
-				5C73BAA12BE1C2B900BC34B0 /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5C73BAA52BE1C2B900BC34B0 /* PBXTargetDependency */,
-			);
-			name = NetworkManagerAsyncAwaitTests;
-			productName = NetworkManagerAsyncAwaitTests;
-			productReference = 5C73BAA32BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitTests.xctest */;
-			productType = "com.apple.product-type.bundle.unit-test";
-		};
 		5C73BAAC2BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitUITests */ = {
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5C73BABD2BE1C2B900BC34B0 /* Build configuration list for PBXNativeTarget "NetworkManagerAsyncAwaitUITests" */;
@@ -475,6 +539,46 @@
 			productReference = 5C73BAAD2BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitUITests.xctest */;
 			productType = "com.apple.product-type.bundle.ui-testing";
 		};
+		5C79E5592CCF358700D047D0 /* NetworkManagerTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C79E5602CCF358700D047D0 /* Build configuration list for PBXNativeTarget "NetworkManagerTest" */;
+			buildPhases = (
+				5C79E5562CCF358700D047D0 /* Sources */,
+				5C79E5572CCF358700D047D0 /* Frameworks */,
+				5C79E5582CCF358700D047D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C79E55F2CCF358700D047D0 /* PBXTargetDependency */,
+			);
+			name = NetworkManagerTest;
+			packageProductDependencies = (
+			);
+			productName = NetworkManagerTest;
+			productReference = 5C79E55A2CCF358700D047D0 /* NetworkManagerTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		5C79E5662CCF818A00D047D0 /* MainTest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 5C79E56D2CCF818A00D047D0 /* Build configuration list for PBXNativeTarget "MainTest" */;
+			buildPhases = (
+				5C79E5632CCF818A00D047D0 /* Sources */,
+				5C79E5642CCF818A00D047D0 /* Frameworks */,
+				5C79E5652CCF818A00D047D0 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				5C79E56C2CCF818A00D047D0 /* PBXTargetDependency */,
+			);
+			name = MainTest;
+			packageProductDependencies = (
+			);
+			productName = MainTest;
+			productReference = 5C79E5672CCF818A00D047D0 /* MainTest.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -482,18 +586,22 @@
 			isa = PBXProject;
 			attributes = {
 				BuildIndependentTargetsInParallel = 1;
-				LastSwiftUpdateCheck = 1530;
+				LastSwiftUpdateCheck = 1600;
 				LastUpgradeCheck = 1530;
 				TargetAttributes = {
 					5C73BA8C2BE1C2B800BC34B0 = {
 						CreatedOnToolsVersion = 15.3;
 					};
-					5C73BAA22BE1C2B900BC34B0 = {
+					5C73BAAC2BE1C2B900BC34B0 = {
 						CreatedOnToolsVersion = 15.3;
 						TestTargetID = 5C73BA8C2BE1C2B800BC34B0;
 					};
-					5C73BAAC2BE1C2B900BC34B0 = {
-						CreatedOnToolsVersion = 15.3;
+					5C79E5592CCF358700D047D0 = {
+						CreatedOnToolsVersion = 16.0;
+						TestTargetID = 5C73BA8C2BE1C2B800BC34B0;
+					};
+					5C79E5662CCF818A00D047D0 = {
+						CreatedOnToolsVersion = 16.0;
 						TestTargetID = 5C73BA8C2BE1C2B800BC34B0;
 					};
 				};
@@ -512,8 +620,9 @@
 			projectRoot = "";
 			targets = (
 				5C73BA8C2BE1C2B800BC34B0 /* NetworkManagerAsyncAwait */,
-				5C73BAA22BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitTests */,
 				5C73BAAC2BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitUITests */,
+				5C79E5592CCF358700D047D0 /* NetworkManagerTest */,
+				5C79E5662CCF818A00D047D0 /* MainTest */,
 			);
 		};
 /* End PBXProject section */
@@ -528,20 +637,29 @@
 				5C73BB022BE1D17200BC34B0 /* Movie.storyboard in Resources */,
 				5C73BA9D2BE1C2B900BC34B0 /* Base in Resources */,
 				5CEC84E22BE9B3C90012C7A8 /* MovieCastErrorCell.xib in Resources */,
+				5CE3A9CF2CD34C75001811D3 /* Movies.json in Resources */,
 				5C73BAFC2BE1D03A00BC34B0 /* MovieCastCell.xib in Resources */,
 				5C73BAEB2BE1D00900BC34B0 /* MovieCell.xib in Resources */,
 				5C73BAFE2BE1D03A00BC34B0 /* MovieReviewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C73BAA12BE1C2B900BC34B0 /* Resources */ = {
+		5C73BAAB2BE1C2B900BC34B0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C73BAAB2BE1C2B900BC34B0 /* Resources */ = {
+		5C79E5582CCF358700D047D0 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5CE3A9D02CD34C75001811D3 /* Movies.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C79E5652CCF818A00D047D0 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -555,6 +673,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C6EB4FB2CD46D1900EC94C5 /* URLSessionProtocol.swift in Sources */,
 				5C73BAFF2BE1D03A00BC34B0 /* MovieCredit.swift in Sources */,
 				5C73BAD22BE1C51E00BC34B0 /* URLExtension.swift in Sources */,
 				5C73BB102BE20A9E00BC34B0 /* MovieResponse.swift in Sources */,
@@ -564,9 +683,13 @@
 				5C73BADA2BE1C60A00BC34B0 /* NetworkErrorCode.swift in Sources */,
 				5C73BB0C2BE2009600BC34B0 /* UIImageViewExtension.swift in Sources */,
 				5C73BACD2BE1C4C000BC34B0 /* NetworkConstants.swift in Sources */,
+				5CE3A9CC2CD34B4E001811D3 /* DataHelper.swift in Sources */,
 				5C73BAD42BE1C59E00BC34B0 /* NetworkManager.swift in Sources */,
 				5C73BAE82BE1D00900BC34B0 /* MovieViewController.swift in Sources */,
 				5C73BB202BE314E800BC34B0 /* MovieViewController+UITableView.swift in Sources */,
+				5CE3A9C42CD31E4E001811D3 /* URLSessionMock.swift in Sources */,
+				5CE3A9C52CD31E4E001811D3 /* URLProtocolMock.swift in Sources */,
+				5CE3A9C62CD31E4E001811D3 /* URLSessionDataTaskMock.swift in Sources */,
 				5C73BB0A2BE1DE0900BC34B0 /* BaseViewModelDelegate.swift in Sources */,
 				5CEC84E32BE9B3C90012C7A8 /* MovieCastErrorCell.swift in Sources */,
 				5C73BB062BE1D35E00BC34B0 /* MovieRepository.swift in Sources */,
@@ -582,8 +705,10 @@
 				5C73BB162BE2248C00BC34B0 /* MovieCast.swift in Sources */,
 				5C73BADC2BE1C60A00BC34B0 /* NetworkResponse.swift in Sources */,
 				5C73BAFD2BE1D03A00BC34B0 /* MovieReviewCell.swift in Sources */,
+				5C6EB4F52CD36A2E00EC94C5 /* MovieViewModelDelegate.swift in Sources */,
 				5C73BB222BE3162800BC34B0 /* MovieDetailViewController+MovieDetailViewModel.swift in Sources */,
 				5C73BB182BE224ED00BC34B0 /* MovieReview.swift in Sources */,
+				5C6EB4FD2CD46D6D00EC94C5 /* URLSessionMockClass.swift in Sources */,
 				5C73BAFB2BE1D03A00BC34B0 /* MovieCastCell.swift in Sources */,
 				5C73BB002BE1D03A00BC34B0 /* MovieReviewResponse.swift in Sources */,
 				5C73BA932BE1C2B800BC34B0 /* SceneDelegate.swift in Sources */,
@@ -597,17 +722,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		5C73BA9F2BE1C2B900BC34B0 /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				5CEC84ED2BEB1E110012C7A8 /* XCTestCaseExtension.swift in Sources */,
-				5CEC84EC2BEB1C1E0012C7A8 /* ParameterizedTestBase.swift in Sources */,
-				5CEC84EB2BEB15750012C7A8 /* ProjectBaseTest.swift in Sources */,
-				5C73BAA82BE1C2B900BC34B0 /* NetworkManagerAsyncAwaitTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 		5C73BAA92BE1C2B900BC34B0 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
@@ -617,18 +731,42 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		5C79E5562CCF358700D047D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6EB4F22CD369DB00EC94C5 /* NetworkManagerTest.swift in Sources */,
+				5CE3A9CD2CD34B4E001811D3 /* DataHelper.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		5C79E5632CCF818A00D047D0 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5C6EB4F92CD36A9100EC94C5 /* MovieViewModelDelegateMock.swift in Sources */,
+				5C6EB4EE2CD369D600EC94C5 /* MainTest.swift in Sources */,
+				5C6EB4EF2CD369D600EC94C5 /* MovieViewModelTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		5C73BAA52BE1C2B900BC34B0 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5C73BA8C2BE1C2B800BC34B0 /* NetworkManagerAsyncAwait */;
-			targetProxy = 5C73BAA42BE1C2B900BC34B0 /* PBXContainerItemProxy */;
-		};
 		5C73BAAF2BE1C2B900BC34B0 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 5C73BA8C2BE1C2B800BC34B0 /* NetworkManagerAsyncAwait */;
 			targetProxy = 5C73BAAE2BE1C2B900BC34B0 /* PBXContainerItemProxy */;
+		};
+		5C79E55F2CCF358700D047D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C73BA8C2BE1C2B800BC34B0 /* NetworkManagerAsyncAwait */;
+			targetProxy = 5C79E55E2CCF358700D047D0 /* PBXContainerItemProxy */;
+		};
+		5C79E56C2CCF818A00D047D0 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 5C73BA8C2BE1C2B800BC34B0 /* NetworkManagerAsyncAwait */;
+			targetProxy = 5C79E56B2CCF818A00D047D0 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -817,44 +955,6 @@
 			};
 			name = Release;
 		};
-		5C73BABB2BE1C2B900BC34B0 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = exlinct.NetworkManagerAsyncAwaitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkManagerAsyncAwait.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetworkManagerAsyncAwait";
-			};
-			name = Debug;
-		};
-		5C73BABC2BE1C2B900BC34B0 /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				BUNDLE_LOADER = "$(TEST_HOST)";
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				GENERATE_INFOPLIST_FILE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 17.4;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = exlinct.NetworkManagerAsyncAwaitTests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkManagerAsyncAwait.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetworkManagerAsyncAwait";
-			};
-			name = Release;
-		};
 		5C73BABE2BE1C2B900BC34B0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -889,6 +989,78 @@
 			};
 			name = Release;
 		};
+		5C79E5612CCF358700D047D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = exlinct.NetworkManagerTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkManagerAsyncAwait.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetworkManagerAsyncAwait";
+			};
+			name = Debug;
+		};
+		5C79E5622CCF358700D047D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = exlinct.NetworkManagerTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkManagerAsyncAwait.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetworkManagerAsyncAwait";
+			};
+			name = Release;
+		};
+		5C79E56E2CCF818A00D047D0 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = exlinct.MainTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkManagerAsyncAwait.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetworkManagerAsyncAwait";
+			};
+			name = Debug;
+		};
+		5C79E56F2CCF818A00D047D0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.0;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = exlinct.MainTest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/NetworkManagerAsyncAwait.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/NetworkManagerAsyncAwait";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -910,20 +1082,29 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		5C73BABA2BE1C2B900BC34B0 /* Build configuration list for PBXNativeTarget "NetworkManagerAsyncAwaitTests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5C73BABB2BE1C2B900BC34B0 /* Debug */,
-				5C73BABC2BE1C2B900BC34B0 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
 		5C73BABD2BE1C2B900BC34B0 /* Build configuration list for PBXNativeTarget "NetworkManagerAsyncAwaitUITests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				5C73BABE2BE1C2B900BC34B0 /* Debug */,
 				5C73BABF2BE1C2B900BC34B0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C79E5602CCF358700D047D0 /* Build configuration list for PBXNativeTarget "NetworkManagerTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C79E5612CCF358700D047D0 /* Debug */,
+				5C79E5622CCF358700D047D0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		5C79E56D2CCF818A00D047D0 /* Build configuration list for PBXNativeTarget "MainTest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				5C79E56E2CCF818A00D047D0 /* Debug */,
+				5C79E56F2CCF818A00D047D0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

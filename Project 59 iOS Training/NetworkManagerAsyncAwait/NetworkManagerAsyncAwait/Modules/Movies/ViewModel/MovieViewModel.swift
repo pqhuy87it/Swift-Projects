@@ -1,10 +1,5 @@
 import Foundation
 
-protocol MovieViewModelDelegate: BaseViewModelDelegate {
-    func getDataMoviesSuccess()
-    func handleGetMoviesFailedWith(_ error: NetworkError)
-}
-
 @MainActor
 class MovieViewModel {
     weak var delegate: MovieViewModelDelegate?

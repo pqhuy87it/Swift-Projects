@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1540"
+   LastUpgradeVersion = "1600"
    version = "1.7">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -27,8 +27,13 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
-      shouldUseLaunchSchemeArgsEnv = "YES"
-      shouldAutocreateTestPlan = "YES">
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <TestPlans>
+         <TestPlanReference
+            reference = "container:NetworkManagerTestPlan.xctestplan"
+            default = "YES">
+         </TestPlanReference>
+      </TestPlans>
       <Testables>
          <TestableReference
             skipped = "NO"
@@ -49,6 +54,28 @@
                BlueprintIdentifier = "5C73BAAC2BE1C2B900BC34B0"
                BuildableName = "NetworkManagerAsyncAwaitUITests.xctest"
                BlueprintName = "NetworkManagerAsyncAwaitUITests"
+               ReferencedContainer = "container:NetworkManagerAsyncAwait.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5C79E5592CCF358700D047D0"
+               BuildableName = "NetworkManagerTest.xctest"
+               BlueprintName = "NetworkManagerTest"
+               ReferencedContainer = "container:NetworkManagerAsyncAwait.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+         <TestableReference
+            skipped = "NO"
+            parallelizable = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "5C79E5662CCF818A00D047D0"
+               BuildableName = "MainTest.xctest"
+               BlueprintName = "MainTest"
                ReferencedContainer = "container:NetworkManagerAsyncAwait.xcodeproj">
             </BuildableReference>
          </TestableReference>

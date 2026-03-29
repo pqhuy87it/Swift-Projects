@@ -1,0 +1,31 @@
+{
+  "configurations" : [
+    {
+      "id" : "1CA8267A-2E60-497A-9969-DD3C7736EEA2",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "target" : {
+        "containerPath" : "container:NetworkManagerAsyncAwait.xcodeproj",
+        "identifier" : "5C79E5662CCF818A00D047D0",
+        "name" : "MainTest"
+      }
+    },
+    {
+      "target" : {
+        "containerPath" : "container:NetworkManagerAsyncAwait.xcodeproj",
+        "identifier" : "5C79E5592CCF358700D047D0",
+        "name" : "NetworkManagerTest"
+      }
+    }
+  ],
+  "version" : 1
+}

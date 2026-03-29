@@ -30,7 +30,7 @@ enum NetworkErrorCode {
             self = .forbidden
         case NetworkStatusCode.notFound.rawValue:
             self = .nilData
-        case NetworkStatusCode.methodNotAllowed.rawValue:
+        case NetworkStatusCode.badRequest.rawValue:
             self = .badRequest
         default:
             self = .unknow
