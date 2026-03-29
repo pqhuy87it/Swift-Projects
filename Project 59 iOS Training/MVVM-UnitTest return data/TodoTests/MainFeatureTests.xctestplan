@@ -1,0 +1,25 @@
+{
+  "configurations" : [
+    {
+      "id" : "6EE17A06-B436-4B47-9D14-EDE33531D75F",
+      "name" : "Configuration 1",
+      "options" : {
+
+      }
+    }
+  ],
+  "defaultOptions" : {
+    "testTimeoutsEnabled" : true
+  },
+  "testTargets" : [
+    {
+      "parallelizable" : true,
+      "target" : {
+        "containerPath" : "container:MVVM-UnitTest.xcodeproj",
+        "identifier" : "5C6AC5FD2BCFB1DC00E94055",
+        "name" : "MainFeaturesTests"
+      }
+    }
+  ],
+  "version" : 1
+}
